@@ -58,7 +58,7 @@ def main():
 	logging.info('Device: {}'.format(args.device))
 
 	# Read data
-	args.path = os.path.join('./Datasets')
+	args.path = os.path.join('../data')
 	corpus_path = os.path.join(args.path, args.data, model_name.reader+args.data_appendix+ '.pkl')
 	if not args.regenerate and os.path.exists(corpus_path):
 		logging.info('Load corpus from {}'.format(corpus_path))
