@@ -374,5 +374,9 @@ class Runner(BaseRunner):
             for i in range(batch,self.args.batch):
                 sequence[i]=np.zeros(self.args.pos_length,dtype=int)
                 mask[i]=np.zeros(self.args.pos_length)
+        while uLocs and uLocs[-1] is None:
+            uLocs.pop()
+        while iLocs and iLocs[-1] is None:
+            iLocs.pop()
         return uLocs, iLocs, temTst, tstLocs, sequence, mask, uLocs_seq, val_list
         
