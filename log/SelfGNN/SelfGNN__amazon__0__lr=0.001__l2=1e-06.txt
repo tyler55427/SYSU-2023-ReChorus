@@ -1,0 +1,262 @@
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 12:58:12 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "./Datasets/amazon/", dataset = "amazon" 
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 12:58:52 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "./Datasets/amazon/", dataset = "amazon" 
+INFO:root:Save corpus to data/amazon\Reader.pkl
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 13:01:30 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "./Datasets/amazon/", dataset = "amazon" 
+INFO:root:Save corpus to data/amazon\Reader.pkl
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 13:02:40 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "./Datasets/amazon/", dataset = "amazon" 
+INFO:root:Save corpus to data/amazon\Reader.pkl
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 13:02:54 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Reading data from "./Datasets/amazon/", dataset = "amazon" 
+INFO:root:Save corpus to Datasets\amazon\Reader.pkl
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:33: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:46: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:47: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 13:07:37 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ leaky              | 0.5       
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from Datasets\amazon\Reader.pkl
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:33: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 13:10:03 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ leaky              | 0.5       
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from Datasets\amazon\Reader.pkl
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:35: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:48: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:49: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 13:13:00 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch              | 512       
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ leaky              | 0.5       
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from Datasets\amazon\Reader.pkl
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:35: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:48: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:49: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+INFO:root:Namespace(model_mode='', model_name='SelfGNN')
+INFO:root:--------------------------------------------- BEGIN: 2025-11-26 13:13:51 ---------------------------------------------
+INFO:root:
+=================================
+ Arguments          | Values     
+=================================
+ batch              | 512       
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ l2                 | 1e-06     
+ leaky              | 0.5       
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ pos_length         | 200       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+INFO:root:Device: cpu
+INFO:root:Load corpus from Datasets\amazon\Reader.pkl
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:35: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:48: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:49: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+

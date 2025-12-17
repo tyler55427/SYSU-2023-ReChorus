@@ -1,0 +1,41 @@
+Namespace(model_mode='', model_name='SelfGNN')
+--------------------------------------------- BEGIN: 2025-11-26 14:41:14 ---------------------------------------------
+
+=================================
+ Arguments          | Values     
+=================================
+ batch              | 512       
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | amazon    
+ early_stop         | 10        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ graphNum           | 5         
+ l2                 | 0         
+ leaky              | 0.5       
+ lr                 | 0.001     
+ main_metric        |           
+ num_workers        | 5         
+ optimizer          | Adam      
+ percent            | 0.0       
+ pos_length         | 200       
+ random_seed        | 0         
+ save_final_results | 1         
+ topk               | 5,10,20,50
+=================================
+Device: cpu
+Load corpus from Datasets\amazon\Reader.pkl
+From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:35: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+USER 11199 ITEM 30821
+From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:48: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+From D:\A1111\School\中大课件\大三上\机器学习实验\大作业\ReChorus\src\helpers\model.py:49: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+aaaaaaaaaaaaaaaaaa
+调用栈:
+bbbbbbbbbbbbbbbbbb
+aaaaaaaaaaaaaaaaaa
+调用栈:

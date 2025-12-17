@@ -1,0 +1,3872 @@
+tstInt [21 44 None ... 21290 18112 30383]
+tstStat [ True  True False ...  True  True  True] 11199
+tstUsrs [    0     1     3 ... 11196 11197 11198] 10000
+trnMat   (0, 0)	1.0
+  (0, 1)	1.0
+  (0, 2)	1.0
+  (0, 3)	1.0
+  (0, 4)	1.0
+  (0, 5)	1.0
+  (0, 6)	1.0
+  (0, 7)	1.0
+  (0, 8)	1.0
+  (0, 9)	1.0
+  (0, 10)	1.0
+  (0, 11)	1.0
+  (0, 12)	1.0
+  (0, 13)	1.0
+  (0, 14)	1.0
+  (0, 15)	1.0
+  (0, 16)	1.0
+  (0, 17)	1.0
+  (0, 18)	1.0
+  (0, 19)	1.0
+  (0, 20)	1.0
+  (0, 22)	1.0
+  (0, 24)	1.0
+  (0, 25)	1.0
+  (0, 26)	1.0
+  :	:
+  (11197, 21303)	1.0
+  (11197, 26734)	1.0
+  (11197, 28954)	1.0
+  (11197, 28976)	1.0
+  (11197, 29308)	1.0
+  (11197, 29461)	1.0
+  (11197, 29512)	1.0
+  (11197, 29542)	1.0
+  (11197, 30350)	1.0
+  (11197, 30367)	1.0
+  (11198, 2217)	1.0
+  (11198, 2218)	1.0
+  (11198, 9966)	1.0
+  (11198, 18128)	1.0
+  (11198, 19787)	1.0
+  (11198, 28964)	1.0
+  (11198, 29081)	1.0
+  (11198, 29384)	1.0
+  (11198, 29461)	1.0
+  (11198, 29467)	1.0
+  (11198, 29486)	1.0
+  (11198, 29518)	1.0
+  (11198, 29734)	1.0
+  (11198, 30353)	1.0
+  (11198, 30370)	1.0 [<11199x30821 sparse matrix of type '<class 'numpy.int32'>'
+	with 72280 stored elements in Compressed Sparse Row format>, <11199x30821 sparse matrix of type '<class 'numpy.int32'>'
+	with 78997 stored elements in Compressed Sparse Row format>, <11199x30821 sparse matrix of type '<class 'numpy.int32'>'
+	with 79692 stored elements in Compressed Sparse Row format>, <11199x30821 sparse matrix of type '<class 'numpy.int32'>'
+	with 78096 stored elements in Compressed Sparse Row format>, <11199x30821 sparse matrix of type '<class 'numpy.int32'>'
+	with 45651 stored elements in Compressed Sparse Row format>]   (0, 0)	3
+  (0, 1)	4
+  (0, 2)	1
+  (0, 3)	4
+  (0, 4)	2
+  (0, 5)	4
+  (0, 6)	2
+  (0, 7)	2
+  (0, 8)	1
+  (0, 9)	3
+  (0, 10)	2
+  (0, 11)	3
+  (0, 12)	3
+  (0, 13)	1
+  (0, 14)	3
+  (0, 15)	3
+  (0, 16)	4
+  (0, 19)	3
+  (0, 20)	2
+  (0, 22)	2
+  (0, 24)	1
+  (0, 25)	1
+  (0, 26)	2
+  (0, 27)	2
+  (0, 28)	3
+  :	:
+  (11197, 28954)	1
+  (11197, 20557)	1
+  (11197, 29542)	1
+  (11197, 21303)	1
+  (11197, 29461)	2
+  (11197, 18122)	1
+  (11197, 28976)	1
+  (11197, 29512)	1
+  (11197, 30350)	2
+  (11197, 30367)	3
+  (11198, 9966)	1
+  (11198, 28964)	2
+  (11198, 29461)	1
+  (11198, 29486)	1
+  (11198, 2217)	1
+  (11198, 2218)	3
+  (11198, 19787)	2
+  (11198, 29384)	2
+  (11198, 29081)	2
+  (11198, 29467)	2
+  (11198, 18128)	2
+  (11198, 29734)	2
+  (11198, 29518)	3
+  (11198, 30353)	3
+  (11198, 30370)	3
+  (0, 17)	1391731200
+  (0, 18)	1388534400
+  (0, 30)	1389484800
+  (1, 0)	1389830400
+  (1, 33)	1389225600
+  (1, 36)	1389830400
+  (1, 38)	1389830400
+  (1, 43)	1389225600
+  (2, 49)	1390608000
+  (2, 54)	1391385600
+  (2, 56)	1391817600
+  (6, 67)	1389830400
+  (6, 189)	1389657600
+  (6, 192)	1391126400
+  (6, 199)	1390176000
+  (6, 200)	1391817600
+  (7, 198)	1389225600
+  (8, 67)	1389657600
+  (8, 214)	1388620800
+  (8, 217)	1389657600
+  (8, 220)	1389657600
+  (8, 222)	1389657600
+  (8, 225)	1389657600
+  (8, 229)	1389657600
+  (9, 67)	1389398400
+  :	:
+  (11193, 29211)	1390435200
+  (11193, 30598)	1390348800
+  (11193, 30680)	1390348800
+  (11194, 13820)	1391731200
+  (11194, 14046)	1389225600
+  (11194, 14199)	1390867200
+  (11194, 16563)	1391558400
+  (11194, 22905)	1389657600
+  (11194, 26806)	1390694400
+  (11194, 27610)	1391990400
+  (11194, 29211)	1390953600
+  (11194, 29212)	1391472000
+  (11194, 30598)	1390780800
+  (11194, 30678)	1390176000
+  (11194, 30679)	1389830400
+  (11194, 30680)	1390089600
+  (11196, 2708)	1389571200
+  (11196, 2712)	1390780800
+  (11196, 2717)	1391990400
+  (11196, 10657)	1389571200
+  (11196, 10724)	1389657600
+  (11196, 15941)	1391385600
+  (11197, 18119)	1391212800
+  (11197, 26734)	1389484800
+  (11197, 29308)	1391817600   (0, 1)	1403308800
+  (0, 3)	1403308800
+  (0, 5)	1403308800
+  (0, 16)	1402963200
+  (3, 75)	1403481600
+  (3, 78)	1404518400
+  (3, 87)	1404518400
+  (4, 55)	1404345600
+  (4, 67)	1404777600
+  (4, 90)	1404691200
+  (4, 91)	1404777600
+  (4, 92)	1404345600
+  (4, 93)	1404777600
+  (4, 94)	1404345600
+  (4, 95)	1404777600
+  (4, 96)	1404345600
+  (4, 97)	1404691200
+  (4, 98)	1404691200
+  (4, 99)	1404345600
+  (4, 100)	1404691200
+  (4, 101)	1404777600
+  (4, 102)	1404777600
+  (4, 103)	1404345600
+  (4, 104)	1404777600
+  (4, 105)	1404777600
+  :	:
+  (11184, 29209)	1402617600
+  (11184, 29234)	1404172800
+  (11184, 29237)	1404259200
+  (11184, 30163)	1402704000
+  (11184, 30686)	1402790400
+  (11184, 30690)	1405468800
+  (11185, 6634)	1402704000
+  (11185, 6635)	1402704000
+  (11188, 26376)	1404950400
+  (11188, 27621)	1404777600
+  (11188, 27638)	1404777600
+  (11188, 27678)	1403395200
+  (11188, 29178)	1404864000
+  (11188, 30162)	1403136000
+  (11189, 21197)	1404691200
+  (11192, 29178)	1404432000
+  (11192, 29230)	1404864000
+  (11192, 29904)	1404864000
+  (11195, 30036)	1403740800
+  (11195, 30038)	1403740800
+  (11195, 30686)	1402704000
+  (11196, 21280)	1403568000
+  (11196, 21289)	1403568000
+  (11196, 22079)	1404086400
+  (11196, 25532)	1404086400
+USER 11199 ITEM 30821
+13.437729
+Steps 0/20: hit10 = 13, ndcg10 = 5
+11.411845
+Steps 1/20: hit10 = 6, ndcg10 = 3
+24.280073
+Steps 2/20: hit10 = 5, ndcg10 = 2
+19.29393
+Steps 3/20: hit10 = 10, ndcg10 = 4
+18.078156
+Steps 4/20: hit10 = 10, ndcg10 = 5
+22.994444
+Steps 5/20: hit10 = 7, ndcg10 = 3
+22.035656
+Steps 6/20: hit10 = 7, ndcg10 = 3
+15.504627
+Steps 7/20: hit10 = 6, ndcg10 = 4
+16.106892
+Steps 8/20: hit10 = 8, ndcg10 = 3
+15.255705
+Steps 9/20: hit10 = 13, ndcg10 = 7
+19.973427
+Steps 10/20: hit10 = 3, ndcg10 = 0
+16.247704
+Steps 11/20: hit10 = 9, ndcg10 = 3
+18.544888
+Steps 12/20: hit10 = 7, ndcg10 = 4
+21.220156
+Steps 13/20: hit10 = 9, ndcg10 = 3
+12.728218
+Steps 14/20: hit10 = 2, ndcg10 = 1
+12.46284
+Steps 15/20: hit10 = 8, ndcg10 = 2
+17.13536
+Steps 16/20: hit10 = 4, ndcg10 = 3
+19.04553
+Steps 17/20: hit10 = 10, ndcg10 = 5
+19.701538
+Steps 18/20: hit10 = 5, ndcg10 = 2
+12.778802
+Steps 19/20: hit10 = 3, ndcg10 = 1
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.005400761184903,epochHit5:0.0087
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.010479496195941376,epochHit20:0.0274
+Model Prepared
+Variables Inited
+Step 0/20: preloss = 1.77, REGLoss = 2.91         
+Step 1/20: preloss = 1.73, REGLoss = 3.06         
+Step 2/20: preloss = 1.52, REGLoss = 3.15         
+Step 3/20: preloss = 1.32, REGLoss = 3.70         
+Step 4/20: preloss = 1.25, REGLoss = 3.20         
+Step 5/20: preloss = 1.11, REGLoss = 3.17         
+Step 6/20: preloss = 0.99, REGLoss = 3.55         
+Step 7/20: preloss = 1.01, REGLoss = 3.25         
+Step 8/20: preloss = 0.96, REGLoss = 3.97         
+Step 9/20: preloss = 0.90, REGLoss = 3.40         
+Step 10/20: preloss = 0.90, REGLoss = 3.25         
+Step 11/20: preloss = 0.82, REGLoss = 3.25         
+Step 12/20: preloss = 0.80, REGLoss = 3.62         
+Step 13/20: preloss = 0.82, REGLoss = 3.20         
+Step 14/20: preloss = 0.77, REGLoss = 3.21         
+Step 15/20: preloss = 0.74, REGLoss = 3.15         
+Step 16/20: preloss = 0.75, REGLoss = 3.19         
+Step 17/20: preloss = 0.71, REGLoss = 3.12         
+Step 18/20: preloss = 0.73, REGLoss = 3.10         
+Step 19/20: preloss = 0.69, REGLoss = 3.03         
+Epoch 0/150, Train: Loss = 8.5754, preLoss = 2.0282  
+-2.1833432
+Steps 0/20: hit10 = 57, ndcg10 = 29
+-2.3062048
+Steps 1/20: hit10 = 38, ndcg10 = 16
+-1.6091137
+Steps 2/20: hit10 = 36, ndcg10 = 17
+-0.60794854
+Steps 3/20: hit10 = 62, ndcg10 = 29
+-1.9494755
+Steps 4/20: hit10 = 52, ndcg10 = 24
+-1.7037184
+Steps 5/20: hit10 = 69, ndcg10 = 33
+-1.0632365
+Steps 6/20: hit10 = 57, ndcg10 = 27
+-0.3461914
+Steps 7/20: hit10 = 61, ndcg10 = 27
+1.8648801
+Steps 8/20: hit10 = 67, ndcg10 = 29
+-2.4175599
+Steps 9/20: hit10 = 52, ndcg10 = 28
+1.4371789
+Steps 10/20: hit10 = 67, ndcg10 = 34
+1.4004493
+Steps 11/20: hit10 = 46, ndcg10 = 21
+1.1346848
+Steps 12/20: hit10 = 55, ndcg10 = 26
+0.95737267
+Steps 13/20: hit10 = 49, ndcg10 = 22
+0.5215056
+Steps 14/20: hit10 = 48, ndcg10 = 22
+-1.9953492
+Steps 15/20: hit10 = 46, ndcg10 = 22
+-2.980416
+Steps 16/20: hit10 = 34, ndcg10 = 19
+-3.8630307
+Steps 17/20: hit10 = 34, ndcg10 = 15
+1.2464995
+Steps 18/20: hit10 = 43, ndcg10 = 18
+-0.9558563
+Steps 19/20: hit10 = 15, ndcg10 = 6
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.03326611726767671,epochHit5:0.0541
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.06629316104663148,epochHit20:0.1739
+
+Step 0/20: preloss = 0.48, REGLoss = 3.01         
+Step 1/20: preloss = 0.43, REGLoss = 2.98         
+Step 2/20: preloss = 0.38, REGLoss = 2.96         
+Step 3/20: preloss = 0.43, REGLoss = 2.90         
+Step 4/20: preloss = 0.38, REGLoss = 2.88         
+Step 5/20: preloss = 0.38, REGLoss = 2.82         
+Step 6/20: preloss = 0.39, REGLoss = 2.76         
+Step 7/20: preloss = 0.33, REGLoss = 2.72         
+Step 8/20: preloss = 0.33, REGLoss = 2.67         
+Step 9/20: preloss = 0.34, REGLoss = 2.63         
+Step 10/20: preloss = 0.30, REGLoss = 2.60         
+Step 11/20: preloss = 0.34, REGLoss = 2.56         
+Step 12/20: preloss = 0.35, REGLoss = 2.50         
+Step 13/20: preloss = 0.35, REGLoss = 2.47         
+Step 14/20: preloss = 0.34, REGLoss = 2.43         
+Step 15/20: preloss = 0.37, REGLoss = 2.40         
+Step 16/20: preloss = 0.33, REGLoss = 2.35         
+Step 17/20: preloss = 0.38, REGLoss = 2.30         
+Step 18/20: preloss = 0.36, REGLoss = 2.34         
+Step 19/20: preloss = 0.33, REGLoss = 2.23         
+Epoch 1/150, Train: Loss = 5.9831, preLoss = 0.7308  
+
+Step 0/20: preloss = 0.22, REGLoss = 2.20         
+Step 1/20: preloss = 0.23, REGLoss = 2.18         
+Step 2/20: preloss = 0.21, REGLoss = 2.13         
+Step 3/20: preloss = 0.18, REGLoss = 2.10         
+Step 4/20: preloss = 0.21, REGLoss = 2.08         
+Step 5/20: preloss = 0.25, REGLoss = 2.04         
+Step 6/20: preloss = 0.18, REGLoss = 2.00         
+Step 7/20: preloss = 0.21, REGLoss = 1.98         
+Step 8/20: preloss = 0.21, REGLoss = 1.95         
+Step 9/20: preloss = 0.21, REGLoss = 1.94         
+Step 10/20: preloss = 0.22, REGLoss = 1.88         
+Step 11/20: preloss = 0.22, REGLoss = 1.96         
+Step 12/20: preloss = 0.23, REGLoss = 1.83         
+Step 13/20: preloss = 0.22, REGLoss = 1.80         
+Step 14/20: preloss = 0.25, REGLoss = 1.81         
+Step 15/20: preloss = 0.25, REGLoss = 1.75         
+Step 16/20: preloss = 0.24, REGLoss = 1.72         
+Step 17/20: preloss = 0.26, REGLoss = 1.70         
+Step 18/20: preloss = 0.29, REGLoss = 3.70         
+Step 19/20: preloss = 0.27, REGLoss = 1.65         
+Epoch 2/150, Train: Loss = 4.4973, preLoss = 0.4565  
+
+Step 0/20: preloss = 0.16, REGLoss = 1.65         
+Step 1/20: preloss = 0.16, REGLoss = 1.65         
+Step 2/20: preloss = 0.15, REGLoss = 1.63         
+Step 3/20: preloss = 0.14, REGLoss = 1.63         
+Step 4/20: preloss = 0.15, REGLoss = 1.62         
+Step 5/20: preloss = 0.17, REGLoss = 1.63         
+Step 6/20: preloss = 0.18, REGLoss = 1.61         
+Step 7/20: preloss = 0.18, REGLoss = 1.60         
+Step 8/20: preloss = 0.19, REGLoss = 1.58         
+Step 9/20: preloss = 0.18, REGLoss = 1.57         
+Step 10/20: preloss = 0.18, REGLoss = 1.56         
+Step 11/20: preloss = 0.20, REGLoss = 1.55         
+Step 12/20: preloss = 0.21, REGLoss = 1.53         
+Step 13/20: preloss = 0.24, REGLoss = 1.52         
+Step 14/20: preloss = 0.25, REGLoss = 1.51         
+Step 15/20: preloss = 0.23, REGLoss = 1.50         
+Step 16/20: preloss = 0.18, REGLoss = 1.52         
+Step 17/20: preloss = 0.24, REGLoss = 1.48         
+Step 18/20: preloss = 0.25, REGLoss = 1.46         
+Step 19/20: preloss = 0.26, REGLoss = 1.44         
+Epoch 3/150, Train: Loss = 3.5130, preLoss = 0.3884  
+0.010447502
+Steps 0/20: hit10 = 79, ndcg10 = 35
+0.41876745
+Steps 1/20: hit10 = 60, ndcg10 = 33
+-2.8663774
+Steps 2/20: hit10 = 69, ndcg10 = 34
+2.266427
+Steps 3/20: hit10 = 84, ndcg10 = 43
+0.7945285
+Steps 4/20: hit10 = 88, ndcg10 = 42
+-3.029281
+Steps 5/20: hit10 = 91, ndcg10 = 41
+-1.7313824
+Steps 6/20: hit10 = 104, ndcg10 = 55
+0.67175674
+Steps 7/20: hit10 = 132, ndcg10 = 59
+0.3075652
+Steps 8/20: hit10 = 122, ndcg10 = 56
+-1.0815148
+Steps 9/20: hit10 = 84, ndcg10 = 39
+-0.31030893
+Steps 10/20: hit10 = 99, ndcg10 = 50
+-0.4242525
+Steps 11/20: hit10 = 92, ndcg10 = 41
+-1.363594
+Steps 12/20: hit10 = 88, ndcg10 = 40
+-2.5188556
+Steps 13/20: hit10 = 93, ndcg10 = 46
+-3.2478428
+Steps 14/20: hit10 = 120, ndcg10 = 57
+-3.8987575
+Steps 15/20: hit10 = 90, ndcg10 = 48
+-1.4238803
+Steps 16/20: hit10 = 106, ndcg10 = 51
+-2.0412922
+Steps 17/20: hit10 = 88, ndcg10 = 39
+-1.4745922
+Steps 18/20: hit10 = 83, ndcg10 = 39
+-2.725161
+Steps 19/20: hit10 = 43, ndcg10 = 17
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.06244312315965019,epochHit5:0.1032
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.11520426205665622,epochHit20:0.2914
+
+Step 0/20: preloss = 0.13, REGLoss = 1.43         
+Step 1/20: preloss = 0.13, REGLoss = 1.43         
+Step 2/20: preloss = 0.14, REGLoss = 1.41         
+Step 3/20: preloss = 0.16, REGLoss = 1.41         
+Step 4/20: preloss = 0.16, REGLoss = 1.39         
+Step 5/20: preloss = 0.16, REGLoss = 1.38         
+Step 6/20: preloss = 0.15, REGLoss = 1.52         
+Step 7/20: preloss = 0.15, REGLoss = 1.36         
+Step 8/20: preloss = 0.16, REGLoss = 1.34         
+Step 9/20: preloss = 0.16, REGLoss = 1.33         
+Step 10/20: preloss = 0.18, REGLoss = 1.32         
+Step 11/20: preloss = 0.17, REGLoss = 1.32         
+Step 12/20: preloss = 0.19, REGLoss = 1.30         
+Step 13/20: preloss = 0.22, REGLoss = 1.31         
+Step 14/20: preloss = 0.19, REGLoss = 1.28         
+Step 15/20: preloss = 0.22, REGLoss = 1.27         
+Step 16/20: preloss = 0.24, REGLoss = 1.26         
+Step 17/20: preloss = 0.21, REGLoss = 1.26         
+Step 18/20: preloss = 0.20, REGLoss = 1.28         
+Step 19/20: preloss = 0.25, REGLoss = 1.23         
+Epoch 4/150, Train: Loss = 3.0410, preLoss = 0.3590  
+
+Step 0/20: preloss = 0.12, REGLoss = 1.56         
+Step 1/20: preloss = 0.12, REGLoss = 1.22         
+Step 2/20: preloss = 0.13, REGLoss = 1.22         
+Step 3/20: preloss = 0.13, REGLoss = 1.23         
+Step 4/20: preloss = 0.15, REGLoss = 1.23         
+Step 5/20: preloss = 0.15, REGLoss = 1.23         
+Step 6/20: preloss = 0.15, REGLoss = 1.28         
+Step 7/20: preloss = 0.17, REGLoss = 1.24         
+Step 8/20: preloss = 0.16, REGLoss = 1.24         
+Step 9/20: preloss = 0.16, REGLoss = 1.24         
+Step 10/20: preloss = 0.16, REGLoss = 1.21         
+Step 11/20: preloss = 0.19, REGLoss = 1.21         
+Step 12/20: preloss = 0.20, REGLoss = 1.20         
+Step 13/20: preloss = 0.17, REGLoss = 1.19         
+Step 14/20: preloss = 0.21, REGLoss = 1.19         
+Step 15/20: preloss = 0.19, REGLoss = 1.18         
+Step 16/20: preloss = 0.20, REGLoss = 1.17         
+Step 17/20: preloss = 0.23, REGLoss = 1.17         
+Step 18/20: preloss = 0.26, REGLoss = 1.16         
+Step 19/20: preloss = 0.26, REGLoss = 1.15         
+Epoch 5/150, Train: Loss = 2.8013, preLoss = 0.3490  
+
+Step 0/20: preloss = 0.10, REGLoss = 1.15         
+Step 1/20: preloss = 0.11, REGLoss = 1.14         
+Step 2/20: preloss = 0.12, REGLoss = 1.14         
+Step 3/20: preloss = 0.12, REGLoss = 1.13         
+Step 4/20: preloss = 0.13, REGLoss = 1.34         
+Step 5/20: preloss = 0.11, REGLoss = 1.11         
+Step 6/20: preloss = 0.12, REGLoss = 13.51         
+Step 7/20: preloss = 0.11, REGLoss = 1.09         
+Step 8/20: preloss = 0.15, REGLoss = 1.09         
+Step 9/20: preloss = 0.15, REGLoss = 1.13         
+Step 10/20: preloss = 0.16, REGLoss = 1.16         
+Step 11/20: preloss = 0.17, REGLoss = 1.32         
+Step 12/20: preloss = 0.17, REGLoss = 1.17         
+Step 13/20: preloss = 0.19, REGLoss = 1.28         
+Step 14/20: preloss = 0.22, REGLoss = 1.31         
+Step 15/20: preloss = 0.22, REGLoss = 1.28         
+Step 16/20: preloss = 0.21, REGLoss = 1.24         
+Step 17/20: preloss = 0.26, REGLoss = 1.28         
+Step 18/20: preloss = 0.23, REGLoss = 1.32         
+Step 19/20: preloss = 0.26, REGLoss = 1.25         
+Epoch 6/150, Train: Loss = 3.9736, preLoss = 0.3306  
+2.1689034
+Steps 0/20: hit10 = 88, ndcg10 = 46
+0.15071106
+Steps 1/20: hit10 = 70, ndcg10 = 34
+-0.3327341
+Steps 2/20: hit10 = 61, ndcg10 = 31
+-0.24139929
+Steps 3/20: hit10 = 81, ndcg10 = 37
+2.8498774
+Steps 4/20: hit10 = 79, ndcg10 = 38
+2.5072508
+Steps 5/20: hit10 = 91, ndcg10 = 41
+0.1039052
+Steps 6/20: hit10 = 106, ndcg10 = 52
+1.5609684
+Steps 7/20: hit10 = 100, ndcg10 = 45
+4.1160736
+Steps 8/20: hit10 = 106, ndcg10 = 48
+1.1595917
+Steps 9/20: hit10 = 70, ndcg10 = 35
+0.8638797
+Steps 10/20: hit10 = 89, ndcg10 = 44
+0.83245564
+Steps 11/20: hit10 = 83, ndcg10 = 38
+0.9976244
+Steps 12/20: hit10 = 89, ndcg10 = 44
+-0.72130394
+Steps 13/20: hit10 = 87, ndcg10 = 40
+3.324407
+Steps 14/20: hit10 = 107, ndcg10 = 50
+-3.285945
+Steps 15/20: hit10 = 105, ndcg10 = 53
+-0.91860723
+Steps 16/20: hit10 = 99, ndcg10 = 47
+0.37837029
+Steps 17/20: hit10 = 85, ndcg10 = 43
+-2.2880487
+Steps 18/20: hit10 = 99, ndcg10 = 49
+-0.94974756
+Steps 19/20: hit10 = 43, ndcg10 = 20
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.060026781220065835,epochHit5:0.097
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.11077062149128726,epochHit20:0.2777
+
+Step 0/20: preloss = 0.14, REGLoss = 1.29         
+Step 1/20: preloss = 0.14, REGLoss = 1.28         
+Step 2/20: preloss = 0.15, REGLoss = 1.29         
+Step 3/20: preloss = 0.16, REGLoss = 1.33         
+Step 4/20: preloss = 0.16, REGLoss = 1.38         
+Step 5/20: preloss = 0.16, REGLoss = 1.32         
+Step 6/20: preloss = 0.18, REGLoss = 1.33         
+Step 7/20: preloss = 0.15, REGLoss = 1.33         
+Step 8/20: preloss = 0.17, REGLoss = 1.32         
+Step 9/20: preloss = 0.18, REGLoss = 1.32         
+Step 10/20: preloss = 0.18, REGLoss = 1.31         
+Step 11/20: preloss = 0.20, REGLoss = 1.31         
+Step 12/20: preloss = 0.20, REGLoss = 1.30         
+Step 13/20: preloss = 0.17, REGLoss = 1.32         
+Step 14/20: preloss = 0.22, REGLoss = 1.28         
+Step 15/20: preloss = 0.20, REGLoss = 1.31         
+Step 16/20: preloss = 0.23, REGLoss = 1.27         
+Step 17/20: preloss = 0.23, REGLoss = 1.26         
+Step 18/20: preloss = 0.22, REGLoss = 1.33         
+Step 19/20: preloss = 0.21, REGLoss = 1.23         
+Epoch 7/150, Train: Loss = 2.9786, preLoss = 0.3661  
+
+Step 0/20: preloss = 0.11, REGLoss = 1.26         
+Step 1/20: preloss = 0.11, REGLoss = 1.22         
+Step 2/20: preloss = 0.12, REGLoss = 1.21         
+Step 3/20: preloss = 0.12, REGLoss = 1.21         
+Step 4/20: preloss = 0.10, REGLoss = 1.19         
+Step 5/20: preloss = 0.12, REGLoss = 1.18         
+Step 6/20: preloss = 0.13, REGLoss = 1.17         
+Step 7/20: preloss = 0.18, REGLoss = 1.16         
+Step 8/20: preloss = 0.16, REGLoss = 1.14         
+Step 9/20: preloss = 0.16, REGLoss = 1.12         
+Step 10/20: preloss = 0.16, REGLoss = 1.11         
+Step 11/20: preloss = 0.16, REGLoss = 1.12         
+Step 12/20: preloss = 0.17, REGLoss = 1.08         
+Step 13/20: preloss = 0.16, REGLoss = 1.07         
+Step 14/20: preloss = 0.18, REGLoss = 1.06         
+Step 15/20: preloss = 0.20, REGLoss = 1.05         
+Step 16/20: preloss = 0.19, REGLoss = 1.04         
+Step 17/20: preloss = 0.17, REGLoss = 1.03         
+Step 18/20: preloss = 0.18, REGLoss = 1.03         
+Step 19/20: preloss = 0.21, REGLoss = 1.02         
+Epoch 8/150, Train: Loss = 2.5540, preLoss = 0.3075  
+
+Step 0/20: preloss = 0.12, REGLoss = 1.01         
+Step 1/20: preloss = 0.12, REGLoss = 1.01         
+Step 2/20: preloss = 0.10, REGLoss = 1.01         
+Step 3/20: preloss = 0.10, REGLoss = 1.00         
+Step 4/20: preloss = 0.11, REGLoss = 1.00         
+Step 5/20: preloss = 0.11, REGLoss = 0.99         
+Step 6/20: preloss = 0.11, REGLoss = 0.98         
+Step 7/20: preloss = 0.12, REGLoss = 0.97         
+Step 8/20: preloss = 0.14, REGLoss = 0.96         
+Step 9/20: preloss = 0.15, REGLoss = 0.95         
+Step 10/20: preloss = 0.13, REGLoss = 0.94         
+Step 11/20: preloss = 0.15, REGLoss = 0.93         
+Step 12/20: preloss = 0.14, REGLoss = 0.92         
+Step 13/20: preloss = 0.14, REGLoss = 0.91         
+Step 14/20: preloss = 0.17, REGLoss = 0.91         
+Step 15/20: preloss = 0.18, REGLoss = 0.90         
+Step 16/20: preloss = 0.16, REGLoss = 0.90         
+Step 17/20: preloss = 0.18, REGLoss = 0.89         
+Step 18/20: preloss = 0.18, REGLoss = 0.89         
+Step 19/20: preloss = 0.19, REGLoss = 0.88         
+Epoch 9/150, Train: Loss = 2.1762, preLoss = 0.2808  
+1.2608242
+Steps 0/20: hit10 = 96, ndcg10 = 48
+0.3547659
+Steps 1/20: hit10 = 78, ndcg10 = 38
+-1.442111
+Steps 2/20: hit10 = 78, ndcg10 = 42
+-0.4808979
+Steps 3/20: hit10 = 80, ndcg10 = 41
+3.900957
+Steps 4/20: hit10 = 91, ndcg10 = 45
+-0.22562408
+Steps 5/20: hit10 = 100, ndcg10 = 50
+-2.7573204
+Steps 6/20: hit10 = 112, ndcg10 = 53
+1.9089694
+Steps 7/20: hit10 = 137, ndcg10 = 67
+1.6880751
+Steps 8/20: hit10 = 162, ndcg10 = 79
+0.33517742
+Steps 9/20: hit10 = 84, ndcg10 = 40
+1.9896603
+Steps 10/20: hit10 = 104, ndcg10 = 50
+0.31276798
+Steps 11/20: hit10 = 79, ndcg10 = 35
+-0.1591568
+Steps 12/20: hit10 = 105, ndcg10 = 54
+0.92476463
+Steps 13/20: hit10 = 118, ndcg10 = 64
+0.89296246
+Steps 14/20: hit10 = 136, ndcg10 = 66
+-1.6599903
+Steps 15/20: hit10 = 111, ndcg10 = 59
+-0.71546364
+Steps 16/20: hit10 = 141, ndcg10 = 67
+2.5512176
+Steps 17/20: hit10 = 117, ndcg10 = 55
+0.56817055
+Steps 18/20: hit10 = 137, ndcg10 = 69
+-1.4687757
+Steps 19/20: hit10 = 62, ndcg10 = 32
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.07840928225762553,epochHit5:0.1257
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.13637371998530604,epochHit20:0.3323
+
+Step 0/20: preloss = 0.09, REGLoss = 0.89         
+Step 1/20: preloss = 0.09, REGLoss = 0.89         
+Step 2/20: preloss = 0.11, REGLoss = 0.89         
+Step 3/20: preloss = 0.12, REGLoss = 0.89         
+Step 4/20: preloss = 0.13, REGLoss = 0.89         
+Step 5/20: preloss = 0.11, REGLoss = 0.88         
+Step 6/20: preloss = 0.13, REGLoss = 0.88         
+Step 7/20: preloss = 0.12, REGLoss = 0.87         
+Step 8/20: preloss = 0.12, REGLoss = 0.87         
+Step 9/20: preloss = 0.12, REGLoss = 0.86         
+Step 10/20: preloss = 0.14, REGLoss = 0.86         
+Step 11/20: preloss = 0.13, REGLoss = 0.85         
+Step 12/20: preloss = 0.15, REGLoss = 0.85         
+Step 13/20: preloss = 0.14, REGLoss = 0.84         
+Step 14/20: preloss = 0.17, REGLoss = 0.84         
+Step 15/20: preloss = 0.17, REGLoss = 0.83         
+Step 16/20: preloss = 0.16, REGLoss = 0.83         
+Step 17/20: preloss = 0.17, REGLoss = 0.83         
+Step 18/20: preloss = 0.18, REGLoss = 0.82         
+Step 19/20: preloss = 0.20, REGLoss = 0.82         
+Epoch 10/150, Train: Loss = 1.9953, preLoss = 0.2765  
+
+Step 0/20: preloss = 0.11, REGLoss = 0.82         
+Step 1/20: preloss = 0.11, REGLoss = 0.82         
+Step 2/20: preloss = 0.10, REGLoss = 0.83         
+Step 3/20: preloss = 0.09, REGLoss = 0.83         
+Step 4/20: preloss = 0.10, REGLoss = 0.83         
+Step 5/20: preloss = 0.11, REGLoss = 0.82         
+Step 6/20: preloss = 0.10, REGLoss = 0.82         
+Step 7/20: preloss = 0.11, REGLoss = 0.82         
+Step 8/20: preloss = 0.13, REGLoss = 0.86         
+Step 9/20: preloss = 0.13, REGLoss = 0.80         
+Step 10/20: preloss = 0.13, REGLoss = 0.80         
+Step 11/20: preloss = 0.13, REGLoss = 0.79         
+Step 12/20: preloss = 0.15, REGLoss = 0.79         
+Step 13/20: preloss = 0.15, REGLoss = 0.84         
+Step 14/20: preloss = 0.16, REGLoss = 0.78         
+Step 15/20: preloss = 0.14, REGLoss = 0.78         
+Step 16/20: preloss = 0.16, REGLoss = 0.78         
+Step 17/20: preloss = 0.18, REGLoss = 0.78         
+Step 18/20: preloss = 0.19, REGLoss = 0.79         
+Step 19/20: preloss = 0.19, REGLoss = 0.78         
+Epoch 11/150, Train: Loss = 1.8867, preLoss = 0.2678  
+
+Step 0/20: preloss = 0.09, REGLoss = 0.79         
+Step 1/20: preloss = 0.09, REGLoss = 0.80         
+Step 2/20: preloss = 0.12, REGLoss = 0.80         
+Step 3/20: preloss = 0.10, REGLoss = 0.80         
+Step 4/20: preloss = 0.10, REGLoss = 0.80         
+Step 5/20: preloss = 0.12, REGLoss = 0.80         
+Step 6/20: preloss = 0.12, REGLoss = 0.80         
+Step 7/20: preloss = 0.11, REGLoss = 0.79         
+Step 8/20: preloss = 0.13, REGLoss = 0.79         
+Step 9/20: preloss = 0.14, REGLoss = 0.78         
+Step 10/20: preloss = 0.13, REGLoss = 0.78         
+Step 11/20: preloss = 0.15, REGLoss = 0.77         
+Step 12/20: preloss = 0.13, REGLoss = 0.77         
+Step 13/20: preloss = 0.15, REGLoss = 0.76         
+Step 14/20: preloss = 0.15, REGLoss = 0.76         
+Step 15/20: preloss = 0.19, REGLoss = 0.76         
+Step 16/20: preloss = 0.18, REGLoss = 0.76         
+Step 17/20: preloss = 0.16, REGLoss = 0.76         
+Step 18/20: preloss = 0.17, REGLoss = 0.76         
+Step 19/20: preloss = 0.19, REGLoss = 0.76         
+Epoch 12/150, Train: Loss = 1.8279, preLoss = 0.2710  
+2.1981115
+Steps 0/20: hit10 = 83, ndcg10 = 43
+1.6448736
+Steps 1/20: hit10 = 89, ndcg10 = 46
+-2.7652292
+Steps 2/20: hit10 = 76, ndcg10 = 38
+1.0483074
+Steps 3/20: hit10 = 79, ndcg10 = 37
+8.586302
+Steps 4/20: hit10 = 100, ndcg10 = 50
+0.9103241
+Steps 5/20: hit10 = 101, ndcg10 = 52
+0.075107574
+Steps 6/20: hit10 = 127, ndcg10 = 67
+2.0122404
+Steps 7/20: hit10 = 151, ndcg10 = 78
+3.5694647
+Steps 8/20: hit10 = 163, ndcg10 = 79
+-1.3910551
+Steps 9/20: hit10 = 118, ndcg10 = 55
+2.6775656
+Steps 10/20: hit10 = 116, ndcg10 = 65
+0.031698227
+Steps 11/20: hit10 = 99, ndcg10 = 45
+0.008151054
+Steps 12/20: hit10 = 125, ndcg10 = 62
+1.4409485
+Steps 13/20: hit10 = 118, ndcg10 = 62
+1.3657675
+Steps 14/20: hit10 = 161, ndcg10 = 84
+0.8519983
+Steps 15/20: hit10 = 115, ndcg10 = 59
+1.5718389
+Steps 16/20: hit10 = 143, ndcg10 = 74
+1.3736811
+Steps 17/20: hit10 = 128, ndcg10 = 63
+1.0980139
+Steps 18/20: hit10 = 144, ndcg10 = 75
+-1.1921635
+Steps 19/20: hit10 = 58, ndcg10 = 31
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.08996992632445901,epochHit5:0.1429
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.1474381951774722,epochHit20:0.3475
+
+Step 0/20: preloss = 0.09, REGLoss = 0.76         
+Step 1/20: preloss = 0.10, REGLoss = 0.77         
+Step 2/20: preloss = 0.10, REGLoss = 0.77         
+Step 3/20: preloss = 0.07, REGLoss = 0.77         
+Step 4/20: preloss = 0.10, REGLoss = 0.77         
+Step 5/20: preloss = 0.10, REGLoss = 0.77         
+Step 6/20: preloss = 0.11, REGLoss = 0.77         
+Step 7/20: preloss = 0.12, REGLoss = 0.76         
+Step 8/20: preloss = 0.09, REGLoss = 0.75         
+Step 9/20: preloss = 0.11, REGLoss = 0.75         
+Step 10/20: preloss = 0.11, REGLoss = 0.74         
+Step 11/20: preloss = 0.14, REGLoss = 0.73         
+Step 12/20: preloss = 0.15, REGLoss = 0.73         
+Step 13/20: preloss = 0.13, REGLoss = 0.72         
+Step 14/20: preloss = 0.14, REGLoss = 0.71         
+Step 15/20: preloss = 0.15, REGLoss = 0.71         
+Step 16/20: preloss = 0.18, REGLoss = 0.71         
+Step 17/20: preloss = 0.16, REGLoss = 0.71         
+Step 18/20: preloss = 0.18, REGLoss = 0.71         
+Step 19/20: preloss = 0.17, REGLoss = 0.70         
+Epoch 13/150, Train: Loss = 1.7324, preLoss = 0.2511  
+
+Step 0/20: preloss = 0.09, REGLoss = 0.71         
+Step 1/20: preloss = 0.09, REGLoss = 0.72         
+Step 2/20: preloss = 0.10, REGLoss = 0.72         
+Step 3/20: preloss = 0.10, REGLoss = 0.72         
+Step 4/20: preloss = 0.10, REGLoss = 0.73         
+Step 5/20: preloss = 0.09, REGLoss = 0.73         
+Step 6/20: preloss = 0.10, REGLoss = 0.73         
+Step 7/20: preloss = 0.10, REGLoss = 0.72         
+Step 8/20: preloss = 0.10, REGLoss = 0.72         
+Step 9/20: preloss = 0.12, REGLoss = 0.71         
+Step 10/20: preloss = 0.12, REGLoss = 0.71         
+Step 11/20: preloss = 0.13, REGLoss = 0.70         
+Step 12/20: preloss = 0.12, REGLoss = 0.69         
+Step 13/20: preloss = 0.13, REGLoss = 0.69         
+Step 14/20: preloss = 0.14, REGLoss = 0.69         
+Step 15/20: preloss = 0.16, REGLoss = 0.68         
+Step 16/20: preloss = 0.15, REGLoss = 0.68         
+Step 17/20: preloss = 0.13, REGLoss = 0.68         
+Step 18/20: preloss = 0.17, REGLoss = 0.68         
+Step 19/20: preloss = 0.18, REGLoss = 0.68         
+Epoch 14/150, Train: Loss = 1.6499, preLoss = 0.2406  
+
+Step 0/20: preloss = 0.08, REGLoss = 0.69         
+Step 1/20: preloss = 0.09, REGLoss = 0.69         
+Step 2/20: preloss = 0.08, REGLoss = 0.69         
+Step 3/20: preloss = 0.09, REGLoss = 0.70         
+Step 4/20: preloss = 0.10, REGLoss = 0.70         
+Step 5/20: preloss = 0.10, REGLoss = 0.70         
+Step 6/20: preloss = 0.09, REGLoss = 0.70         
+Step 7/20: preloss = 0.09, REGLoss = 0.69         
+Step 8/20: preloss = 0.10, REGLoss = 0.69         
+Step 9/20: preloss = 0.14, REGLoss = 0.68         
+Step 10/20: preloss = 0.13, REGLoss = 0.68         
+Step 11/20: preloss = 0.12, REGLoss = 0.67         
+Step 12/20: preloss = 0.11, REGLoss = 0.67         
+Step 13/20: preloss = 0.13, REGLoss = 0.69         
+Step 14/20: preloss = 0.14, REGLoss = 0.66         
+Step 15/20: preloss = 0.13, REGLoss = 0.66         
+Step 16/20: preloss = 0.15, REGLoss = 0.66         
+Step 17/20: preloss = 0.18, REGLoss = 0.66         
+Step 18/20: preloss = 0.15, REGLoss = 0.66         
+Step 19/20: preloss = 0.15, REGLoss = 0.66         
+Epoch 15/150, Train: Loss = 1.5987, preLoss = 0.2371  
+1.1750946
+Steps 0/20: hit10 = 81, ndcg10 = 40
+0.25588417
+Steps 1/20: hit10 = 77, ndcg10 = 36
+-0.9022927
+Steps 2/20: hit10 = 77, ndcg10 = 36
+0.06260681
+Steps 3/20: hit10 = 103, ndcg10 = 48
+5.2111177
+Steps 4/20: hit10 = 105, ndcg10 = 54
+2.2987785
+Steps 5/20: hit10 = 112, ndcg10 = 57
+-3.5272927
+Steps 6/20: hit10 = 122, ndcg10 = 59
+-0.9143648
+Steps 7/20: hit10 = 162, ndcg10 = 87
+6.069726
+Steps 8/20: hit10 = 169, ndcg10 = 88
+4.3630943
+Steps 9/20: hit10 = 98, ndcg10 = 49
+1.3747091
+Steps 10/20: hit10 = 121, ndcg10 = 63
+0.74542713
+Steps 11/20: hit10 = 117, ndcg10 = 59
+1.4368963
+Steps 12/20: hit10 = 106, ndcg10 = 56
+2.767943
+Steps 13/20: hit10 = 111, ndcg10 = 58
+3.6422615
+Steps 14/20: hit10 = 166, ndcg10 = 87
+0.15376282
+Steps 15/20: hit10 = 104, ndcg10 = 53
+-1.354785
+Steps 16/20: hit10 = 149, ndcg10 = 76
+1.6714716
+Steps 17/20: hit10 = 110, ndcg10 = 47
+0.7855377
+Steps 18/20: hit10 = 150, ndcg10 = 74
+3.4991465
+Steps 19/20: hit10 = 75, ndcg10 = 40
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.08912292229572956,epochHit5:0.1418
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.14754749207670845,epochHit20:0.3494
+
+Step 0/20: preloss = 0.10, REGLoss = 0.67         
+Step 1/20: preloss = 0.11, REGLoss = 0.70         
+Step 2/20: preloss = 0.09, REGLoss = 0.68         
+Step 3/20: preloss = 0.09, REGLoss = 0.69         
+Step 4/20: preloss = 0.10, REGLoss = 0.69         
+Step 5/20: preloss = 0.10, REGLoss = 0.69         
+Step 6/20: preloss = 0.10, REGLoss = 0.69         
+Step 7/20: preloss = 0.09, REGLoss = 0.69         
+Step 8/20: preloss = 0.13, REGLoss = 0.68         
+Step 9/20: preloss = 0.12, REGLoss = 0.68         
+Step 10/20: preloss = 0.12, REGLoss = 0.67         
+Step 11/20: preloss = 0.13, REGLoss = 0.67         
+Step 12/20: preloss = 0.15, REGLoss = 0.67         
+Step 13/20: preloss = 0.12, REGLoss = 0.66         
+Step 14/20: preloss = 0.13, REGLoss = 0.66         
+Step 15/20: preloss = 0.14, REGLoss = 0.66         
+Step 16/20: preloss = 0.15, REGLoss = 0.66         
+Step 17/20: preloss = 0.16, REGLoss = 0.66         
+Step 18/20: preloss = 0.19, REGLoss = 0.66         
+Step 19/20: preloss = 0.14, REGLoss = 0.66         
+Epoch 16/150, Train: Loss = 1.5915, preLoss = 0.2440  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.67         
+Step 1/20: preloss = 0.08, REGLoss = 0.67         
+Step 2/20: preloss = 0.09, REGLoss = 0.67         
+Step 3/20: preloss = 0.08, REGLoss = 0.68         
+Step 4/20: preloss = 0.09, REGLoss = 0.68         
+Step 5/20: preloss = 0.09, REGLoss = 0.67         
+Step 6/20: preloss = 0.10, REGLoss = 0.67         
+Step 7/20: preloss = 0.09, REGLoss = 0.67         
+Step 8/20: preloss = 0.09, REGLoss = 0.66         
+Step 9/20: preloss = 0.09, REGLoss = 0.66         
+Step 10/20: preloss = 0.10, REGLoss = 0.65         
+Step 11/20: preloss = 0.12, REGLoss = 0.64         
+Step 12/20: preloss = 0.12, REGLoss = 0.63         
+Step 13/20: preloss = 0.13, REGLoss = 0.63         
+Step 14/20: preloss = 0.13, REGLoss = 0.63         
+Step 15/20: preloss = 0.14, REGLoss = 0.62         
+Step 16/20: preloss = 0.15, REGLoss = 0.62         
+Step 17/20: preloss = 0.15, REGLoss = 0.62         
+Step 18/20: preloss = 0.15, REGLoss = 0.63         
+Step 19/20: preloss = 0.18, REGLoss = 0.63         
+Epoch 17/150, Train: Loss = 1.5239, preLoss = 0.2241  
+
+Step 0/20: preloss = 0.07, REGLoss = 0.64         
+Step 1/20: preloss = 0.08, REGLoss = 0.64         
+Step 2/20: preloss = 0.08, REGLoss = 0.65         
+Step 3/20: preloss = 0.09, REGLoss = 0.65         
+Step 4/20: preloss = 0.07, REGLoss = 0.65         
+Step 5/20: preloss = 0.09, REGLoss = 0.65         
+Step 6/20: preloss = 0.09, REGLoss = 0.65         
+Step 7/20: preloss = 0.08, REGLoss = 0.65         
+Step 8/20: preloss = 0.09, REGLoss = 0.64         
+Step 9/20: preloss = 0.11, REGLoss = 0.64         
+Step 10/20: preloss = 0.10, REGLoss = 0.63         
+Step 11/20: preloss = 0.11, REGLoss = 0.64         
+Step 12/20: preloss = 0.12, REGLoss = 0.62         
+Step 13/20: preloss = 0.11, REGLoss = 0.61         
+Step 14/20: preloss = 0.15, REGLoss = 0.61         
+Step 15/20: preloss = 0.13, REGLoss = 0.61         
+Step 16/20: preloss = 0.13, REGLoss = 0.61         
+Step 17/20: preloss = 0.15, REGLoss = 0.61         
+Step 18/20: preloss = 0.12, REGLoss = 0.64         
+Step 19/20: preloss = 0.14, REGLoss = 0.62         
+Epoch 18/150, Train: Loss = 1.4795, preLoss = 0.2119  
+4.7704735
+Steps 0/20: hit10 = 91, ndcg10 = 47
+3.12821
+Steps 1/20: hit10 = 92, ndcg10 = 44
+1.0183187
+Steps 2/20: hit10 = 80, ndcg10 = 39
+1.4069118
+Steps 3/20: hit10 = 100, ndcg10 = 46
+4.6680126
+Steps 4/20: hit10 = 119, ndcg10 = 62
+2.6165361
+Steps 5/20: hit10 = 106, ndcg10 = 51
+1.6217127
+Steps 6/20: hit10 = 123, ndcg10 = 59
+3.8621187
+Steps 7/20: hit10 = 162, ndcg10 = 82
+5.7518597
+Steps 8/20: hit10 = 177, ndcg10 = 88
+4.6176033
+Steps 9/20: hit10 = 115, ndcg10 = 59
+4.799073
+Steps 10/20: hit10 = 127, ndcg10 = 61
+4.3515596
+Steps 11/20: hit10 = 110, ndcg10 = 55
+3.658039
+Steps 12/20: hit10 = 136, ndcg10 = 70
+4.343222
+Steps 13/20: hit10 = 133, ndcg10 = 64
+4.4081545
+Steps 14/20: hit10 = 163, ndcg10 = 85
+2.983924
+Steps 15/20: hit10 = 135, ndcg10 = 67
+4.561589
+Steps 16/20: hit10 = 142, ndcg10 = 71
+5.724188
+Steps 17/20: hit10 = 143, ndcg10 = 75
+4.683258
+Steps 18/20: hit10 = 146, ndcg10 = 73
+3.3041515
+Steps 19/20: hit10 = 81, ndcg10 = 39
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.09482957999390416,epochHit5:0.1546
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.1555468100982393,epochHit20:0.3699
+
+Step 0/20: preloss = 0.07, REGLoss = 0.63         
+Step 1/20: preloss = 0.07, REGLoss = 0.64         
+Step 2/20: preloss = 0.09, REGLoss = 0.65         
+Step 3/20: preloss = 0.08, REGLoss = 0.65         
+Step 4/20: preloss = 0.09, REGLoss = 0.66         
+Step 5/20: preloss = 0.11, REGLoss = 0.66         
+Step 6/20: preloss = 0.10, REGLoss = 0.66         
+Step 7/20: preloss = 0.10, REGLoss = 0.66         
+Step 8/20: preloss = 0.10, REGLoss = 0.66         
+Step 9/20: preloss = 0.11, REGLoss = 0.65         
+Step 10/20: preloss = 0.10, REGLoss = 0.64         
+Step 11/20: preloss = 0.11, REGLoss = 0.64         
+Step 12/20: preloss = 0.12, REGLoss = 0.63         
+Step 13/20: preloss = 0.10, REGLoss = 0.63         
+Step 14/20: preloss = 0.13, REGLoss = 0.63         
+Step 15/20: preloss = 0.14, REGLoss = 0.62         
+Step 16/20: preloss = 0.14, REGLoss = 0.62         
+Step 17/20: preloss = 0.16, REGLoss = 0.62         
+Step 18/20: preloss = 0.14, REGLoss = 0.62         
+Step 19/20: preloss = 0.16, REGLoss = 0.62         
+Epoch 19/150, Train: Loss = 1.4987, preLoss = 0.2208  
+
+Step 0/20: preloss = 0.07, REGLoss = 0.63         
+Step 1/20: preloss = 0.07, REGLoss = 0.64         
+Step 2/20: preloss = 0.07, REGLoss = 0.65         
+Step 3/20: preloss = 0.10, REGLoss = 0.64         
+Step 4/20: preloss = 0.08, REGLoss = 0.65         
+Step 5/20: preloss = 0.08, REGLoss = 0.65         
+Step 6/20: preloss = 0.10, REGLoss = 0.65         
+Step 7/20: preloss = 0.10, REGLoss = 0.64         
+Step 8/20: preloss = 0.11, REGLoss = 0.63         
+Step 9/20: preloss = 0.10, REGLoss = 0.63         
+Step 10/20: preloss = 0.10, REGLoss = 0.63         
+Step 11/20: preloss = 0.11, REGLoss = 0.63         
+Step 12/20: preloss = 0.11, REGLoss = 0.62         
+Step 13/20: preloss = 0.13, REGLoss = 0.62         
+Step 14/20: preloss = 0.12, REGLoss = 0.61         
+Step 15/20: preloss = 0.13, REGLoss = 0.61         
+Step 16/20: preloss = 0.15, REGLoss = 0.61         
+Step 17/20: preloss = 0.15, REGLoss = 0.61         
+Step 18/20: preloss = 0.14, REGLoss = 0.61         
+Step 19/20: preloss = 0.13, REGLoss = 0.61         
+Epoch 20/150, Train: Loss = 1.4695, preLoss = 0.2131  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.62         
+Step 1/20: preloss = 0.07, REGLoss = 0.66         
+Step 2/20: preloss = 0.08, REGLoss = 0.62         
+Step 3/20: preloss = 0.08, REGLoss = 0.63         
+Step 4/20: preloss = 0.08, REGLoss = 0.63         
+Step 5/20: preloss = 0.09, REGLoss = 0.63         
+Step 6/20: preloss = 0.08, REGLoss = 0.63         
+Step 7/20: preloss = 0.09, REGLoss = 0.63         
+Step 8/20: preloss = 0.10, REGLoss = 0.63         
+Step 9/20: preloss = 0.10, REGLoss = 0.63         
+Step 10/20: preloss = 0.10, REGLoss = 0.62         
+Step 11/20: preloss = 0.13, REGLoss = 0.62         
+Step 12/20: preloss = 0.11, REGLoss = 0.62         
+Step 13/20: preloss = 0.10, REGLoss = 0.62         
+Step 14/20: preloss = 0.11, REGLoss = 0.62         
+Step 15/20: preloss = 0.12, REGLoss = 0.62         
+Step 16/20: preloss = 0.14, REGLoss = 0.62         
+Step 17/20: preloss = 0.14, REGLoss = 0.63         
+Step 18/20: preloss = 0.13, REGLoss = 0.62         
+Step 19/20: preloss = 0.14, REGLoss = 0.62         
+Epoch 21/150, Train: Loss = 1.4574, preLoss = 0.2026  
+4.9824963
+Steps 0/20: hit10 = 96, ndcg10 = 50
+0.9050312
+Steps 1/20: hit10 = 108, ndcg10 = 53
+4.4520855
+Steps 2/20: hit10 = 95, ndcg10 = 47
+2.0381374
+Steps 3/20: hit10 = 95, ndcg10 = 49
+4.873502
+Steps 4/20: hit10 = 136, ndcg10 = 72
+0.89420176
+Steps 5/20: hit10 = 120, ndcg10 = 65
+1.9813223
+Steps 6/20: hit10 = 137, ndcg10 = 71
+5.4659657
+Steps 7/20: hit10 = 171, ndcg10 = 93
+4.801589
+Steps 8/20: hit10 = 185, ndcg10 = 95
+2.3397493
+Steps 9/20: hit10 = 123, ndcg10 = 63
+2.0180807
+Steps 10/20: hit10 = 119, ndcg10 = 60
+2.3129911
+Steps 11/20: hit10 = 116, ndcg10 = 61
+2.7998438
+Steps 12/20: hit10 = 136, ndcg10 = 72
+4.7649307
+Steps 13/20: hit10 = 138, ndcg10 = 72
+4.2119236
+Steps 14/20: hit10 = 178, ndcg10 = 94
+2.606063
+Steps 15/20: hit10 = 155, ndcg10 = 82
+1.7250376
+Steps 16/20: hit10 = 171, ndcg10 = 99
+4.8440924
+Steps 17/20: hit10 = 161, ndcg10 = 83
+1.8121653
+Steps 18/20: hit10 = 185, ndcg10 = 94
+3.2573824
+Steps 19/20: hit10 = 80, ndcg10 = 40
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.11123818618012071,epochHit5:0.1733
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.1719103178325774,epochHit20:0.3874
+
+Step 0/20: preloss = 0.07, REGLoss = 0.63         
+Step 1/20: preloss = 0.07, REGLoss = 0.64         
+Step 2/20: preloss = 0.07, REGLoss = 0.64         
+Step 3/20: preloss = 0.08, REGLoss = 0.64         
+Step 4/20: preloss = 0.08, REGLoss = 0.64         
+Step 5/20: preloss = 0.08, REGLoss = 0.64         
+Step 6/20: preloss = 0.09, REGLoss = 0.64         
+Step 7/20: preloss = 0.09, REGLoss = 0.63         
+Step 8/20: preloss = 0.07, REGLoss = 0.63         
+Step 9/20: preloss = 0.09, REGLoss = 0.62         
+Step 10/20: preloss = 0.10, REGLoss = 0.62         
+Step 11/20: preloss = 0.09, REGLoss = 0.61         
+Step 12/20: preloss = 0.11, REGLoss = 0.61         
+Step 13/20: preloss = 0.10, REGLoss = 0.60         
+Step 14/20: preloss = 0.12, REGLoss = 0.60         
+Step 15/20: preloss = 0.10, REGLoss = 0.60         
+Step 16/20: preloss = 0.14, REGLoss = 0.60         
+Step 17/20: preloss = 0.11, REGLoss = 0.60         
+Step 18/20: preloss = 0.12, REGLoss = 0.60         
+Step 19/20: preloss = 0.16, REGLoss = 0.59         
+Epoch 22/150, Train: Loss = 1.4333, preLoss = 0.1952  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.60         
+Step 1/20: preloss = 0.06, REGLoss = 0.60         
+Step 2/20: preloss = 0.07, REGLoss = 0.61         
+Step 3/20: preloss = 0.07, REGLoss = 0.61         
+Step 4/20: preloss = 0.08, REGLoss = 0.62         
+Step 5/20: preloss = 0.09, REGLoss = 0.61         
+Step 6/20: preloss = 0.10, REGLoss = 0.61         
+Step 7/20: preloss = 0.09, REGLoss = 0.61         
+Step 8/20: preloss = 0.12, REGLoss = 0.61         
+Step 9/20: preloss = 0.10, REGLoss = 0.60         
+Step 10/20: preloss = 0.10, REGLoss = 0.65         
+Step 11/20: preloss = 0.09, REGLoss = 0.60         
+Step 12/20: preloss = 0.10, REGLoss = 0.60         
+Step 13/20: preloss = 0.12, REGLoss = 0.61         
+Step 14/20: preloss = 0.11, REGLoss = 0.61         
+Step 15/20: preloss = 0.13, REGLoss = 0.61         
+Step 16/20: preloss = 0.13, REGLoss = 0.61         
+Step 17/20: preloss = 0.13, REGLoss = 0.61         
+Step 18/20: preloss = 0.13, REGLoss = 0.62         
+Step 19/20: preloss = 0.14, REGLoss = 0.62         
+Epoch 23/150, Train: Loss = 1.4253, preLoss = 0.2036  
+
+Step 0/20: preloss = 0.07, REGLoss = 0.72         
+Step 1/20: preloss = 0.07, REGLoss = 0.64         
+Step 2/20: preloss = 0.08, REGLoss = 0.65         
+Step 3/20: preloss = 0.09, REGLoss = 0.66         
+Step 4/20: preloss = 0.07, REGLoss = 0.67         
+Step 5/20: preloss = 0.08, REGLoss = 0.68         
+Step 6/20: preloss = 0.08, REGLoss = 0.68         
+Step 7/20: preloss = 0.10, REGLoss = 0.68         
+Step 8/20: preloss = 0.09, REGLoss = 0.68         
+Step 9/20: preloss = 0.10, REGLoss = 0.68         
+Step 10/20: preloss = 0.12, REGLoss = 0.68         
+Step 11/20: preloss = 0.12, REGLoss = 0.68         
+Step 12/20: preloss = 0.11, REGLoss = 0.67         
+Step 13/20: preloss = 0.10, REGLoss = 0.67         
+Step 14/20: preloss = 0.13, REGLoss = 0.67         
+Step 15/20: preloss = 0.12, REGLoss = 0.67         
+Step 16/20: preloss = 0.14, REGLoss = 0.67         
+Step 17/20: preloss = 0.13, REGLoss = 0.67         
+Step 18/20: preloss = 0.13, REGLoss = 0.67         
+Step 19/20: preloss = 0.14, REGLoss = 0.66         
+Epoch 24/150, Train: Loss = 1.5488, preLoss = 0.2047  
+4.022315
+Steps 0/20: hit10 = 91, ndcg10 = 49
+4.153517
+Steps 1/20: hit10 = 104, ndcg10 = 53
+2.994731
+Steps 2/20: hit10 = 83, ndcg10 = 40
+0.025286674
+Steps 3/20: hit10 = 104, ndcg10 = 50
+1.8012376
+Steps 4/20: hit10 = 126, ndcg10 = 65
+0.12608528
+Steps 5/20: hit10 = 127, ndcg10 = 66
+0.7950516
+Steps 6/20: hit10 = 148, ndcg10 = 79
+5.0748243
+Steps 7/20: hit10 = 169, ndcg10 = 87
+2.6794052
+Steps 8/20: hit10 = 184, ndcg10 = 96
+1.3848114
+Steps 9/20: hit10 = 112, ndcg10 = 57
+3.3348746
+Steps 10/20: hit10 = 137, ndcg10 = 75
+3.7845745
+Steps 11/20: hit10 = 114, ndcg10 = 57
+2.2631283
+Steps 12/20: hit10 = 118, ndcg10 = 60
+0.966105
+Steps 13/20: hit10 = 138, ndcg10 = 71
+2.8018055
+Steps 14/20: hit10 = 184, ndcg10 = 97
+2.095952
+Steps 15/20: hit10 = 139, ndcg10 = 70
+2.3445559
+Steps 16/20: hit10 = 158, ndcg10 = 79
+3.7753491
+Steps 17/20: hit10 = 170, ndcg10 = 81
+0.8551769
+Steps 18/20: hit10 = 167, ndcg10 = 89
+3.0158215
+Steps 19/20: hit10 = 81, ndcg10 = 38
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.10509124956607493,epochHit5:0.1672
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.16655693800789062,epochHit20:0.3838
+
+Step 0/20: preloss = 0.07, REGLoss = 0.67         
+Step 1/20: preloss = 0.07, REGLoss = 0.68         
+Step 2/20: preloss = 0.07, REGLoss = 0.68         
+Step 3/20: preloss = 0.07, REGLoss = 0.68         
+Step 4/20: preloss = 0.08, REGLoss = 0.68         
+Step 5/20: preloss = 0.07, REGLoss = 0.68         
+Step 6/20: preloss = 0.08, REGLoss = 0.68         
+Step 7/20: preloss = 0.08, REGLoss = 0.68         
+Step 8/20: preloss = 0.10, REGLoss = 0.67         
+Step 9/20: preloss = 0.08, REGLoss = 0.66         
+Step 10/20: preloss = 0.09, REGLoss = 0.65         
+Step 11/20: preloss = 0.12, REGLoss = 0.64         
+Step 12/20: preloss = 0.10, REGLoss = 0.63         
+Step 13/20: preloss = 0.12, REGLoss = 0.63         
+Step 14/20: preloss = 0.11, REGLoss = 0.62         
+Step 15/20: preloss = 0.10, REGLoss = 0.62         
+Step 16/20: preloss = 0.12, REGLoss = 0.69         
+Step 17/20: preloss = 0.14, REGLoss = 0.62         
+Step 18/20: preloss = 0.14, REGLoss = 0.62         
+Step 19/20: preloss = 0.15, REGLoss = 0.62         
+Epoch 25/150, Train: Loss = 1.5053, preLoss = 0.1949  
+
+Step 0/20: preloss = 0.07, REGLoss = 0.63         
+Step 1/20: preloss = 0.08, REGLoss = 0.64         
+Step 2/20: preloss = 0.06, REGLoss = 0.65         
+Step 3/20: preloss = 0.07, REGLoss = 0.66         
+Step 4/20: preloss = 0.07, REGLoss = 0.66         
+Step 5/20: preloss = 0.07, REGLoss = 0.66         
+Step 6/20: preloss = 0.08, REGLoss = 0.66         
+Step 7/20: preloss = 0.09, REGLoss = 0.66         
+Step 8/20: preloss = 0.08, REGLoss = 0.66         
+Step 9/20: preloss = 0.09, REGLoss = 0.65         
+Step 10/20: preloss = 0.09, REGLoss = 0.64         
+Step 11/20: preloss = 0.09, REGLoss = 0.64         
+Step 12/20: preloss = 0.09, REGLoss = 0.63         
+Step 13/20: preloss = 0.10, REGLoss = 0.63         
+Step 14/20: preloss = 0.10, REGLoss = 0.62         
+Step 15/20: preloss = 0.11, REGLoss = 0.62         
+Step 16/20: preloss = 0.12, REGLoss = 0.61         
+Step 17/20: preloss = 0.12, REGLoss = 0.61         
+Step 18/20: preloss = 0.12, REGLoss = 0.61         
+Step 19/20: preloss = 0.13, REGLoss = 0.61         
+Epoch 26/150, Train: Loss = 1.4602, preLoss = 0.1854  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.62         
+Step 1/20: preloss = 0.07, REGLoss = 0.62         
+Step 2/20: preloss = 0.07, REGLoss = 0.63         
+Step 3/20: preloss = 0.06, REGLoss = 0.63         
+Step 4/20: preloss = 0.07, REGLoss = 0.63         
+Step 5/20: preloss = 0.08, REGLoss = 0.63         
+Step 6/20: preloss = 0.07, REGLoss = 0.62         
+Step 7/20: preloss = 0.08, REGLoss = 0.62         
+Step 8/20: preloss = 0.08, REGLoss = 0.61         
+Step 9/20: preloss = 0.08, REGLoss = 0.61         
+Step 10/20: preloss = 0.10, REGLoss = 0.60         
+Step 11/20: preloss = 0.10, REGLoss = 0.59         
+Step 12/20: preloss = 0.09, REGLoss = 0.59         
+Step 13/20: preloss = 0.11, REGLoss = 0.59         
+Step 14/20: preloss = 0.10, REGLoss = 0.58         
+Step 15/20: preloss = 0.09, REGLoss = 0.58         
+Step 16/20: preloss = 0.12, REGLoss = 0.58         
+Step 17/20: preloss = 0.11, REGLoss = 0.58         
+Step 18/20: preloss = 0.12, REGLoss = 0.58         
+Step 19/20: preloss = 0.13, REGLoss = 0.57         
+Epoch 27/150, Train: Loss = 1.3809, preLoss = 0.1775  
+4.956285
+Steps 0/20: hit10 = 92, ndcg10 = 46
+2.5023699
+Steps 1/20: hit10 = 95, ndcg10 = 51
+1.7434602
+Steps 2/20: hit10 = 85, ndcg10 = 47
+0.63186455
+Steps 3/20: hit10 = 108, ndcg10 = 55
+3.162179
+Steps 4/20: hit10 = 122, ndcg10 = 67
+1.5509577
+Steps 5/20: hit10 = 143, ndcg10 = 77
+-0.25380135
+Steps 6/20: hit10 = 155, ndcg10 = 87
+4.508676
+Steps 7/20: hit10 = 185, ndcg10 = 100
+1.1917753
+Steps 8/20: hit10 = 210, ndcg10 = 111
+-3.6698503
+Steps 9/20: hit10 = 123, ndcg10 = 63
+2.2400303
+Steps 10/20: hit10 = 152, ndcg10 = 77
+4.3217506
+Steps 11/20: hit10 = 133, ndcg10 = 71
+4.211336
+Steps 12/20: hit10 = 147, ndcg10 = 81
+0.96044064
+Steps 13/20: hit10 = 144, ndcg10 = 81
+3.8987417
+Steps 14/20: hit10 = 179, ndcg10 = 91
+2.8250399
+Steps 15/20: hit10 = 157, ndcg10 = 86
+3.4214706
+Steps 16/20: hit10 = 191, ndcg10 = 101
+5.4476113
+Steps 17/20: hit10 = 174, ndcg10 = 87
+2.3168879
+Steps 18/20: hit10 = 186, ndcg10 = 101
+1.2663803
+Steps 19/20: hit10 = 95, ndcg10 = 51
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.12361622053826322,epochHit5:0.1928
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.1819373948181276,epochHit20:0.3984
+
+Step 0/20: preloss = 0.07, REGLoss = 0.58         
+Step 1/20: preloss = 0.06, REGLoss = 0.59         
+Step 2/20: preloss = 0.08, REGLoss = 0.59         
+Step 3/20: preloss = 0.06, REGLoss = 0.60         
+Step 4/20: preloss = 0.06, REGLoss = 0.60         
+Step 5/20: preloss = 0.08, REGLoss = 0.60         
+Step 6/20: preloss = 0.08, REGLoss = 0.60         
+Step 7/20: preloss = 0.08, REGLoss = 0.60         
+Step 8/20: preloss = 0.11, REGLoss = 0.60         
+Step 9/20: preloss = 0.08, REGLoss = 0.59         
+Step 10/20: preloss = 0.11, REGLoss = 0.59         
+Step 11/20: preloss = 0.10, REGLoss = 0.58         
+Step 12/20: preloss = 0.09, REGLoss = 0.58         
+Step 13/20: preloss = 0.10, REGLoss = 0.58         
+Step 14/20: preloss = 0.08, REGLoss = 0.58         
+Step 15/20: preloss = 0.11, REGLoss = 0.58         
+Step 16/20: preloss = 0.11, REGLoss = 0.58         
+Step 17/20: preloss = 0.11, REGLoss = 0.58         
+Step 18/20: preloss = 0.12, REGLoss = 0.59         
+Step 19/20: preloss = 0.13, REGLoss = 0.58         
+Epoch 28/150, Train: Loss = 1.3600, preLoss = 0.1827  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.59         
+Step 1/20: preloss = 0.06, REGLoss = 0.60         
+Step 2/20: preloss = 0.07, REGLoss = 0.60         
+Step 3/20: preloss = 0.07, REGLoss = 0.61         
+Step 4/20: preloss = 0.08, REGLoss = 0.61         
+Step 5/20: preloss = 0.08, REGLoss = 0.61         
+Step 6/20: preloss = 0.08, REGLoss = 0.61         
+Step 7/20: preloss = 0.10, REGLoss = 0.61         
+Step 8/20: preloss = 0.08, REGLoss = 0.60         
+Step 9/20: preloss = 0.08, REGLoss = 0.60         
+Step 10/20: preloss = 0.09, REGLoss = 0.59         
+Step 11/20: preloss = 0.09, REGLoss = 0.59         
+Step 12/20: preloss = 0.09, REGLoss = 0.58         
+Step 13/20: preloss = 0.11, REGLoss = 0.59         
+Step 14/20: preloss = 0.09, REGLoss = 0.58         
+Step 15/20: preloss = 0.11, REGLoss = 0.58         
+Step 16/20: preloss = 0.10, REGLoss = 0.58         
+Step 17/20: preloss = 0.10, REGLoss = 0.58         
+Step 18/20: preloss = 0.10, REGLoss = 0.58         
+Step 19/20: preloss = 0.11, REGLoss = 0.58         
+Epoch 29/150, Train: Loss = 1.3652, preLoss = 0.1764  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.59         
+Step 1/20: preloss = 0.06, REGLoss = 0.59         
+Step 2/20: preloss = 0.07, REGLoss = 0.60         
+Step 3/20: preloss = 0.06, REGLoss = 0.60         
+Step 4/20: preloss = 0.06, REGLoss = 0.60         
+Step 5/20: preloss = 0.07, REGLoss = 0.60         
+Step 6/20: preloss = 0.07, REGLoss = 0.59         
+Step 7/20: preloss = 0.08, REGLoss = 0.59         
+Step 8/20: preloss = 0.09, REGLoss = 0.58         
+Step 9/20: preloss = 0.09, REGLoss = 0.57         
+Step 10/20: preloss = 0.08, REGLoss = 0.57         
+Step 11/20: preloss = 0.08, REGLoss = 0.57         
+Step 12/20: preloss = 0.10, REGLoss = 0.56         
+Step 13/20: preloss = 0.10, REGLoss = 0.56         
+Step 14/20: preloss = 0.10, REGLoss = 0.56         
+Step 15/20: preloss = 0.10, REGLoss = 0.56         
+Step 16/20: preloss = 0.09, REGLoss = 0.56         
+Step 17/20: preloss = 0.10, REGLoss = 0.57         
+Step 18/20: preloss = 0.11, REGLoss = 0.57         
+Step 19/20: preloss = 0.16, REGLoss = 0.57         
+Epoch 30/150, Train: Loss = 1.3276, preLoss = 0.1732  
+4.629485
+Steps 0/20: hit10 = 104, ndcg10 = 53
+3.3826036
+Steps 1/20: hit10 = 111, ndcg10 = 58
+3.3293686
+Steps 2/20: hit10 = 101, ndcg10 = 50
+1.2490807
+Steps 3/20: hit10 = 115, ndcg10 = 58
+0.92059135
+Steps 4/20: hit10 = 128, ndcg10 = 68
+-1.6265354
+Steps 5/20: hit10 = 134, ndcg10 = 66
+-0.34488964
+Steps 6/20: hit10 = 167, ndcg10 = 89
+4.5204983
+Steps 7/20: hit10 = 191, ndcg10 = 100
+5.661153
+Steps 8/20: hit10 = 196, ndcg10 = 101
+0.4765463
+Steps 9/20: hit10 = 131, ndcg10 = 68
+-0.9045224
+Steps 10/20: hit10 = 137, ndcg10 = 77
+1.3499355
+Steps 11/20: hit10 = 128, ndcg10 = 73
+1.548976
+Steps 12/20: hit10 = 137, ndcg10 = 72
+0.5327625
+Steps 13/20: hit10 = 154, ndcg10 = 81
+2.61866
+Steps 14/20: hit10 = 196, ndcg10 = 106
+-0.0034189224
+Steps 15/20: hit10 = 153, ndcg10 = 84
+1.5119715
+Steps 16/20: hit10 = 189, ndcg10 = 102
+2.7137918
+Steps 17/20: hit10 = 182, ndcg10 = 94
+2.4258823
+Steps 18/20: hit10 = 192, ndcg10 = 108
+1.54739
+Steps 19/20: hit10 = 90, ndcg10 = 52
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.12360565126167858,epochHit5:0.1902
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.18613709810050572,epochHit20:0.4095
+
+Step 0/20: preloss = 0.06, REGLoss = 0.58         
+Step 1/20: preloss = 0.05, REGLoss = 0.58         
+Step 2/20: preloss = 0.06, REGLoss = 0.59         
+Step 3/20: preloss = 0.07, REGLoss = 0.59         
+Step 4/20: preloss = 0.06, REGLoss = 0.59         
+Step 5/20: preloss = 0.08, REGLoss = 0.59         
+Step 6/20: preloss = 0.09, REGLoss = 0.59         
+Step 7/20: preloss = 0.08, REGLoss = 0.59         
+Step 8/20: preloss = 0.08, REGLoss = 0.58         
+Step 9/20: preloss = 0.09, REGLoss = 0.58         
+Step 10/20: preloss = 0.08, REGLoss = 0.58         
+Step 11/20: preloss = 0.09, REGLoss = 0.57         
+Step 12/20: preloss = 0.08, REGLoss = 0.57         
+Step 13/20: preloss = 0.10, REGLoss = 0.57         
+Step 14/20: preloss = 0.09, REGLoss = 0.56         
+Step 15/20: preloss = 0.09, REGLoss = 0.56         
+Step 16/20: preloss = 0.11, REGLoss = 0.56         
+Step 17/20: preloss = 0.11, REGLoss = 0.56         
+Step 18/20: preloss = 0.12, REGLoss = 0.56         
+Step 19/20: preloss = 0.12, REGLoss = 0.56         
+Epoch 31/150, Train: Loss = 1.3238, preLoss = 0.1717  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.57         
+Step 1/20: preloss = 0.06, REGLoss = 0.57         
+Step 2/20: preloss = 0.05, REGLoss = 0.58         
+Step 3/20: preloss = 0.07, REGLoss = 0.59         
+Step 4/20: preloss = 0.07, REGLoss = 0.59         
+Step 5/20: preloss = 0.07, REGLoss = 0.59         
+Step 6/20: preloss = 0.07, REGLoss = 0.59         
+Step 7/20: preloss = 0.10, REGLoss = 0.59         
+Step 8/20: preloss = 0.10, REGLoss = 0.58         
+Step 9/20: preloss = 0.06, REGLoss = 0.58         
+Step 10/20: preloss = 0.08, REGLoss = 0.58         
+Step 11/20: preloss = 0.08, REGLoss = 0.58         
+Step 12/20: preloss = 0.09, REGLoss = 0.57         
+Step 13/20: preloss = 0.09, REGLoss = 0.57         
+Step 14/20: preloss = 0.11, REGLoss = 0.57         
+Step 15/20: preloss = 0.10, REGLoss = 0.57         
+Step 16/20: preloss = 0.09, REGLoss = 0.56         
+Step 17/20: preloss = 0.11, REGLoss = 0.57         
+Step 18/20: preloss = 0.11, REGLoss = 0.56         
+Step 19/20: preloss = 0.10, REGLoss = 0.56         
+Epoch 32/150, Train: Loss = 1.3207, preLoss = 0.1680  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.57         
+Step 1/20: preloss = 0.07, REGLoss = 0.57         
+Step 2/20: preloss = 0.06, REGLoss = 0.58         
+Step 3/20: preloss = 0.07, REGLoss = 0.58         
+Step 4/20: preloss = 0.06, REGLoss = 0.58         
+Step 5/20: preloss = 0.08, REGLoss = 0.58         
+Step 6/20: preloss = 0.06, REGLoss = 0.58         
+Step 7/20: preloss = 0.09, REGLoss = 0.57         
+Step 8/20: preloss = 0.06, REGLoss = 0.57         
+Step 9/20: preloss = 0.08, REGLoss = 0.56         
+Step 10/20: preloss = 0.08, REGLoss = 0.56         
+Step 11/20: preloss = 0.07, REGLoss = 0.55         
+Step 12/20: preloss = 0.10, REGLoss = 0.55         
+Step 13/20: preloss = 0.10, REGLoss = 0.54         
+Step 14/20: preloss = 0.11, REGLoss = 0.54         
+Step 15/20: preloss = 0.10, REGLoss = 0.54         
+Step 16/20: preloss = 0.09, REGLoss = 0.54         
+Step 17/20: preloss = 0.10, REGLoss = 0.54         
+Step 18/20: preloss = 0.09, REGLoss = 0.54         
+Step 19/20: preloss = 0.11, REGLoss = 0.54         
+Epoch 33/150, Train: Loss = 1.2816, preLoss = 0.1631  
+1.6937742
+Steps 0/20: hit10 = 89, ndcg10 = 46
+2.955597
+Steps 1/20: hit10 = 98, ndcg10 = 50
+5.8342733
+Steps 2/20: hit10 = 102, ndcg10 = 51
+-1.9743767
+Steps 3/20: hit10 = 115, ndcg10 = 60
+7.8152323
+Steps 4/20: hit10 = 118, ndcg10 = 62
+2.977604
+Steps 5/20: hit10 = 148, ndcg10 = 81
+-1.6863613
+Steps 6/20: hit10 = 154, ndcg10 = 85
+5.617303
+Steps 7/20: hit10 = 191, ndcg10 = 108
+1.6289415
+Steps 8/20: hit10 = 202, ndcg10 = 115
+1.654726
+Steps 9/20: hit10 = 119, ndcg10 = 64
+2.1312027
+Steps 10/20: hit10 = 174, ndcg10 = 96
+2.2543488
+Steps 11/20: hit10 = 139, ndcg10 = 71
+2.3476734
+Steps 12/20: hit10 = 155, ndcg10 = 85
+-1.5181417
+Steps 13/20: hit10 = 159, ndcg10 = 85
+4.6585197
+Steps 14/20: hit10 = 211, ndcg10 = 115
+3.208188
+Steps 15/20: hit10 = 176, ndcg10 = 89
+3.041438
+Steps 16/20: hit10 = 185, ndcg10 = 101
+-3.960075
+Steps 17/20: hit10 = 173, ndcg10 = 97
+-1.8015556
+Steps 18/20: hit10 = 209, ndcg10 = 117
+1.8527622
+Steps 19/20: hit10 = 104, ndcg10 = 52
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.1318217792816482,epochHit5:0.202
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.1926736865010397,epochHit20:0.4158
+
+Step 0/20: preloss = 0.06, REGLoss = 0.55         
+Step 1/20: preloss = 0.05, REGLoss = 0.56         
+Step 2/20: preloss = 0.06, REGLoss = 0.56         
+Step 3/20: preloss = 0.07, REGLoss = 0.57         
+Step 4/20: preloss = 0.06, REGLoss = 0.57         
+Step 5/20: preloss = 0.07, REGLoss = 0.57         
+Step 6/20: preloss = 0.09, REGLoss = 0.57         
+Step 7/20: preloss = 0.08, REGLoss = 0.56         
+Step 8/20: preloss = 0.07, REGLoss = 0.56         
+Step 9/20: preloss = 0.09, REGLoss = 0.56         
+Step 10/20: preloss = 0.08, REGLoss = 0.55         
+Step 11/20: preloss = 0.08, REGLoss = 0.55         
+Step 12/20: preloss = 0.08, REGLoss = 0.55         
+Step 13/20: preloss = 0.10, REGLoss = 0.55         
+Step 14/20: preloss = 0.10, REGLoss = 0.54         
+Step 15/20: preloss = 0.11, REGLoss = 0.54         
+Step 16/20: preloss = 0.09, REGLoss = 0.54         
+Step 17/20: preloss = 0.12, REGLoss = 0.55         
+Step 18/20: preloss = 0.13, REGLoss = 0.55         
+Step 19/20: preloss = 0.10, REGLoss = 0.55         
+Epoch 34/150, Train: Loss = 1.2798, preLoss = 0.1695  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.56         
+Step 1/20: preloss = 0.05, REGLoss = 0.56         
+Step 2/20: preloss = 0.05, REGLoss = 0.57         
+Step 3/20: preloss = 0.07, REGLoss = 0.57         
+Step 4/20: preloss = 0.07, REGLoss = 0.58         
+Step 5/20: preloss = 0.06, REGLoss = 0.58         
+Step 6/20: preloss = 0.08, REGLoss = 0.57         
+Step 7/20: preloss = 0.06, REGLoss = 0.57         
+Step 8/20: preloss = 0.07, REGLoss = 0.57         
+Step 9/20: preloss = 0.07, REGLoss = 0.56         
+Step 10/20: preloss = 0.09, REGLoss = 0.55         
+Step 11/20: preloss = 0.09, REGLoss = 0.55         
+Step 12/20: preloss = 0.08, REGLoss = 0.55         
+Step 13/20: preloss = 0.09, REGLoss = 0.54         
+Step 14/20: preloss = 0.09, REGLoss = 0.54         
+Step 15/20: preloss = 0.09, REGLoss = 0.54         
+Step 16/20: preloss = 0.10, REGLoss = 0.54         
+Step 17/20: preloss = 0.09, REGLoss = 0.57         
+Step 18/20: preloss = 0.08, REGLoss = 0.54         
+Step 19/20: preloss = 0.09, REGLoss = 0.54         
+Epoch 35/150, Train: Loss = 1.2694, preLoss = 0.1554  
+
+Step 0/20: preloss = 0.07, REGLoss = 0.55         
+Step 1/20: preloss = 0.06, REGLoss = 0.55         
+Step 2/20: preloss = 0.06, REGLoss = 0.56         
+Step 3/20: preloss = 0.06, REGLoss = 0.56         
+Step 4/20: preloss = 0.06, REGLoss = 0.56         
+Step 5/20: preloss = 0.08, REGLoss = 0.56         
+Step 6/20: preloss = 0.07, REGLoss = 0.56         
+Step 7/20: preloss = 0.07, REGLoss = 0.56         
+Step 8/20: preloss = 0.07, REGLoss = 0.55         
+Step 9/20: preloss = 0.10, REGLoss = 0.56         
+Step 10/20: preloss = 0.10, REGLoss = 0.55         
+Step 11/20: preloss = 0.08, REGLoss = 0.55         
+Step 12/20: preloss = 0.08, REGLoss = 0.54         
+Step 13/20: preloss = 0.08, REGLoss = 0.54         
+Step 14/20: preloss = 0.09, REGLoss = 0.54         
+Step 15/20: preloss = 0.09, REGLoss = 0.54         
+Step 16/20: preloss = 0.08, REGLoss = 0.54         
+Step 17/20: preloss = 0.10, REGLoss = 0.55         
+Step 18/20: preloss = 0.10, REGLoss = 0.55         
+Step 19/20: preloss = 0.09, REGLoss = 0.55         
+Epoch 36/150, Train: Loss = 1.2604, preLoss = 0.1572  
+3.7143517
+Steps 0/20: hit10 = 94, ndcg10 = 49
+1.8938951
+Steps 1/20: hit10 = 102, ndcg10 = 58
+1.8919458
+Steps 2/20: hit10 = 98, ndcg10 = 54
+3.9154167
+Steps 3/20: hit10 = 116, ndcg10 = 64
+2.4305468
+Steps 4/20: hit10 = 133, ndcg10 = 73
+1.6768904
+Steps 5/20: hit10 = 127, ndcg10 = 65
+-0.099840164
+Steps 6/20: hit10 = 160, ndcg10 = 83
+-3.7151108
+Steps 7/20: hit10 = 186, ndcg10 = 105
+5.181042
+Steps 8/20: hit10 = 194, ndcg10 = 102
+1.1163712
+Steps 9/20: hit10 = 126, ndcg10 = 65
+0.98649025
+Steps 10/20: hit10 = 164, ndcg10 = 94
+1.337637
+Steps 11/20: hit10 = 144, ndcg10 = 75
+1.1814089
+Steps 12/20: hit10 = 154, ndcg10 = 93
+1.7044554
+Steps 13/20: hit10 = 154, ndcg10 = 90
+1.3481941
+Steps 14/20: hit10 = 188, ndcg10 = 103
+1.0601287
+Steps 15/20: hit10 = 162, ndcg10 = 93
+3.238083
+Steps 16/20: hit10 = 178, ndcg10 = 104
+2.5663996
+Steps 17/20: hit10 = 190, ndcg10 = 105
+-0.1947689
+Steps 18/20: hit10 = 200, ndcg10 = 103
+0.4299116
+Steps 19/20: hit10 = 107, ndcg10 = 56
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.13386274673202647,epochHit5:0.2031
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.19182066112109428,epochHit20:0.4062
+
+Step 0/20: preloss = 0.05, REGLoss = 0.55         
+Step 1/20: preloss = 0.05, REGLoss = 0.56         
+Step 2/20: preloss = 0.06, REGLoss = 0.56         
+Step 3/20: preloss = 0.05, REGLoss = 0.56         
+Step 4/20: preloss = 0.07, REGLoss = 0.56         
+Step 5/20: preloss = 0.07, REGLoss = 0.55         
+Step 6/20: preloss = 0.07, REGLoss = 0.55         
+Step 7/20: preloss = 0.07, REGLoss = 0.55         
+Step 8/20: preloss = 0.07, REGLoss = 0.54         
+Step 9/20: preloss = 0.07, REGLoss = 0.53         
+Step 10/20: preloss = 0.08, REGLoss = 0.53         
+Step 11/20: preloss = 0.09, REGLoss = 0.53         
+Step 12/20: preloss = 0.07, REGLoss = 0.52         
+Step 13/20: preloss = 0.08, REGLoss = 0.52         
+Step 14/20: preloss = 0.09, REGLoss = 0.52         
+Step 15/20: preloss = 0.10, REGLoss = 0.52         
+Step 16/20: preloss = 0.10, REGLoss = 0.52         
+Step 17/20: preloss = 0.10, REGLoss = 0.52         
+Step 18/20: preloss = 0.09, REGLoss = 0.53         
+Step 19/20: preloss = 0.11, REGLoss = 0.53         
+Epoch 37/150, Train: Loss = 1.2290, preLoss = 0.1542  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.54         
+Step 1/20: preloss = 0.06, REGLoss = 0.54         
+Step 2/20: preloss = 0.06, REGLoss = 0.55         
+Step 3/20: preloss = 0.06, REGLoss = 0.55         
+Step 4/20: preloss = 0.07, REGLoss = 0.56         
+Step 5/20: preloss = 0.07, REGLoss = 0.56         
+Step 6/20: preloss = 0.06, REGLoss = 0.56         
+Step 7/20: preloss = 0.08, REGLoss = 0.59         
+Step 8/20: preloss = 0.09, REGLoss = 0.55         
+Step 9/20: preloss = 0.07, REGLoss = 0.55         
+Step 10/20: preloss = 0.07, REGLoss = 0.54         
+Step 11/20: preloss = 0.09, REGLoss = 0.54         
+Step 12/20: preloss = 0.09, REGLoss = 0.54         
+Step 13/20: preloss = 0.10, REGLoss = 0.53         
+Step 14/20: preloss = 0.10, REGLoss = 0.53         
+Step 15/20: preloss = 0.10, REGLoss = 0.54         
+Step 16/20: preloss = 0.10, REGLoss = 0.54         
+Step 17/20: preloss = 0.09, REGLoss = 0.54         
+Step 18/20: preloss = 0.12, REGLoss = 0.55         
+Step 19/20: preloss = 0.08, REGLoss = 0.55         
+Epoch 38/150, Train: Loss = 1.2557, preLoss = 0.1599  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.56         
+Step 1/20: preloss = 0.06, REGLoss = 0.58         
+Step 2/20: preloss = 0.05, REGLoss = 0.58         
+Step 3/20: preloss = 0.06, REGLoss = 0.58         
+Step 4/20: preloss = 0.05, REGLoss = 0.58         
+Step 5/20: preloss = 0.05, REGLoss = 0.58         
+Step 6/20: preloss = 0.06, REGLoss = 0.58         
+Step 7/20: preloss = 0.07, REGLoss = 0.57         
+Step 8/20: preloss = 0.07, REGLoss = 0.57         
+Step 9/20: preloss = 0.07, REGLoss = 0.56         
+Step 10/20: preloss = 0.07, REGLoss = 0.55         
+Step 11/20: preloss = 0.07, REGLoss = 0.54         
+Step 12/20: preloss = 0.09, REGLoss = 0.54         
+Step 13/20: preloss = 0.08, REGLoss = 0.53         
+Step 14/20: preloss = 0.09, REGLoss = 0.53         
+Step 15/20: preloss = 0.09, REGLoss = 0.53         
+Step 16/20: preloss = 0.10, REGLoss = 0.53         
+Step 17/20: preloss = 0.09, REGLoss = 0.52         
+Step 18/20: preloss = 0.10, REGLoss = 0.52         
+Step 19/20: preloss = 0.11, REGLoss = 0.52         
+Epoch 39/150, Train: Loss = 1.2562, preLoss = 0.1494  
+3.2088866
+Steps 0/20: hit10 = 99, ndcg10 = 52
+2.634387
+Steps 1/20: hit10 = 101, ndcg10 = 53
+1.416604
+Steps 2/20: hit10 = 100, ndcg10 = 54
+2.6143465
+Steps 3/20: hit10 = 107, ndcg10 = 55
+1.1395168
+Steps 4/20: hit10 = 142, ndcg10 = 74
+-0.22133541
+Steps 5/20: hit10 = 143, ndcg10 = 75
+0.80421543
+Steps 6/20: hit10 = 175, ndcg10 = 96
+4.1826367
+Steps 7/20: hit10 = 186, ndcg10 = 98
+5.209279
+Steps 8/20: hit10 = 202, ndcg10 = 113
+-1.1804237
+Steps 9/20: hit10 = 125, ndcg10 = 70
+2.5231943
+Steps 10/20: hit10 = 142, ndcg10 = 76
+3.4121084
+Steps 11/20: hit10 = 147, ndcg10 = 73
+1.5469208
+Steps 12/20: hit10 = 137, ndcg10 = 72
+-0.052581787
+Steps 13/20: hit10 = 142, ndcg10 = 82
+5.782487
+Steps 14/20: hit10 = 211, ndcg10 = 109
+3.0281062
+Steps 15/20: hit10 = 167, ndcg10 = 91
+-0.5510149
+Steps 16/20: hit10 = 202, ndcg10 = 113
+0.8625932
+Steps 17/20: hit10 = 180, ndcg10 = 102
+-0.32740974
+Steps 18/20: hit10 = 205, ndcg10 = 105
+1.1087847
+Steps 19/20: hit10 = 109, ndcg10 = 59
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.13107189287385013,epochHit5:0.2021
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.1925845387544708,epochHit20:0.4181
+
+Step 0/20: preloss = 0.06, REGLoss = 0.53         
+Step 1/20: preloss = 0.06, REGLoss = 0.53         
+Step 2/20: preloss = 0.06, REGLoss = 0.53         
+Step 3/20: preloss = 0.06, REGLoss = 0.54         
+Step 4/20: preloss = 0.07, REGLoss = 0.54         
+Step 5/20: preloss = 0.06, REGLoss = 0.55         
+Step 6/20: preloss = 0.06, REGLoss = 0.54         
+Step 7/20: preloss = 0.06, REGLoss = 0.54         
+Step 8/20: preloss = 0.06, REGLoss = 0.53         
+Step 9/20: preloss = 0.07, REGLoss = 0.53         
+Step 10/20: preloss = 0.10, REGLoss = 0.53         
+Step 11/20: preloss = 0.08, REGLoss = 0.52         
+Step 12/20: preloss = 0.07, REGLoss = 0.52         
+Step 13/20: preloss = 0.08, REGLoss = 0.52         
+Step 14/20: preloss = 0.08, REGLoss = 0.51         
+Step 15/20: preloss = 0.09, REGLoss = 0.51         
+Step 16/20: preloss = 0.09, REGLoss = 0.51         
+Step 17/20: preloss = 0.09, REGLoss = 0.51         
+Step 18/20: preloss = 0.10, REGLoss = 0.51         
+Step 19/20: preloss = 0.10, REGLoss = 0.51         
+Epoch 40/150, Train: Loss = 1.2014, preLoss = 0.1520  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.51         
+Step 1/20: preloss = 0.05, REGLoss = 0.52         
+Step 2/20: preloss = 0.06, REGLoss = 0.52         
+Step 3/20: preloss = 0.05, REGLoss = 0.52         
+Step 4/20: preloss = 0.07, REGLoss = 0.52         
+Step 5/20: preloss = 0.07, REGLoss = 0.52         
+Step 6/20: preloss = 0.07, REGLoss = 0.52         
+Step 7/20: preloss = 0.07, REGLoss = 0.52         
+Step 8/20: preloss = 0.08, REGLoss = 0.52         
+Step 9/20: preloss = 0.06, REGLoss = 0.51         
+Step 10/20: preloss = 0.08, REGLoss = 0.51         
+Step 11/20: preloss = 0.08, REGLoss = 0.50         
+Step 12/20: preloss = 0.07, REGLoss = 0.50         
+Step 13/20: preloss = 0.08, REGLoss = 0.50         
+Step 14/20: preloss = 0.08, REGLoss = 0.50         
+Step 15/20: preloss = 0.09, REGLoss = 0.50         
+Step 16/20: preloss = 0.10, REGLoss = 0.50         
+Step 17/20: preloss = 0.11, REGLoss = 0.50         
+Step 18/20: preloss = 0.09, REGLoss = 0.50         
+Step 19/20: preloss = 0.11, REGLoss = 0.50         
+Epoch 41/150, Train: Loss = 1.1713, preLoss = 0.1513  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.52         
+Step 1/20: preloss = 0.06, REGLoss = 0.52         
+Step 2/20: preloss = 0.06, REGLoss = 0.53         
+Step 3/20: preloss = 0.06, REGLoss = 0.53         
+Step 4/20: preloss = 0.08, REGLoss = 0.54         
+Step 5/20: preloss = 0.08, REGLoss = 0.54         
+Step 6/20: preloss = 0.05, REGLoss = 0.54         
+Step 7/20: preloss = 0.07, REGLoss = 0.54         
+Step 8/20: preloss = 0.07, REGLoss = 0.54         
+Step 9/20: preloss = 0.06, REGLoss = 0.54         
+Step 10/20: preloss = 0.07, REGLoss = 0.53         
+Step 11/20: preloss = 0.08, REGLoss = 0.53         
+Step 12/20: preloss = 0.09, REGLoss = 0.52         
+Step 13/20: preloss = 0.09, REGLoss = 0.52         
+Step 14/20: preloss = 0.08, REGLoss = 0.51         
+Step 15/20: preloss = 0.11, REGLoss = 0.51         
+Step 16/20: preloss = 0.09, REGLoss = 0.51         
+Step 17/20: preloss = 0.10, REGLoss = 0.51         
+Step 18/20: preloss = 0.09, REGLoss = 0.51         
+Step 19/20: preloss = 0.09, REGLoss = 0.51         
+Epoch 42/150, Train: Loss = 1.2022, preLoss = 0.1539  
+2.4241467
+Steps 0/20: hit10 = 118, ndcg10 = 63
+1.7936916
+Steps 1/20: hit10 = 117, ndcg10 = 63
+1.3347569
+Steps 2/20: hit10 = 101, ndcg10 = 52
+-0.2560444
+Steps 3/20: hit10 = 114, ndcg10 = 61
+2.0688267
+Steps 4/20: hit10 = 142, ndcg10 = 77
+1.6500607
+Steps 5/20: hit10 = 149, ndcg10 = 83
+0.64958143
+Steps 6/20: hit10 = 179, ndcg10 = 99
+0.7259693
+Steps 7/20: hit10 = 189, ndcg10 = 107
+2.3463755
+Steps 8/20: hit10 = 196, ndcg10 = 109
+-1.8266721
+Steps 9/20: hit10 = 144, ndcg10 = 77
+1.5571375
+Steps 10/20: hit10 = 160, ndcg10 = 88
+0.34515715
+Steps 11/20: hit10 = 135, ndcg10 = 75
+1.4597282
+Steps 12/20: hit10 = 162, ndcg10 = 93
+1.6025124
+Steps 13/20: hit10 = 152, ndcg10 = 82
+1.0284424
+Steps 14/20: hit10 = 196, ndcg10 = 106
+1.9932442
+Steps 15/20: hit10 = 164, ndcg10 = 94
+-0.49802113
+Steps 16/20: hit10 = 190, ndcg10 = 108
+2.634591
+Steps 17/20: hit10 = 190, ndcg10 = 102
+1.9120703
+Steps 18/20: hit10 = 203, ndcg10 = 116
+2.9992733
+Steps 19/20: hit10 = 103, ndcg10 = 64
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14098837246860593,epochHit5:0.2119
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20082193141657323,epochHit20:0.421
+
+Step 0/20: preloss = 0.05, REGLoss = 0.51         
+Step 1/20: preloss = 0.05, REGLoss = 0.52         
+Step 2/20: preloss = 0.06, REGLoss = 0.52         
+Step 3/20: preloss = 0.06, REGLoss = 0.53         
+Step 4/20: preloss = 0.05, REGLoss = 0.53         
+Step 5/20: preloss = 0.07, REGLoss = 0.52         
+Step 6/20: preloss = 0.06, REGLoss = 0.52         
+Step 7/20: preloss = 0.07, REGLoss = 0.52         
+Step 8/20: preloss = 0.06, REGLoss = 0.54         
+Step 9/20: preloss = 0.08, REGLoss = 0.51         
+Step 10/20: preloss = 0.07, REGLoss = 0.50         
+Step 11/20: preloss = 0.08, REGLoss = 0.50         
+Step 12/20: preloss = 0.09, REGLoss = 0.50         
+Step 13/20: preloss = 0.08, REGLoss = 0.51         
+Step 14/20: preloss = 0.08, REGLoss = 0.50         
+Step 15/20: preloss = 0.09, REGLoss = 0.51         
+Step 16/20: preloss = 0.09, REGLoss = 0.50         
+Step 17/20: preloss = 0.10, REGLoss = 0.51         
+Step 18/20: preloss = 0.09, REGLoss = 0.51         
+Step 19/20: preloss = 0.14, REGLoss = 0.51         
+Epoch 43/150, Train: Loss = 1.1812, preLoss = 0.1536  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.52         
+Step 1/20: preloss = 0.06, REGLoss = 0.53         
+Step 2/20: preloss = 0.07, REGLoss = 0.53         
+Step 3/20: preloss = 0.08, REGLoss = 0.54         
+Step 4/20: preloss = 0.06, REGLoss = 0.54         
+Step 5/20: preloss = 0.06, REGLoss = 0.55         
+Step 6/20: preloss = 0.06, REGLoss = 0.54         
+Step 7/20: preloss = 0.07, REGLoss = 0.54         
+Step 8/20: preloss = 0.09, REGLoss = 0.54         
+Step 9/20: preloss = 0.07, REGLoss = 0.53         
+Step 10/20: preloss = 0.08, REGLoss = 0.53         
+Step 11/20: preloss = 0.08, REGLoss = 0.52         
+Step 12/20: preloss = 0.07, REGLoss = 0.52         
+Step 13/20: preloss = 0.08, REGLoss = 0.51         
+Step 14/20: preloss = 0.08, REGLoss = 0.51         
+Step 15/20: preloss = 0.07, REGLoss = 0.51         
+Step 16/20: preloss = 0.09, REGLoss = 0.50         
+Step 17/20: preloss = 0.08, REGLoss = 0.50         
+Step 18/20: preloss = 0.09, REGLoss = 0.50         
+Step 19/20: preloss = 0.09, REGLoss = 0.50         
+Epoch 44/150, Train: Loss = 1.1951, preLoss = 0.1469  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.50         
+Step 1/20: preloss = 0.05, REGLoss = 0.51         
+Step 2/20: preloss = 0.07, REGLoss = 0.51         
+Step 3/20: preloss = 0.06, REGLoss = 0.51         
+Step 4/20: preloss = 0.05, REGLoss = 0.51         
+Step 5/20: preloss = 0.06, REGLoss = 0.51         
+Step 6/20: preloss = 0.05, REGLoss = 0.50         
+Step 7/20: preloss = 0.06, REGLoss = 0.50         
+Step 8/20: preloss = 0.08, REGLoss = 0.49         
+Step 9/20: preloss = 0.08, REGLoss = 0.49         
+Step 10/20: preloss = 0.06, REGLoss = 0.51         
+Step 11/20: preloss = 0.08, REGLoss = 0.48         
+Step 12/20: preloss = 0.08, REGLoss = 0.48         
+Step 13/20: preloss = 0.07, REGLoss = 0.47         
+Step 14/20: preloss = 0.09, REGLoss = 0.47         
+Step 15/20: preloss = 0.07, REGLoss = 0.47         
+Step 16/20: preloss = 0.09, REGLoss = 0.48         
+Step 17/20: preloss = 0.10, REGLoss = 0.48         
+Step 18/20: preloss = 0.08, REGLoss = 0.49         
+Step 19/20: preloss = 0.11, REGLoss = 0.49         
+Epoch 45/150, Train: Loss = 1.1303, preLoss = 0.1447  
+1.6233597
+Steps 0/20: hit10 = 107, ndcg10 = 57
+1.5328331
+Steps 1/20: hit10 = 110, ndcg10 = 56
+4.533843
+Steps 2/20: hit10 = 105, ndcg10 = 54
+-4.984567
+Steps 3/20: hit10 = 118, ndcg10 = 63
+3.04251
+Steps 4/20: hit10 = 140, ndcg10 = 76
+1.1690159
+Steps 5/20: hit10 = 157, ndcg10 = 91
+0.4043398
+Steps 6/20: hit10 = 162, ndcg10 = 84
+1.5175371
+Steps 7/20: hit10 = 204, ndcg10 = 112
+3.1552339
+Steps 8/20: hit10 = 217, ndcg10 = 123
+-0.92336655
+Steps 9/20: hit10 = 138, ndcg10 = 76
+1.4431515
+Steps 10/20: hit10 = 162, ndcg10 = 91
+1.6298018
+Steps 11/20: hit10 = 134, ndcg10 = 68
+2.7123795
+Steps 12/20: hit10 = 159, ndcg10 = 87
+-1.9746966
+Steps 13/20: hit10 = 152, ndcg10 = 88
+2.7682905
+Steps 14/20: hit10 = 207, ndcg10 = 112
+5.1165686
+Steps 15/20: hit10 = 168, ndcg10 = 94
+-1.4663916
+Steps 16/20: hit10 = 205, ndcg10 = 118
+0.8752594
+Steps 17/20: hit10 = 192, ndcg10 = 107
+-1.7568674
+Steps 18/20: hit10 = 222, ndcg10 = 119
+2.561306
+Steps 19/20: hit10 = 119, ndcg10 = 65
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14344848387410705,epochHit5:0.2202
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.2019394583445476,epochHit20:0.4242
+
+Step 0/20: preloss = 0.05, REGLoss = 0.50         
+Step 1/20: preloss = 0.04, REGLoss = 0.50         
+Step 2/20: preloss = 0.05, REGLoss = 0.51         
+Step 3/20: preloss = 0.06, REGLoss = 0.51         
+Step 4/20: preloss = 0.05, REGLoss = 0.52         
+Step 5/20: preloss = 0.07, REGLoss = 0.52         
+Step 6/20: preloss = 0.07, REGLoss = 0.52         
+Step 7/20: preloss = 0.07, REGLoss = 0.51         
+Step 8/20: preloss = 0.06, REGLoss = 0.51         
+Step 9/20: preloss = 0.07, REGLoss = 0.50         
+Step 10/20: preloss = 0.07, REGLoss = 0.50         
+Step 11/20: preloss = 0.08, REGLoss = 0.49         
+Step 12/20: preloss = 0.08, REGLoss = 0.49         
+Step 13/20: preloss = 0.06, REGLoss = 0.49         
+Step 14/20: preloss = 0.08, REGLoss = 0.48         
+Step 15/20: preloss = 0.08, REGLoss = 0.48         
+Step 16/20: preloss = 0.09, REGLoss = 0.48         
+Step 17/20: preloss = 0.08, REGLoss = 0.49         
+Step 18/20: preloss = 0.10, REGLoss = 0.48         
+Step 19/20: preloss = 0.10, REGLoss = 0.48         
+Epoch 46/150, Train: Loss = 1.1389, preLoss = 0.1415  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.49         
+Step 1/20: preloss = 0.05, REGLoss = 0.49         
+Step 2/20: preloss = 0.05, REGLoss = 0.50         
+Step 3/20: preloss = 0.06, REGLoss = 0.50         
+Step 4/20: preloss = 0.05, REGLoss = 0.50         
+Step 5/20: preloss = 0.06, REGLoss = 0.50         
+Step 6/20: preloss = 0.06, REGLoss = 0.50         
+Step 7/20: preloss = 0.07, REGLoss = 0.50         
+Step 8/20: preloss = 0.05, REGLoss = 0.49         
+Step 9/20: preloss = 0.06, REGLoss = 0.50         
+Step 10/20: preloss = 0.07, REGLoss = 0.48         
+Step 11/20: preloss = 0.07, REGLoss = 0.48         
+Step 12/20: preloss = 0.06, REGLoss = 0.47         
+Step 13/20: preloss = 0.07, REGLoss = 0.47         
+Step 14/20: preloss = 0.08, REGLoss = 0.47         
+Step 15/20: preloss = 0.08, REGLoss = 0.46         
+Step 16/20: preloss = 0.11, REGLoss = 0.46         
+Step 17/20: preloss = 0.08, REGLoss = 0.46         
+Step 18/20: preloss = 0.08, REGLoss = 0.46         
+Step 19/20: preloss = 0.09, REGLoss = 0.46         
+Epoch 47/150, Train: Loss = 1.1017, preLoss = 0.1362  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.55         
+Step 1/20: preloss = 0.05, REGLoss = 0.47         
+Step 2/20: preloss = 0.05, REGLoss = 0.48         
+Step 3/20: preloss = 0.05, REGLoss = 0.49         
+Step 4/20: preloss = 0.05, REGLoss = 0.49         
+Step 5/20: preloss = 0.06, REGLoss = 0.49         
+Step 6/20: preloss = 0.05, REGLoss = 0.50         
+Step 7/20: preloss = 0.06, REGLoss = 0.49         
+Step 8/20: preloss = 0.07, REGLoss = 0.49         
+Step 9/20: preloss = 0.06, REGLoss = 0.49         
+Step 10/20: preloss = 0.07, REGLoss = 0.49         
+Step 11/20: preloss = 0.08, REGLoss = 0.48         
+Step 12/20: preloss = 0.08, REGLoss = 0.48         
+Step 13/20: preloss = 0.08, REGLoss = 0.48         
+Step 14/20: preloss = 0.09, REGLoss = 0.48         
+Step 15/20: preloss = 0.08, REGLoss = 0.48         
+Step 16/20: preloss = 0.08, REGLoss = 0.48         
+Step 17/20: preloss = 0.10, REGLoss = 0.49         
+Step 18/20: preloss = 0.08, REGLoss = 0.49         
+Step 19/20: preloss = 0.09, REGLoss = 0.49         
+Epoch 48/150, Train: Loss = 1.1158, preLoss = 0.1376  
+2.566721
+Steps 0/20: hit10 = 106, ndcg10 = 55
+-1.6929626
+Steps 1/20: hit10 = 100, ndcg10 = 58
+-1.4597683
+Steps 2/20: hit10 = 90, ndcg10 = 50
+-2.2515116
+Steps 3/20: hit10 = 120, ndcg10 = 67
+-1.2681837
+Steps 4/20: hit10 = 147, ndcg10 = 81
+-1.9827032
+Steps 5/20: hit10 = 145, ndcg10 = 77
+2.5309458
+Steps 6/20: hit10 = 172, ndcg10 = 93
+3.6553173
+Steps 7/20: hit10 = 190, ndcg10 = 101
+2.5386353
+Steps 8/20: hit10 = 191, ndcg10 = 111
+1.7521305
+Steps 9/20: hit10 = 130, ndcg10 = 68
+0.34877205
+Steps 10/20: hit10 = 152, ndcg10 = 88
+3.1595283
+Steps 11/20: hit10 = 140, ndcg10 = 76
+0.56588936
+Steps 12/20: hit10 = 151, ndcg10 = 80
+-0.42808247
+Steps 13/20: hit10 = 161, ndcg10 = 87
+0.37641335
+Steps 14/20: hit10 = 195, ndcg10 = 114
+-2.491036
+Steps 15/20: hit10 = 157, ndcg10 = 88
+-4.343634
+Steps 16/20: hit10 = 193, ndcg10 = 121
+1.3341007
+Steps 17/20: hit10 = 195, ndcg10 = 109
+-1.7297707
+Steps 18/20: hit10 = 220, ndcg10 = 125
+0.4969616
+Steps 19/20: hit10 = 114, ndcg10 = 67
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.1414213414544041,epochHit5:0.2107
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20030607487512503,epochHit20:0.4169
+
+Step 0/20: preloss = 0.05, REGLoss = 0.49         
+Step 1/20: preloss = 0.05, REGLoss = 0.50         
+Step 2/20: preloss = 0.07, REGLoss = 0.50         
+Step 3/20: preloss = 0.06, REGLoss = 0.51         
+Step 4/20: preloss = 0.05, REGLoss = 0.51         
+Step 5/20: preloss = 0.06, REGLoss = 0.51         
+Step 6/20: preloss = 0.06, REGLoss = 0.50         
+Step 7/20: preloss = 0.05, REGLoss = 0.50         
+Step 8/20: preloss = 0.06, REGLoss = 0.50         
+Step 9/20: preloss = 0.08, REGLoss = 0.49         
+Step 10/20: preloss = 0.07, REGLoss = 0.49         
+Step 11/20: preloss = 0.07, REGLoss = 0.48         
+Step 12/20: preloss = 0.09, REGLoss = 0.47         
+Step 13/20: preloss = 0.07, REGLoss = 0.47         
+Step 14/20: preloss = 0.07, REGLoss = 0.47         
+Step 15/20: preloss = 0.08, REGLoss = 0.46         
+Step 16/20: preloss = 0.10, REGLoss = 0.46         
+Step 17/20: preloss = 0.10, REGLoss = 0.46         
+Step 18/20: preloss = 0.10, REGLoss = 0.47         
+Step 19/20: preloss = 0.10, REGLoss = 0.47         
+Epoch 49/150, Train: Loss = 1.1143, preLoss = 0.1429  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.47         
+Step 1/20: preloss = 0.07, REGLoss = 0.48         
+Step 2/20: preloss = 0.05, REGLoss = 0.49         
+Step 3/20: preloss = 0.06, REGLoss = 0.50         
+Step 4/20: preloss = 0.06, REGLoss = 0.51         
+Step 5/20: preloss = 0.06, REGLoss = 0.51         
+Step 6/20: preloss = 0.06, REGLoss = 0.52         
+Step 7/20: preloss = 0.06, REGLoss = 0.51         
+Step 8/20: preloss = 0.07, REGLoss = 0.51         
+Step 9/20: preloss = 0.06, REGLoss = 0.51         
+Step 10/20: preloss = 0.08, REGLoss = 0.50         
+Step 11/20: preloss = 0.07, REGLoss = 0.49         
+Step 12/20: preloss = 0.07, REGLoss = 0.49         
+Step 13/20: preloss = 0.08, REGLoss = 0.48         
+Step 14/20: preloss = 0.09, REGLoss = 0.48         
+Step 15/20: preloss = 0.09, REGLoss = 0.47         
+Step 16/20: preloss = 0.07, REGLoss = 0.47         
+Step 17/20: preloss = 0.09, REGLoss = 0.47         
+Step 18/20: preloss = 0.09, REGLoss = 0.47         
+Step 19/20: preloss = 0.07, REGLoss = 0.47         
+Epoch 50/150, Train: Loss = 1.1187, preLoss = 0.1394  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.47         
+Step 1/20: preloss = 0.05, REGLoss = 0.48         
+Step 2/20: preloss = 0.05, REGLoss = 0.48         
+Step 3/20: preloss = 0.06, REGLoss = 0.49         
+Step 4/20: preloss = 0.06, REGLoss = 0.49         
+Step 5/20: preloss = 0.05, REGLoss = 0.49         
+Step 6/20: preloss = 0.06, REGLoss = 0.48         
+Step 7/20: preloss = 0.08, REGLoss = 0.48         
+Step 8/20: preloss = 0.05, REGLoss = 0.47         
+Step 9/20: preloss = 0.07, REGLoss = 0.47         
+Step 10/20: preloss = 0.07, REGLoss = 0.46         
+Step 11/20: preloss = 0.06, REGLoss = 0.46         
+Step 12/20: preloss = 0.07, REGLoss = 0.45         
+Step 13/20: preloss = 0.09, REGLoss = 0.45         
+Step 14/20: preloss = 0.09, REGLoss = 0.44         
+Step 15/20: preloss = 0.09, REGLoss = 0.44         
+Step 16/20: preloss = 0.07, REGLoss = 0.44         
+Step 17/20: preloss = 0.09, REGLoss = 0.44         
+Step 18/20: preloss = 0.08, REGLoss = 0.45         
+Step 19/20: preloss = 0.09, REGLoss = 0.45         
+Epoch 51/150, Train: Loss = 1.0667, preLoss = 0.1384  
+3.0551171
+Steps 0/20: hit10 = 104, ndcg10 = 58
+-2.884265
+Steps 1/20: hit10 = 116, ndcg10 = 68
+0.01872158
+Steps 2/20: hit10 = 112, ndcg10 = 67
+1.6526947
+Steps 3/20: hit10 = 123, ndcg10 = 62
+3.2260118
+Steps 4/20: hit10 = 132, ndcg10 = 73
+0.5199003
+Steps 5/20: hit10 = 153, ndcg10 = 87
+1.7823677
+Steps 6/20: hit10 = 156, ndcg10 = 86
+-1.6479969
+Steps 7/20: hit10 = 183, ndcg10 = 106
+-0.89712715
+Steps 8/20: hit10 = 202, ndcg10 = 119
+-5.031431
+Steps 9/20: hit10 = 146, ndcg10 = 81
+1.4475689
+Steps 10/20: hit10 = 164, ndcg10 = 96
+-2.127152
+Steps 11/20: hit10 = 138, ndcg10 = 74
+0.5622101
+Steps 12/20: hit10 = 140, ndcg10 = 80
+3.6421127
+Steps 13/20: hit10 = 152, ndcg10 = 83
+0.20488834
+Steps 14/20: hit10 = 211, ndcg10 = 115
+0.26963472
+Steps 15/20: hit10 = 196, ndcg10 = 110
+-3.5832913
+Steps 16/20: hit10 = 201, ndcg10 = 119
+1.8008208
+Steps 17/20: hit10 = 210, ndcg10 = 122
+-1.6425419
+Steps 18/20: hit10 = 217, ndcg10 = 128
+-0.8807306
+Steps 19/20: hit10 = 111, ndcg10 = 65
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.15044523980802302,epochHit5:0.2228
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20724152372534826,epochHit20:0.4215
+
+Step 0/20: preloss = 0.05, REGLoss = 0.46         
+Step 1/20: preloss = 0.05, REGLoss = 0.46         
+Step 2/20: preloss = 0.06, REGLoss = 0.47         
+Step 3/20: preloss = 0.05, REGLoss = 0.47         
+Step 4/20: preloss = 0.05, REGLoss = 0.48         
+Step 5/20: preloss = 0.06, REGLoss = 0.48         
+Step 6/20: preloss = 0.07, REGLoss = 0.48         
+Step 7/20: preloss = 0.06, REGLoss = 0.47         
+Step 8/20: preloss = 0.06, REGLoss = 0.47         
+Step 9/20: preloss = 0.07, REGLoss = 0.47         
+Step 10/20: preloss = 0.06, REGLoss = 0.47         
+Step 11/20: preloss = 0.08, REGLoss = 0.47         
+Step 12/20: preloss = 0.07, REGLoss = 0.46         
+Step 13/20: preloss = 0.09, REGLoss = 0.46         
+Step 14/20: preloss = 0.08, REGLoss = 0.46         
+Step 15/20: preloss = 0.09, REGLoss = 0.45         
+Step 16/20: preloss = 0.08, REGLoss = 0.45         
+Step 17/20: preloss = 0.08, REGLoss = 0.45         
+Step 18/20: preloss = 0.07, REGLoss = 0.45         
+Step 19/20: preloss = 0.09, REGLoss = 0.45         
+Epoch 52/150, Train: Loss = 1.0646, preLoss = 0.1359  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.45         
+Step 1/20: preloss = 0.05, REGLoss = 0.45         
+Step 2/20: preloss = 0.04, REGLoss = 0.46         
+Step 3/20: preloss = 0.06, REGLoss = 0.46         
+Step 4/20: preloss = 0.06, REGLoss = 0.46         
+Step 5/20: preloss = 0.07, REGLoss = 0.46         
+Step 6/20: preloss = 0.07, REGLoss = 0.46         
+Step 7/20: preloss = 0.07, REGLoss = 0.46         
+Step 8/20: preloss = 0.05, REGLoss = 0.45         
+Step 9/20: preloss = 0.06, REGLoss = 0.45         
+Step 10/20: preloss = 0.07, REGLoss = 0.45         
+Step 11/20: preloss = 0.07, REGLoss = 0.44         
+Step 12/20: preloss = 0.06, REGLoss = 0.44         
+Step 13/20: preloss = 0.08, REGLoss = 0.44         
+Step 14/20: preloss = 0.06, REGLoss = 0.43         
+Step 15/20: preloss = 0.07, REGLoss = 0.43         
+Step 16/20: preloss = 0.06, REGLoss = 0.43         
+Step 17/20: preloss = 0.07, REGLoss = 0.43         
+Step 18/20: preloss = 0.08, REGLoss = 0.45         
+Step 19/20: preloss = 0.09, REGLoss = 0.42         
+Epoch 53/150, Train: Loss = 1.0199, preLoss = 0.1288  
+
+Step 0/20: preloss = 0.06, REGLoss = 0.43         
+Step 1/20: preloss = 0.05, REGLoss = 0.44         
+Step 2/20: preloss = 0.04, REGLoss = 0.44         
+Step 3/20: preloss = 0.05, REGLoss = 0.44         
+Step 4/20: preloss = 0.06, REGLoss = 0.45         
+Step 5/20: preloss = 0.05, REGLoss = 0.45         
+Step 6/20: preloss = 0.07, REGLoss = 0.45         
+Step 7/20: preloss = 0.06, REGLoss = 0.45         
+Step 8/20: preloss = 0.07, REGLoss = 0.45         
+Step 9/20: preloss = 0.07, REGLoss = 0.45         
+Step 10/20: preloss = 0.06, REGLoss = 0.44         
+Step 11/20: preloss = 0.07, REGLoss = 0.44         
+Step 12/20: preloss = 0.06, REGLoss = 0.44         
+Step 13/20: preloss = 0.08, REGLoss = 0.44         
+Step 14/20: preloss = 0.07, REGLoss = 0.44         
+Step 15/20: preloss = 0.08, REGLoss = 0.44         
+Step 16/20: preloss = 0.08, REGLoss = 0.44         
+Step 17/20: preloss = 0.08, REGLoss = 0.44         
+Step 18/20: preloss = 0.08, REGLoss = 0.44         
+Step 19/20: preloss = 0.08, REGLoss = 0.44         
+Epoch 54/150, Train: Loss = 1.0144, preLoss = 0.1310  
+0.2153163
+Steps 0/20: hit10 = 114, ndcg10 = 61
+-1.6626463
+Steps 1/20: hit10 = 114, ndcg10 = 65
+1.5742316
+Steps 2/20: hit10 = 109, ndcg10 = 54
+-1.196908
+Steps 3/20: hit10 = 131, ndcg10 = 70
+0.699878
+Steps 4/20: hit10 = 142, ndcg10 = 79
+3.6793032
+Steps 5/20: hit10 = 152, ndcg10 = 85
+5.1518073
+Steps 6/20: hit10 = 152, ndcg10 = 90
+-4.7345877
+Steps 7/20: hit10 = 198, ndcg10 = 108
+1.633904
+Steps 8/20: hit10 = 213, ndcg10 = 122
+-0.7170477
+Steps 9/20: hit10 = 141, ndcg10 = 76
+1.7757568
+Steps 10/20: hit10 = 173, ndcg10 = 100
+4.6990085
+Steps 11/20: hit10 = 153, ndcg10 = 87
+2.9853077
+Steps 12/20: hit10 = 177, ndcg10 = 100
+1.212779
+Steps 13/20: hit10 = 159, ndcg10 = 96
+2.2888393
+Steps 14/20: hit10 = 199, ndcg10 = 116
+3.082469
+Steps 15/20: hit10 = 177, ndcg10 = 105
+0.19633293
+Steps 16/20: hit10 = 191, ndcg10 = 107
+-0.1244297
+Steps 17/20: hit10 = 203, ndcg10 = 110
+-0.18469048
+Steps 18/20: hit10 = 218, ndcg10 = 127
+-0.24964619
+Steps 19/20: hit10 = 123, ndcg10 = 73
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.1530923037408433,epochHit5:0.2272
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.2110167747310917,epochHit20:0.4298
+
+Step 0/20: preloss = 0.05, REGLoss = 0.44         
+Step 1/20: preloss = 0.05, REGLoss = 0.45         
+Step 2/20: preloss = 0.06, REGLoss = 0.45         
+Step 3/20: preloss = 0.06, REGLoss = 0.47         
+Step 4/20: preloss = 0.06, REGLoss = 0.46         
+Step 5/20: preloss = 0.06, REGLoss = 0.46         
+Step 6/20: preloss = 0.07, REGLoss = 0.46         
+Step 7/20: preloss = 0.07, REGLoss = 0.46         
+Step 8/20: preloss = 0.07, REGLoss = 0.45         
+Step 9/20: preloss = 0.06, REGLoss = 0.45         
+Step 10/20: preloss = 0.07, REGLoss = 0.45         
+Step 11/20: preloss = 0.06, REGLoss = 0.45         
+Step 12/20: preloss = 0.06, REGLoss = 0.45         
+Step 13/20: preloss = 0.06, REGLoss = 0.44         
+Step 14/20: preloss = 0.07, REGLoss = 0.44         
+Step 15/20: preloss = 0.08, REGLoss = 0.44         
+Step 16/20: preloss = 0.08, REGLoss = 0.43         
+Step 17/20: preloss = 0.09, REGLoss = 0.43         
+Step 18/20: preloss = 0.09, REGLoss = 0.43         
+Step 19/20: preloss = 0.07, REGLoss = 0.43         
+Epoch 55/150, Train: Loss = 1.0277, preLoss = 0.1335  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.43         
+Step 1/20: preloss = 0.05, REGLoss = 0.44         
+Step 2/20: preloss = 0.05, REGLoss = 0.44         
+Step 3/20: preloss = 0.04, REGLoss = 0.44         
+Step 4/20: preloss = 0.06, REGLoss = 0.44         
+Step 5/20: preloss = 0.05, REGLoss = 0.44         
+Step 6/20: preloss = 0.07, REGLoss = 0.44         
+Step 7/20: preloss = 0.06, REGLoss = 0.44         
+Step 8/20: preloss = 0.05, REGLoss = 0.44         
+Step 9/20: preloss = 0.06, REGLoss = 0.44         
+Step 10/20: preloss = 0.06, REGLoss = 0.43         
+Step 11/20: preloss = 0.08, REGLoss = 0.43         
+Step 12/20: preloss = 0.07, REGLoss = 0.43         
+Step 13/20: preloss = 0.08, REGLoss = 0.43         
+Step 14/20: preloss = 0.08, REGLoss = 0.42         
+Step 15/20: preloss = 0.08, REGLoss = 0.42         
+Step 16/20: preloss = 0.07, REGLoss = 0.42         
+Step 17/20: preloss = 0.07, REGLoss = 0.42         
+Step 18/20: preloss = 0.08, REGLoss = 0.42         
+Step 19/20: preloss = 0.09, REGLoss = 0.42         
+Epoch 56/150, Train: Loss = 0.9932, preLoss = 0.1295  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.43         
+Step 1/20: preloss = 0.05, REGLoss = 0.46         
+Step 2/20: preloss = 0.04, REGLoss = 0.43         
+Step 3/20: preloss = 0.06, REGLoss = 0.44         
+Step 4/20: preloss = 0.05, REGLoss = 0.44         
+Step 5/20: preloss = 0.05, REGLoss = 0.45         
+Step 6/20: preloss = 0.05, REGLoss = 0.45         
+Step 7/20: preloss = 0.06, REGLoss = 0.45         
+Step 8/20: preloss = 0.06, REGLoss = 0.45         
+Step 9/20: preloss = 0.04, REGLoss = 0.45         
+Step 10/20: preloss = 0.08, REGLoss = 0.45         
+Step 11/20: preloss = 0.07, REGLoss = 0.44         
+Step 12/20: preloss = 0.07, REGLoss = 0.44         
+Step 13/20: preloss = 0.06, REGLoss = 0.44         
+Step 14/20: preloss = 0.07, REGLoss = 0.44         
+Step 15/20: preloss = 0.07, REGLoss = 0.43         
+Step 16/20: preloss = 0.09, REGLoss = 0.43         
+Step 17/20: preloss = 0.09, REGLoss = 0.43         
+Step 18/20: preloss = 0.10, REGLoss = 0.43         
+Step 19/20: preloss = 0.10, REGLoss = 0.43         
+Epoch 57/150, Train: Loss = 1.0124, preLoss = 0.1318  
+0.82950354
+Steps 0/20: hit10 = 110, ndcg10 = 56
+-2.1947746
+Steps 1/20: hit10 = 117, ndcg10 = 65
+-0.484025
+Steps 2/20: hit10 = 101, ndcg10 = 58
+0.76344824
+Steps 3/20: hit10 = 119, ndcg10 = 66
+2.4783044
+Steps 4/20: hit10 = 153, ndcg10 = 91
+0.6824112
+Steps 5/20: hit10 = 150, ndcg10 = 81
+-0.5916929
+Steps 6/20: hit10 = 162, ndcg10 = 94
+3.5990467
+Steps 7/20: hit10 = 192, ndcg10 = 112
+3.4689374
+Steps 8/20: hit10 = 209, ndcg10 = 117
+0.17430305
+Steps 9/20: hit10 = 148, ndcg10 = 79
+2.8553448
+Steps 10/20: hit10 = 159, ndcg10 = 88
+0.1058588
+Steps 11/20: hit10 = 144, ndcg10 = 83
+1.0580082
+Steps 12/20: hit10 = 154, ndcg10 = 88
+-2.2687697
+Steps 13/20: hit10 = 154, ndcg10 = 89
+1.3156514
+Steps 14/20: hit10 = 184, ndcg10 = 105
+-0.822845
+Steps 15/20: hit10 = 176, ndcg10 = 100
+-4.2739563
+Steps 16/20: hit10 = 197, ndcg10 = 119
+2.7870307
+Steps 17/20: hit10 = 204, ndcg10 = 118
+0.58824253
+Steps 18/20: hit10 = 211, ndcg10 = 117
+3.3620577
+Steps 19/20: hit10 = 101, ndcg10 = 58
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.1486619753457541,epochHit5:0.2193
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20805958025453364,epochHit20:0.4278
+
+Step 0/20: preloss = 0.05, REGLoss = 0.44         
+Step 1/20: preloss = 0.05, REGLoss = 0.45         
+Step 2/20: preloss = 0.05, REGLoss = 0.46         
+Step 3/20: preloss = 0.05, REGLoss = 0.46         
+Step 4/20: preloss = 0.06, REGLoss = 0.46         
+Step 5/20: preloss = 0.07, REGLoss = 0.46         
+Step 6/20: preloss = 0.07, REGLoss = 0.47         
+Step 7/20: preloss = 0.06, REGLoss = 0.46         
+Step 8/20: preloss = 0.07, REGLoss = 0.46         
+Step 9/20: preloss = 0.07, REGLoss = 0.46         
+Step 10/20: preloss = 0.07, REGLoss = 0.46         
+Step 11/20: preloss = 0.07, REGLoss = 0.45         
+Step 12/20: preloss = 0.06, REGLoss = 0.45         
+Step 13/20: preloss = 0.07, REGLoss = 0.45         
+Step 14/20: preloss = 0.07, REGLoss = 0.45         
+Step 15/20: preloss = 0.10, REGLoss = 0.45         
+Step 16/20: preloss = 0.10, REGLoss = 0.44         
+Step 17/20: preloss = 0.09, REGLoss = 0.44         
+Step 18/20: preloss = 0.08, REGLoss = 0.44         
+Step 19/20: preloss = 0.08, REGLoss = 0.44         
+Epoch 58/150, Train: Loss = 1.0432, preLoss = 0.1380  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.45         
+Step 1/20: preloss = 0.04, REGLoss = 0.46         
+Step 2/20: preloss = 0.05, REGLoss = 0.47         
+Step 3/20: preloss = 0.06, REGLoss = 0.47         
+Step 4/20: preloss = 0.04, REGLoss = 0.47         
+Step 5/20: preloss = 0.07, REGLoss = 0.47         
+Step 6/20: preloss = 0.07, REGLoss = 0.49         
+Step 7/20: preloss = 0.06, REGLoss = 0.47         
+Step 8/20: preloss = 0.06, REGLoss = 0.47         
+Step 9/20: preloss = 0.08, REGLoss = 0.46         
+Step 10/20: preloss = 0.07, REGLoss = 0.46         
+Step 11/20: preloss = 0.08, REGLoss = 0.45         
+Step 12/20: preloss = 0.07, REGLoss = 0.45         
+Step 13/20: preloss = 0.07, REGLoss = 0.44         
+Step 14/20: preloss = 0.07, REGLoss = 0.44         
+Step 15/20: preloss = 0.08, REGLoss = 0.44         
+Step 16/20: preloss = 0.07, REGLoss = 0.44         
+Step 17/20: preloss = 0.09, REGLoss = 0.44         
+Step 18/20: preloss = 0.09, REGLoss = 0.44         
+Step 19/20: preloss = 0.08, REGLoss = 0.43         
+Epoch 59/150, Train: Loss = 1.0460, preLoss = 0.1346  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.44         
+Step 1/20: preloss = 0.04, REGLoss = 0.44         
+Step 2/20: preloss = 0.06, REGLoss = 0.44         
+Step 3/20: preloss = 0.05, REGLoss = 0.44         
+Step 4/20: preloss = 0.05, REGLoss = 0.45         
+Step 5/20: preloss = 0.05, REGLoss = 0.45         
+Step 6/20: preloss = 0.06, REGLoss = 0.44         
+Step 7/20: preloss = 0.06, REGLoss = 0.44         
+Step 8/20: preloss = 0.06, REGLoss = 0.43         
+Step 9/20: preloss = 0.06, REGLoss = 0.43         
+Step 10/20: preloss = 0.07, REGLoss = 0.42         
+Step 11/20: preloss = 0.07, REGLoss = 0.43         
+Step 12/20: preloss = 0.06, REGLoss = 0.42         
+Step 13/20: preloss = 0.07, REGLoss = 0.41         
+Step 14/20: preloss = 0.07, REGLoss = 0.41         
+Step 15/20: preloss = 0.07, REGLoss = 0.41         
+Step 16/20: preloss = 0.08, REGLoss = 0.41         
+Step 17/20: preloss = 0.07, REGLoss = 0.41         
+Step 18/20: preloss = 0.08, REGLoss = 0.41         
+Step 19/20: preloss = 0.08, REGLoss = 0.40         
+Epoch 60/150, Train: Loss = 0.9797, preLoss = 0.1273  
+4.640051
+Steps 0/20: hit10 = 107, ndcg10 = 57
+2.7925897
+Steps 1/20: hit10 = 115, ndcg10 = 67
+0.28322792
+Steps 2/20: hit10 = 106, ndcg10 = 52
+-1.3581548
+Steps 3/20: hit10 = 133, ndcg10 = 74
+1.6151135
+Steps 4/20: hit10 = 142, ndcg10 = 79
+1.942667
+Steps 5/20: hit10 = 146, ndcg10 = 78
+0.48071527
+Steps 6/20: hit10 = 157, ndcg10 = 93
+1.1925282
+Steps 7/20: hit10 = 183, ndcg10 = 99
+2.2643638
+Steps 8/20: hit10 = 201, ndcg10 = 117
+2.8562665
+Steps 9/20: hit10 = 135, ndcg10 = 76
+3.0510721
+Steps 10/20: hit10 = 164, ndcg10 = 92
+4.307298
+Steps 11/20: hit10 = 141, ndcg10 = 77
+2.5504818
+Steps 12/20: hit10 = 158, ndcg10 = 93
+-2.7398987
+Steps 13/20: hit10 = 177, ndcg10 = 103
+0.14182758
+Steps 14/20: hit10 = 205, ndcg10 = 121
+-1.3924813
+Steps 15/20: hit10 = 173, ndcg10 = 102
+-3.584715
+Steps 16/20: hit10 = 197, ndcg10 = 114
+1.6518545
+Steps 17/20: hit10 = 209, ndcg10 = 122
+1.3267226
+Steps 18/20: hit10 = 214, ndcg10 = 115
+0.49772072
+Steps 19/20: hit10 = 102, ndcg10 = 57
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14921729671417913,epochHit5:0.2212
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20608146295371088,epochHit20:0.4203
+
+Step 0/20: preloss = 0.05, REGLoss = 0.41         
+Step 1/20: preloss = 0.05, REGLoss = 0.41         
+Step 2/20: preloss = 0.04, REGLoss = 0.42         
+Step 3/20: preloss = 0.04, REGLoss = 0.42         
+Step 4/20: preloss = 0.06, REGLoss = 0.42         
+Step 5/20: preloss = 0.05, REGLoss = 0.42         
+Step 6/20: preloss = 0.05, REGLoss = 0.42         
+Step 7/20: preloss = 0.04, REGLoss = 0.42         
+Step 8/20: preloss = 0.06, REGLoss = 0.41         
+Step 9/20: preloss = 0.06, REGLoss = 0.41         
+Step 10/20: preloss = 0.05, REGLoss = 0.41         
+Step 11/20: preloss = 0.06, REGLoss = 0.40         
+Step 12/20: preloss = 0.05, REGLoss = 0.40         
+Step 13/20: preloss = 0.08, REGLoss = 0.40         
+Step 14/20: preloss = 0.07, REGLoss = 0.40         
+Step 15/20: preloss = 0.08, REGLoss = 0.39         
+Step 16/20: preloss = 0.08, REGLoss = 0.40         
+Step 17/20: preloss = 0.09, REGLoss = 0.40         
+Step 18/20: preloss = 0.09, REGLoss = 0.40         
+Step 19/20: preloss = 0.07, REGLoss = 0.40         
+Epoch 61/150, Train: Loss = 0.9380, preLoss = 0.1219  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.41         
+Step 1/20: preloss = 0.05, REGLoss = 0.41         
+Step 2/20: preloss = 0.06, REGLoss = 0.42         
+Step 3/20: preloss = 0.06, REGLoss = 0.42         
+Step 4/20: preloss = 0.05, REGLoss = 0.42         
+Step 5/20: preloss = 0.05, REGLoss = 0.43         
+Step 6/20: preloss = 0.05, REGLoss = 0.42         
+Step 7/20: preloss = 0.06, REGLoss = 0.42         
+Step 8/20: preloss = 0.06, REGLoss = 0.42         
+Step 9/20: preloss = 0.06, REGLoss = 0.42         
+Step 10/20: preloss = 0.07, REGLoss = 0.42         
+Step 11/20: preloss = 0.08, REGLoss = 0.41         
+Step 12/20: preloss = 0.06, REGLoss = 0.41         
+Step 13/20: preloss = 0.08, REGLoss = 0.41         
+Step 14/20: preloss = 0.08, REGLoss = 0.40         
+Step 15/20: preloss = 0.08, REGLoss = 0.40         
+Step 16/20: preloss = 0.07, REGLoss = 0.40         
+Step 17/20: preloss = 0.07, REGLoss = 0.40         
+Step 18/20: preloss = 0.08, REGLoss = 0.40         
+Step 19/20: preloss = 0.06, REGLoss = 0.40         
+Epoch 62/150, Train: Loss = 0.9541, preLoss = 0.1282  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.41         
+Step 1/20: preloss = 0.04, REGLoss = 0.41         
+Step 2/20: preloss = 0.05, REGLoss = 0.42         
+Step 3/20: preloss = 0.06, REGLoss = 0.42         
+Step 4/20: preloss = 0.05, REGLoss = 0.42         
+Step 5/20: preloss = 0.05, REGLoss = 0.42         
+Step 6/20: preloss = 0.05, REGLoss = 0.42         
+Step 7/20: preloss = 0.07, REGLoss = 0.42         
+Step 8/20: preloss = 0.05, REGLoss = 0.41         
+Step 9/20: preloss = 0.05, REGLoss = 0.41         
+Step 10/20: preloss = 0.07, REGLoss = 0.41         
+Step 11/20: preloss = 0.06, REGLoss = 0.40         
+Step 12/20: preloss = 0.07, REGLoss = 0.40         
+Step 13/20: preloss = 0.07, REGLoss = 0.40         
+Step 14/20: preloss = 0.07, REGLoss = 0.40         
+Step 15/20: preloss = 0.08, REGLoss = 0.39         
+Step 16/20: preloss = 0.08, REGLoss = 0.39         
+Step 17/20: preloss = 0.08, REGLoss = 0.39         
+Step 18/20: preloss = 0.08, REGLoss = 0.40         
+Step 19/20: preloss = 0.09, REGLoss = 0.39         
+Epoch 63/150, Train: Loss = 0.9385, preLoss = 0.1237  
+0.8931384
+Steps 0/20: hit10 = 96, ndcg10 = 53
+1.385272
+Steps 1/20: hit10 = 105, ndcg10 = 56
+2.845899
+Steps 2/20: hit10 = 95, ndcg10 = 50
+0.79674053
+Steps 3/20: hit10 = 132, ndcg10 = 76
+3.8009992
+Steps 4/20: hit10 = 140, ndcg10 = 82
+-0.6416664
+Steps 5/20: hit10 = 161, ndcg10 = 86
+1.9036226
+Steps 6/20: hit10 = 170, ndcg10 = 94
+0.25689888
+Steps 7/20: hit10 = 200, ndcg10 = 111
+2.3418622
+Steps 8/20: hit10 = 214, ndcg10 = 123
+2.1615763
+Steps 9/20: hit10 = 133, ndcg10 = 76
+-0.49786997
+Steps 10/20: hit10 = 162, ndcg10 = 93
+0.71370983
+Steps 11/20: hit10 = 166, ndcg10 = 95
+2.3312662
+Steps 12/20: hit10 = 172, ndcg10 = 96
+-0.6302557
+Steps 13/20: hit10 = 165, ndcg10 = 89
+2.0248384
+Steps 14/20: hit10 = 212, ndcg10 = 120
+0.5095024
+Steps 15/20: hit10 = 181, ndcg10 = 104
+0.14066839
+Steps 16/20: hit10 = 191, ndcg10 = 102
+-3.449669
+Steps 17/20: hit10 = 200, ndcg10 = 110
+-1.5737495
+Steps 18/20: hit10 = 206, ndcg10 = 117
+-1.0947156
+Steps 19/20: hit10 = 109, ndcg10 = 70
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.1483730553025202,epochHit5:0.219
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20954436678342717,epochHit20:0.4323
+
+Step 0/20: preloss = 0.04, REGLoss = 0.40         
+Step 1/20: preloss = 0.05, REGLoss = 0.41         
+Step 2/20: preloss = 0.05, REGLoss = 0.41         
+Step 3/20: preloss = 0.06, REGLoss = 0.42         
+Step 4/20: preloss = 0.05, REGLoss = 0.42         
+Step 5/20: preloss = 0.05, REGLoss = 0.42         
+Step 6/20: preloss = 0.06, REGLoss = 0.42         
+Step 7/20: preloss = 0.06, REGLoss = 0.42         
+Step 8/20: preloss = 0.06, REGLoss = 0.42         
+Step 9/20: preloss = 0.05, REGLoss = 0.42         
+Step 10/20: preloss = 0.06, REGLoss = 0.42         
+Step 11/20: preloss = 0.07, REGLoss = 0.41         
+Step 12/20: preloss = 0.07, REGLoss = 0.41         
+Step 13/20: preloss = 0.06, REGLoss = 0.40         
+Step 14/20: preloss = 0.07, REGLoss = 0.40         
+Step 15/20: preloss = 0.07, REGLoss = 0.40         
+Step 16/20: preloss = 0.07, REGLoss = 0.43         
+Step 17/20: preloss = 0.08, REGLoss = 0.40         
+Step 18/20: preloss = 0.09, REGLoss = 0.40         
+Step 19/20: preloss = 0.08, REGLoss = 0.40         
+Epoch 64/150, Train: Loss = 0.9505, preLoss = 0.1259  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.41         
+Step 1/20: preloss = 0.05, REGLoss = 0.42         
+Step 2/20: preloss = 0.05, REGLoss = 0.42         
+Step 3/20: preloss = 0.05, REGLoss = 0.43         
+Step 4/20: preloss = 0.05, REGLoss = 0.43         
+Step 5/20: preloss = 0.05, REGLoss = 0.44         
+Step 6/20: preloss = 0.05, REGLoss = 0.43         
+Step 7/20: preloss = 0.06, REGLoss = 0.43         
+Step 8/20: preloss = 0.06, REGLoss = 0.43         
+Step 9/20: preloss = 0.06, REGLoss = 0.42         
+Step 10/20: preloss = 0.06, REGLoss = 0.42         
+Step 11/20: preloss = 0.07, REGLoss = 0.42         
+Step 12/20: preloss = 0.06, REGLoss = 0.41         
+Step 13/20: preloss = 0.06, REGLoss = 0.41         
+Step 14/20: preloss = 0.07, REGLoss = 0.41         
+Step 15/20: preloss = 0.08, REGLoss = 0.40         
+Step 16/20: preloss = 0.08, REGLoss = 0.40         
+Step 17/20: preloss = 0.08, REGLoss = 0.40         
+Step 18/20: preloss = 0.08, REGLoss = 0.42         
+Step 19/20: preloss = 0.08, REGLoss = 0.40         
+Epoch 65/150, Train: Loss = 0.9574, preLoss = 0.1225  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.40         
+Step 1/20: preloss = 0.05, REGLoss = 0.41         
+Step 2/20: preloss = 0.05, REGLoss = 0.42         
+Step 3/20: preloss = 0.04, REGLoss = 0.42         
+Step 4/20: preloss = 0.06, REGLoss = 0.42         
+Step 5/20: preloss = 0.05, REGLoss = 0.43         
+Step 6/20: preloss = 0.06, REGLoss = 0.44         
+Step 7/20: preloss = 0.06, REGLoss = 0.43         
+Step 8/20: preloss = 0.07, REGLoss = 0.42         
+Step 9/20: preloss = 0.07, REGLoss = 0.42         
+Step 10/20: preloss = 0.06, REGLoss = 0.42         
+Step 11/20: preloss = 0.05, REGLoss = 0.42         
+Step 12/20: preloss = 0.07, REGLoss = 0.42         
+Step 13/20: preloss = 0.07, REGLoss = 0.41         
+Step 14/20: preloss = 0.08, REGLoss = 0.41         
+Step 15/20: preloss = 0.08, REGLoss = 0.41         
+Step 16/20: preloss = 0.07, REGLoss = 0.41         
+Step 17/20: preloss = 0.07, REGLoss = 0.41         
+Step 18/20: preloss = 0.08, REGLoss = 0.41         
+Step 19/20: preloss = 0.11, REGLoss = 0.41         
+Epoch 66/150, Train: Loss = 0.9649, preLoss = 0.1293  
+2.978201
+Steps 0/20: hit10 = 104, ndcg10 = 59
+-1.596097
+Steps 1/20: hit10 = 117, ndcg10 = 71
+-1.7141528
+Steps 2/20: hit10 = 100, ndcg10 = 52
+0.599493
+Steps 3/20: hit10 = 126, ndcg10 = 71
+0.8930893
+Steps 4/20: hit10 = 155, ndcg10 = 84
+1.1581707
+Steps 5/20: hit10 = 148, ndcg10 = 87
+1.9675484
+Steps 6/20: hit10 = 160, ndcg10 = 93
+-0.32129622
+Steps 7/20: hit10 = 199, ndcg10 = 111
+1.4220324
+Steps 8/20: hit10 = 222, ndcg10 = 121
+-3.0276093
+Steps 9/20: hit10 = 138, ndcg10 = 75
+0.117257595
+Steps 10/20: hit10 = 172, ndcg10 = 102
+1.408433
+Steps 11/20: hit10 = 151, ndcg10 = 85
+1.0071311
+Steps 12/20: hit10 = 169, ndcg10 = 94
+-4.031679
+Steps 13/20: hit10 = 163, ndcg10 = 92
+0.9117651
+Steps 14/20: hit10 = 197, ndcg10 = 119
+-0.7882366
+Steps 15/20: hit10 = 187, ndcg10 = 104
+-3.8951716
+Steps 16/20: hit10 = 205, ndcg10 = 113
+1.4959383
+Steps 17/20: hit10 = 213, ndcg10 = 124
+-2.2452202
+Steps 18/20: hit10 = 218, ndcg10 = 121
+-0.9446988
+Steps 19/20: hit10 = 106, ndcg10 = 64
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.15394210945835546,epochHit5:0.2276
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.21187340499118046,epochHit20:0.4299
+
+Step 0/20: preloss = 0.04, REGLoss = 0.42         
+Step 1/20: preloss = 0.05, REGLoss = 0.42         
+Step 2/20: preloss = 0.05, REGLoss = 0.42         
+Step 3/20: preloss = 0.05, REGLoss = 0.43         
+Step 4/20: preloss = 0.05, REGLoss = 0.43         
+Step 5/20: preloss = 0.05, REGLoss = 0.43         
+Step 6/20: preloss = 0.05, REGLoss = 0.43         
+Step 7/20: preloss = 0.06, REGLoss = 0.43         
+Step 8/20: preloss = 0.06, REGLoss = 0.42         
+Step 9/20: preloss = 0.06, REGLoss = 0.42         
+Step 10/20: preloss = 0.06, REGLoss = 0.42         
+Step 11/20: preloss = 0.07, REGLoss = 0.41         
+Step 12/20: preloss = 0.07, REGLoss = 0.41         
+Step 13/20: preloss = 0.08, REGLoss = 0.40         
+Step 14/20: preloss = 0.08, REGLoss = 0.40         
+Step 15/20: preloss = 0.07, REGLoss = 0.40         
+Step 16/20: preloss = 0.07, REGLoss = 0.40         
+Step 17/20: preloss = 0.07, REGLoss = 0.40         
+Step 18/20: preloss = 0.08, REGLoss = 0.40         
+Step 19/20: preloss = 0.09, REGLoss = 0.40         
+Epoch 67/150, Train: Loss = 0.9574, preLoss = 0.1273  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.41         
+Step 1/20: preloss = 0.04, REGLoss = 0.41         
+Step 2/20: preloss = 0.04, REGLoss = 0.41         
+Step 3/20: preloss = 0.05, REGLoss = 0.41         
+Step 4/20: preloss = 0.05, REGLoss = 0.41         
+Step 5/20: preloss = 0.06, REGLoss = 0.41         
+Step 6/20: preloss = 0.06, REGLoss = 0.41         
+Step 7/20: preloss = 0.06, REGLoss = 0.41         
+Step 8/20: preloss = 0.05, REGLoss = 0.41         
+Step 9/20: preloss = 0.06, REGLoss = 0.41         
+Step 10/20: preloss = 0.06, REGLoss = 0.40         
+Step 11/20: preloss = 0.05, REGLoss = 0.41         
+Step 12/20: preloss = 0.07, REGLoss = 0.40         
+Step 13/20: preloss = 0.06, REGLoss = 0.39         
+Step 14/20: preloss = 0.07, REGLoss = 0.39         
+Step 15/20: preloss = 0.08, REGLoss = 0.39         
+Step 16/20: preloss = 0.08, REGLoss = 0.39         
+Step 17/20: preloss = 0.07, REGLoss = 0.39         
+Step 18/20: preloss = 0.07, REGLoss = 0.39         
+Step 19/20: preloss = 0.08, REGLoss = 0.39         
+Epoch 68/150, Train: Loss = 0.9265, preLoss = 0.1218  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.40         
+Step 1/20: preloss = 0.05, REGLoss = 0.40         
+Step 2/20: preloss = 0.04, REGLoss = 0.40         
+Step 3/20: preloss = 0.05, REGLoss = 0.41         
+Step 4/20: preloss = 0.05, REGLoss = 0.41         
+Step 5/20: preloss = 0.06, REGLoss = 0.41         
+Step 6/20: preloss = 0.06, REGLoss = 0.40         
+Step 7/20: preloss = 0.05, REGLoss = 0.40         
+Step 8/20: preloss = 0.05, REGLoss = 0.40         
+Step 9/20: preloss = 0.07, REGLoss = 0.39         
+Step 10/20: preloss = 0.06, REGLoss = 0.39         
+Step 11/20: preloss = 0.07, REGLoss = 0.39         
+Step 12/20: preloss = 0.07, REGLoss = 0.39         
+Step 13/20: preloss = 0.07, REGLoss = 0.38         
+Step 14/20: preloss = 0.07, REGLoss = 0.38         
+Step 15/20: preloss = 0.09, REGLoss = 0.38         
+Step 16/20: preloss = 0.08, REGLoss = 0.38         
+Step 17/20: preloss = 0.06, REGLoss = 0.38         
+Step 18/20: preloss = 0.08, REGLoss = 0.38         
+Step 19/20: preloss = 0.09, REGLoss = 0.38         
+Epoch 69/150, Train: Loss = 0.9111, preLoss = 0.1250  
+3.030837
+Steps 0/20: hit10 = 114, ndcg10 = 62
+1.122664
+Steps 1/20: hit10 = 127, ndcg10 = 70
+1.4498668
+Steps 2/20: hit10 = 110, ndcg10 = 61
+2.4622135
+Steps 3/20: hit10 = 125, ndcg10 = 69
+0.60199356
+Steps 4/20: hit10 = 136, ndcg10 = 76
+1.0853181
+Steps 5/20: hit10 = 157, ndcg10 = 84
+3.9548812
+Steps 6/20: hit10 = 153, ndcg10 = 91
+-0.6467128
+Steps 7/20: hit10 = 195, ndcg10 = 112
+2.6749468
+Steps 8/20: hit10 = 214, ndcg10 = 124
+0.28982735
+Steps 9/20: hit10 = 153, ndcg10 = 80
+-1.4652748
+Steps 10/20: hit10 = 167, ndcg10 = 95
+-0.53708553
+Steps 11/20: hit10 = 148, ndcg10 = 80
+4.1319556
+Steps 12/20: hit10 = 157, ndcg10 = 88
+3.6878216
+Steps 13/20: hit10 = 157, ndcg10 = 86
+1.8934412
+Steps 14/20: hit10 = 192, ndcg10 = 111
+-0.98565626
+Steps 15/20: hit10 = 165, ndcg10 = 86
+-1.0404544
+Steps 16/20: hit10 = 206, ndcg10 = 116
+2.1620731
+Steps 17/20: hit10 = 189, ndcg10 = 105
+-3.7499278
+Steps 18/20: hit10 = 210, ndcg10 = 114
+0.29139805
+Steps 19/20: hit10 = 108, ndcg10 = 69
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14773897369206057,epochHit5:0.2212
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.2066585386208133,epochHit20:0.4273
+
+Step 0/20: preloss = 0.04, REGLoss = 0.40         
+Step 1/20: preloss = 0.04, REGLoss = 0.40         
+Step 2/20: preloss = 0.05, REGLoss = 0.40         
+Step 3/20: preloss = 0.05, REGLoss = 0.40         
+Step 4/20: preloss = 0.06, REGLoss = 0.42         
+Step 5/20: preloss = 0.05, REGLoss = 0.41         
+Step 6/20: preloss = 0.05, REGLoss = 0.41         
+Step 7/20: preloss = 0.05, REGLoss = 0.41         
+Step 8/20: preloss = 0.06, REGLoss = 0.41         
+Step 9/20: preloss = 0.06, REGLoss = 0.41         
+Step 10/20: preloss = 0.07, REGLoss = 0.41         
+Step 11/20: preloss = 0.05, REGLoss = 0.41         
+Step 12/20: preloss = 0.08, REGLoss = 0.41         
+Step 13/20: preloss = 0.06, REGLoss = 0.41         
+Step 14/20: preloss = 0.07, REGLoss = 0.40         
+Step 15/20: preloss = 0.07, REGLoss = 0.40         
+Step 16/20: preloss = 0.06, REGLoss = 0.40         
+Step 17/20: preloss = 0.08, REGLoss = 0.40         
+Step 18/20: preloss = 0.07, REGLoss = 0.40         
+Step 19/20: preloss = 0.09, REGLoss = 0.40         
+Epoch 70/150, Train: Loss = 0.9330, preLoss = 0.1207  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.40         
+Step 1/20: preloss = 0.05, REGLoss = 0.40         
+Step 2/20: preloss = 0.04, REGLoss = 0.41         
+Step 3/20: preloss = 0.04, REGLoss = 0.41         
+Step 4/20: preloss = 0.04, REGLoss = 0.41         
+Step 5/20: preloss = 0.05, REGLoss = 0.41         
+Step 6/20: preloss = 0.06, REGLoss = 0.40         
+Step 7/20: preloss = 0.06, REGLoss = 0.40         
+Step 8/20: preloss = 0.05, REGLoss = 0.40         
+Step 9/20: preloss = 0.06, REGLoss = 0.39         
+Step 10/20: preloss = 0.06, REGLoss = 0.39         
+Step 11/20: preloss = 0.05, REGLoss = 0.39         
+Step 12/20: preloss = 0.06, REGLoss = 0.38         
+Step 13/20: preloss = 0.07, REGLoss = 0.38         
+Step 14/20: preloss = 0.06, REGLoss = 0.38         
+Step 15/20: preloss = 0.07, REGLoss = 0.39         
+Step 16/20: preloss = 0.07, REGLoss = 0.38         
+Step 17/20: preloss = 0.07, REGLoss = 0.38         
+Step 18/20: preloss = 0.07, REGLoss = 0.38         
+Step 19/20: preloss = 0.08, REGLoss = 0.38         
+Epoch 71/150, Train: Loss = 0.9038, preLoss = 0.1183  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.38         
+Step 1/20: preloss = 0.05, REGLoss = 0.39         
+Step 2/20: preloss = 0.04, REGLoss = 0.39         
+Step 3/20: preloss = 0.06, REGLoss = 0.39         
+Step 4/20: preloss = 0.05, REGLoss = 0.40         
+Step 5/20: preloss = 0.05, REGLoss = 0.39         
+Step 6/20: preloss = 0.06, REGLoss = 0.39         
+Step 7/20: preloss = 0.06, REGLoss = 0.39         
+Step 8/20: preloss = 0.05, REGLoss = 0.39         
+Step 9/20: preloss = 0.05, REGLoss = 0.39         
+Step 10/20: preloss = 0.06, REGLoss = 0.39         
+Step 11/20: preloss = 0.06, REGLoss = 0.39         
+Step 12/20: preloss = 0.07, REGLoss = 0.39         
+Step 13/20: preloss = 0.07, REGLoss = 0.38         
+Step 14/20: preloss = 0.06, REGLoss = 0.38         
+Step 15/20: preloss = 0.08, REGLoss = 0.38         
+Step 16/20: preloss = 0.08, REGLoss = 0.38         
+Step 17/20: preloss = 0.07, REGLoss = 0.38         
+Step 18/20: preloss = 0.08, REGLoss = 0.38         
+Step 19/20: preloss = 0.09, REGLoss = 0.38         
+Epoch 72/150, Train: Loss = 0.8992, preLoss = 0.1234  
+0.1530261
+Steps 0/20: hit10 = 102, ndcg10 = 58
+-1.5933485
+Steps 1/20: hit10 = 114, ndcg10 = 64
+-1.0929799
+Steps 2/20: hit10 = 98, ndcg10 = 49
+0.71007967
+Steps 3/20: hit10 = 137, ndcg10 = 82
+2.8675356
+Steps 4/20: hit10 = 136, ndcg10 = 77
+0.82585335
+Steps 5/20: hit10 = 153, ndcg10 = 80
+1.3176608
+Steps 6/20: hit10 = 154, ndcg10 = 89
+1.3982725
+Steps 7/20: hit10 = 206, ndcg10 = 113
+1.3845925
+Steps 8/20: hit10 = 206, ndcg10 = 122
+-1.1428218
+Steps 9/20: hit10 = 135, ndcg10 = 77
+1.2704487
+Steps 10/20: hit10 = 176, ndcg10 = 99
+1.1639004
+Steps 11/20: hit10 = 135, ndcg10 = 74
+0.70528364
+Steps 12/20: hit10 = 154, ndcg10 = 82
+1.7821302
+Steps 13/20: hit10 = 162, ndcg10 = 93
+0.8340521
+Steps 14/20: hit10 = 188, ndcg10 = 110
+0.18090534
+Steps 15/20: hit10 = 184, ndcg10 = 99
+-3.7678103
+Steps 16/20: hit10 = 216, ndcg10 = 123
+3.3428955
+Steps 17/20: hit10 = 181, ndcg10 = 103
+-0.16142368
+Steps 18/20: hit10 = 218, ndcg10 = 124
+0.03969574
+Steps 19/20: hit10 = 112, ndcg10 = 69
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14858610082707638,epochHit5:0.2199
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20782941253474888,epochHit20:0.4276
+
+Step 0/20: preloss = 0.04, REGLoss = 0.39         
+Step 1/20: preloss = 0.04, REGLoss = 0.39         
+Step 2/20: preloss = 0.04, REGLoss = 0.40         
+Step 3/20: preloss = 0.04, REGLoss = 0.40         
+Step 4/20: preloss = 0.04, REGLoss = 0.40         
+Step 5/20: preloss = 0.04, REGLoss = 0.40         
+Step 6/20: preloss = 0.05, REGLoss = 0.40         
+Step 7/20: preloss = 0.05, REGLoss = 0.40         
+Step 8/20: preloss = 0.06, REGLoss = 0.40         
+Step 9/20: preloss = 0.06, REGLoss = 0.39         
+Step 10/20: preloss = 0.08, REGLoss = 0.39         
+Step 11/20: preloss = 0.06, REGLoss = 0.38         
+Step 12/20: preloss = 0.06, REGLoss = 0.38         
+Step 13/20: preloss = 0.06, REGLoss = 0.39         
+Step 14/20: preloss = 0.07, REGLoss = 0.38         
+Step 15/20: preloss = 0.07, REGLoss = 0.38         
+Step 16/20: preloss = 0.07, REGLoss = 0.38         
+Step 17/20: preloss = 0.06, REGLoss = 0.38         
+Step 18/20: preloss = 0.09, REGLoss = 0.38         
+Step 19/20: preloss = 0.07, REGLoss = 0.38         
+Epoch 73/150, Train: Loss = 0.8943, preLoss = 0.1160  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.38         
+Step 1/20: preloss = 0.05, REGLoss = 0.39         
+Step 2/20: preloss = 0.05, REGLoss = 0.39         
+Step 3/20: preloss = 0.05, REGLoss = 0.40         
+Step 4/20: preloss = 0.05, REGLoss = 0.40         
+Step 5/20: preloss = 0.05, REGLoss = 0.40         
+Step 6/20: preloss = 0.05, REGLoss = 0.40         
+Step 7/20: preloss = 0.07, REGLoss = 0.39         
+Step 8/20: preloss = 0.07, REGLoss = 0.39         
+Step 9/20: preloss = 0.05, REGLoss = 0.39         
+Step 10/20: preloss = 0.07, REGLoss = 0.39         
+Step 11/20: preloss = 0.06, REGLoss = 0.38         
+Step 12/20: preloss = 0.07, REGLoss = 0.38         
+Step 13/20: preloss = 0.07, REGLoss = 0.38         
+Step 14/20: preloss = 0.06, REGLoss = 0.38         
+Step 15/20: preloss = 0.07, REGLoss = 0.38         
+Step 16/20: preloss = 0.07, REGLoss = 0.38         
+Step 17/20: preloss = 0.08, REGLoss = 0.38         
+Step 18/20: preloss = 0.08, REGLoss = 0.38         
+Step 19/20: preloss = 0.09, REGLoss = 0.37         
+Epoch 74/150, Train: Loss = 0.8941, preLoss = 0.1221  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.38         
+Step 1/20: preloss = 0.04, REGLoss = 0.38         
+Step 2/20: preloss = 0.05, REGLoss = 0.39         
+Step 3/20: preloss = 0.05, REGLoss = 0.39         
+Step 4/20: preloss = 0.04, REGLoss = 0.39         
+Step 5/20: preloss = 0.05, REGLoss = 0.40         
+Step 6/20: preloss = 0.05, REGLoss = 0.39         
+Step 7/20: preloss = 0.05, REGLoss = 0.39         
+Step 8/20: preloss = 0.06, REGLoss = 0.39         
+Step 9/20: preloss = 0.05, REGLoss = 0.39         
+Step 10/20: preloss = 0.06, REGLoss = 0.38         
+Step 11/20: preloss = 0.07, REGLoss = 0.38         
+Step 12/20: preloss = 0.06, REGLoss = 0.37         
+Step 13/20: preloss = 0.07, REGLoss = 0.37         
+Step 14/20: preloss = 0.08, REGLoss = 0.37         
+Step 15/20: preloss = 0.07, REGLoss = 0.36         
+Step 16/20: preloss = 0.07, REGLoss = 0.36         
+Step 17/20: preloss = 0.07, REGLoss = 0.37         
+Step 18/20: preloss = 0.08, REGLoss = 0.37         
+Step 19/20: preloss = 0.06, REGLoss = 0.37         
+Epoch 75/150, Train: Loss = 0.8790, preLoss = 0.1184  
+1.3239946
+Steps 0/20: hit10 = 117, ndcg10 = 64
+-2.739438
+Steps 1/20: hit10 = 106, ndcg10 = 57
+1.2091703
+Steps 2/20: hit10 = 102, ndcg10 = 55
+0.4923277
+Steps 3/20: hit10 = 122, ndcg10 = 65
+1.4037981
+Steps 4/20: hit10 = 156, ndcg10 = 88
+0.68736076
+Steps 5/20: hit10 = 152, ndcg10 = 84
+0.13879776
+Steps 6/20: hit10 = 178, ndcg10 = 101
+0.8881707
+Steps 7/20: hit10 = 202, ndcg10 = 111
+0.37663746
+Steps 8/20: hit10 = 212, ndcg10 = 123
+-1.3778048
+Steps 9/20: hit10 = 130, ndcg10 = 72
+2.222321
+Steps 10/20: hit10 = 176, ndcg10 = 104
+0.8518734
+Steps 11/20: hit10 = 151, ndcg10 = 81
+1.5146859
+Steps 12/20: hit10 = 157, ndcg10 = 88
+0.6741276
+Steps 13/20: hit10 = 149, ndcg10 = 86
+0.03031683
+Steps 14/20: hit10 = 180, ndcg10 = 104
+1.5304713
+Steps 15/20: hit10 = 171, ndcg10 = 103
+-0.12707853
+Steps 16/20: hit10 = 192, ndcg10 = 114
+-0.0030574799
+Steps 17/20: hit10 = 186, ndcg10 = 98
+-0.16832495
+Steps 18/20: hit10 = 196, ndcg10 = 108
+-0.046873093
+Steps 19/20: hit10 = 103, ndcg10 = 60
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14785572712266876,epochHit5:0.2207
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20525987216501307,epochHit20:0.4228
+
+Step 0/20: preloss = 0.04, REGLoss = 0.38         
+Step 1/20: preloss = 0.06, REGLoss = 0.38         
+Step 2/20: preloss = 0.04, REGLoss = 0.39         
+Step 3/20: preloss = 0.05, REGLoss = 0.39         
+Step 4/20: preloss = 0.04, REGLoss = 0.39         
+Step 5/20: preloss = 0.06, REGLoss = 0.39         
+Step 6/20: preloss = 0.04, REGLoss = 0.40         
+Step 7/20: preloss = 0.06, REGLoss = 0.39         
+Step 8/20: preloss = 0.05, REGLoss = 0.39         
+Step 9/20: preloss = 0.06, REGLoss = 0.38         
+Step 10/20: preloss = 0.05, REGLoss = 0.38         
+Step 11/20: preloss = 0.06, REGLoss = 0.38         
+Step 12/20: preloss = 0.06, REGLoss = 0.37         
+Step 13/20: preloss = 0.06, REGLoss = 0.37         
+Step 14/20: preloss = 0.07, REGLoss = 0.37         
+Step 15/20: preloss = 0.08, REGLoss = 0.37         
+Step 16/20: preloss = 0.08, REGLoss = 0.37         
+Step 17/20: preloss = 0.05, REGLoss = 0.37         
+Step 18/20: preloss = 0.08, REGLoss = 0.37         
+Step 19/20: preloss = 0.06, REGLoss = 0.37         
+Epoch 76/150, Train: Loss = 0.8772, preLoss = 0.1154  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.38         
+Step 1/20: preloss = 0.05, REGLoss = 0.38         
+Step 2/20: preloss = 0.05, REGLoss = 0.38         
+Step 3/20: preloss = 0.05, REGLoss = 0.39         
+Step 4/20: preloss = 0.05, REGLoss = 0.39         
+Step 5/20: preloss = 0.05, REGLoss = 0.39         
+Step 6/20: preloss = 0.06, REGLoss = 0.39         
+Step 7/20: preloss = 0.05, REGLoss = 0.39         
+Step 8/20: preloss = 0.05, REGLoss = 0.44         
+Step 9/20: preloss = 0.06, REGLoss = 0.38         
+Step 10/20: preloss = 0.06, REGLoss = 0.39         
+Step 11/20: preloss = 0.06, REGLoss = 0.39         
+Step 12/20: preloss = 0.06, REGLoss = 0.40         
+Step 13/20: preloss = 0.07, REGLoss = 0.40         
+Step 14/20: preloss = 0.06, REGLoss = 0.41         
+Step 15/20: preloss = 0.07, REGLoss = 0.46         
+Step 16/20: preloss = 0.08, REGLoss = 0.42         
+Step 17/20: preloss = 0.08, REGLoss = 0.43         
+Step 18/20: preloss = 0.07, REGLoss = 0.44         
+Step 19/20: preloss = 0.10, REGLoss = 0.44         
+Epoch 77/150, Train: Loss = 0.9308, preLoss = 0.1231  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.45         
+Step 1/20: preloss = 0.05, REGLoss = 0.45         
+Step 2/20: preloss = 0.04, REGLoss = 0.45         
+Step 3/20: preloss = 0.05, REGLoss = 0.46         
+Step 4/20: preloss = 0.05, REGLoss = 0.46         
+Step 5/20: preloss = 0.06, REGLoss = 0.51         
+Step 6/20: preloss = 0.06, REGLoss = 0.45         
+Step 7/20: preloss = 0.06, REGLoss = 0.45         
+Step 8/20: preloss = 0.06, REGLoss = 0.45         
+Step 9/20: preloss = 0.06, REGLoss = 0.44         
+Step 10/20: preloss = 0.07, REGLoss = 0.44         
+Step 11/20: preloss = 0.06, REGLoss = 0.43         
+Step 12/20: preloss = 0.06, REGLoss = 0.43         
+Step 13/20: preloss = 0.07, REGLoss = 0.42         
+Step 14/20: preloss = 0.06, REGLoss = 0.42         
+Step 15/20: preloss = 0.07, REGLoss = 0.41         
+Step 16/20: preloss = 0.07, REGLoss = 0.41         
+Step 17/20: preloss = 0.06, REGLoss = 0.40         
+Step 18/20: preloss = 0.08, REGLoss = 0.40         
+Step 19/20: preloss = 0.08, REGLoss = 0.40         
+Epoch 78/150, Train: Loss = 0.9945, preLoss = 0.1226  
+-1.1681426
+Steps 0/20: hit10 = 110, ndcg10 = 57
+0.22897148
+Steps 1/20: hit10 = 124, ndcg10 = 65
+4.226892
+Steps 2/20: hit10 = 93, ndcg10 = 51
+0.45462036
+Steps 3/20: hit10 = 131, ndcg10 = 70
+-2.3931012
+Steps 4/20: hit10 = 141, ndcg10 = 76
+2.2979832
+Steps 5/20: hit10 = 134, ndcg10 = 78
+2.6323433
+Steps 6/20: hit10 = 157, ndcg10 = 97
+-0.29712868
+Steps 7/20: hit10 = 192, ndcg10 = 108
+3.5988941
+Steps 8/20: hit10 = 207, ndcg10 = 125
+-0.93328
+Steps 9/20: hit10 = 156, ndcg10 = 84
+2.1362057
+Steps 10/20: hit10 = 166, ndcg10 = 91
+-2.517436
+Steps 11/20: hit10 = 144, ndcg10 = 80
+1.891366
+Steps 12/20: hit10 = 157, ndcg10 = 95
+0.7975683
+Steps 13/20: hit10 = 152, ndcg10 = 85
+-0.29999304
+Steps 14/20: hit10 = 196, ndcg10 = 104
+2.2725263
+Steps 15/20: hit10 = 187, ndcg10 = 105
+0.24113178
+Steps 16/20: hit10 = 204, ndcg10 = 110
+3.6751935
+Steps 17/20: hit10 = 201, ndcg10 = 116
+0.4088273
+Steps 18/20: hit10 = 221, ndcg10 = 119
+2.1764965
+Steps 19/20: hit10 = 116, ndcg10 = 63
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14700245161805003,epochHit5:0.2202
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.205567302561739,epochHit20:0.4245
+
+Step 0/20: preloss = 0.04, REGLoss = 0.40         
+Step 1/20: preloss = 0.04, REGLoss = 0.40         
+Step 2/20: preloss = 0.05, REGLoss = 0.40         
+Step 3/20: preloss = 0.04, REGLoss = 0.40         
+Step 4/20: preloss = 0.04, REGLoss = 0.40         
+Step 5/20: preloss = 0.05, REGLoss = 0.40         
+Step 6/20: preloss = 0.05, REGLoss = 0.40         
+Step 7/20: preloss = 0.05, REGLoss = 0.42         
+Step 8/20: preloss = 0.04, REGLoss = 0.39         
+Step 9/20: preloss = 0.07, REGLoss = 0.39         
+Step 10/20: preloss = 0.06, REGLoss = 0.39         
+Step 11/20: preloss = 0.07, REGLoss = 0.39         
+Step 12/20: preloss = 0.07, REGLoss = 0.40         
+Step 13/20: preloss = 0.06, REGLoss = 0.38         
+Step 14/20: preloss = 0.06, REGLoss = 0.38         
+Step 15/20: preloss = 0.05, REGLoss = 0.38         
+Step 16/20: preloss = 0.07, REGLoss = 0.38         
+Step 17/20: preloss = 0.07, REGLoss = 0.38         
+Step 18/20: preloss = 0.07, REGLoss = 0.39         
+Step 19/20: preloss = 0.08, REGLoss = 0.38         
+Epoch 79/150, Train: Loss = 0.9014, preLoss = 0.1132  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.39         
+Step 1/20: preloss = 0.04, REGLoss = 0.39         
+Step 2/20: preloss = 0.04, REGLoss = 0.40         
+Step 3/20: preloss = 0.04, REGLoss = 0.40         
+Step 4/20: preloss = 0.05, REGLoss = 0.40         
+Step 5/20: preloss = 0.06, REGLoss = 0.40         
+Step 6/20: preloss = 0.05, REGLoss = 0.40         
+Step 7/20: preloss = 0.06, REGLoss = 0.40         
+Step 8/20: preloss = 0.06, REGLoss = 0.40         
+Step 9/20: preloss = 0.05, REGLoss = 0.39         
+Step 10/20: preloss = 0.06, REGLoss = 0.39         
+Step 11/20: preloss = 0.06, REGLoss = 0.38         
+Step 12/20: preloss = 0.06, REGLoss = 0.38         
+Step 13/20: preloss = 0.06, REGLoss = 0.37         
+Step 14/20: preloss = 0.07, REGLoss = 0.37         
+Step 15/20: preloss = 0.07, REGLoss = 0.37         
+Step 16/20: preloss = 0.06, REGLoss = 0.37         
+Step 17/20: preloss = 0.08, REGLoss = 0.37         
+Step 18/20: preloss = 0.06, REGLoss = 0.37         
+Step 19/20: preloss = 0.08, REGLoss = 0.37         
+Epoch 80/150, Train: Loss = 0.8859, preLoss = 0.1146  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.38         
+Step 1/20: preloss = 0.04, REGLoss = 0.38         
+Step 2/20: preloss = 0.04, REGLoss = 0.38         
+Step 3/20: preloss = 0.05, REGLoss = 0.38         
+Step 4/20: preloss = 0.05, REGLoss = 0.39         
+Step 5/20: preloss = 0.05, REGLoss = 0.39         
+Step 6/20: preloss = 0.06, REGLoss = 0.38         
+Step 7/20: preloss = 0.06, REGLoss = 0.38         
+Step 8/20: preloss = 0.05, REGLoss = 0.38         
+Step 9/20: preloss = 0.07, REGLoss = 0.38         
+Step 10/20: preloss = 0.06, REGLoss = 0.37         
+Step 11/20: preloss = 0.06, REGLoss = 0.37         
+Step 12/20: preloss = 0.07, REGLoss = 0.37         
+Step 13/20: preloss = 0.07, REGLoss = 0.36         
+Step 14/20: preloss = 0.05, REGLoss = 0.39         
+Step 15/20: preloss = 0.06, REGLoss = 0.36         
+Step 16/20: preloss = 0.06, REGLoss = 0.36         
+Step 17/20: preloss = 0.08, REGLoss = 0.36         
+Step 18/20: preloss = 0.08, REGLoss = 0.37         
+Step 19/20: preloss = 0.08, REGLoss = 0.37         
+Epoch 81/150, Train: Loss = 0.8647, preLoss = 0.1143  
+-0.74658394
+Steps 0/20: hit10 = 110, ndcg10 = 63
+-0.7929826
+Steps 1/20: hit10 = 111, ndcg10 = 63
+-1.4518323
+Steps 2/20: hit10 = 102, ndcg10 = 55
+1.9801292
+Steps 3/20: hit10 = 134, ndcg10 = 78
+3.269724
+Steps 4/20: hit10 = 145, ndcg10 = 83
+-0.077560425
+Steps 5/20: hit10 = 163, ndcg10 = 92
+0.89717746
+Steps 6/20: hit10 = 156, ndcg10 = 86
+-1.4700241
+Steps 7/20: hit10 = 186, ndcg10 = 106
+1.6033578
+Steps 8/20: hit10 = 207, ndcg10 = 115
+-1.8265419
+Steps 9/20: hit10 = 134, ndcg10 = 68
+-3.472796
+Steps 10/20: hit10 = 165, ndcg10 = 93
+3.8405085
+Steps 11/20: hit10 = 140, ndcg10 = 74
+2.7081099
+Steps 12/20: hit10 = 154, ndcg10 = 85
+-0.9715185
+Steps 13/20: hit10 = 159, ndcg10 = 94
+0.43147802
+Steps 14/20: hit10 = 203, ndcg10 = 113
+1.9966407
+Steps 15/20: hit10 = 183, ndcg10 = 99
+-1.0498323
+Steps 16/20: hit10 = 189, ndcg10 = 103
+2.307181
+Steps 17/20: hit10 = 207, ndcg10 = 118
+0.50529766
+Steps 18/20: hit10 = 220, ndcg10 = 122
+0.56881857
+Steps 19/20: hit10 = 112, ndcg10 = 65
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14645096261194346,epochHit5:0.2193
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20629280524678148,epochHit20:0.4286
+
+Step 0/20: preloss = 0.04, REGLoss = 0.37         
+Step 1/20: preloss = 0.04, REGLoss = 0.38         
+Step 2/20: preloss = 0.04, REGLoss = 0.39         
+Step 3/20: preloss = 0.06, REGLoss = 0.39         
+Step 4/20: preloss = 0.05, REGLoss = 0.39         
+Step 5/20: preloss = 0.06, REGLoss = 0.39         
+Step 6/20: preloss = 0.05, REGLoss = 0.39         
+Step 7/20: preloss = 0.05, REGLoss = 0.38         
+Step 8/20: preloss = 0.06, REGLoss = 0.38         
+Step 9/20: preloss = 0.05, REGLoss = 0.38         
+Step 10/20: preloss = 0.05, REGLoss = 0.37         
+Step 11/20: preloss = 0.06, REGLoss = 0.37         
+Step 12/20: preloss = 0.06, REGLoss = 0.36         
+Step 13/20: preloss = 0.04, REGLoss = 0.36         
+Step 14/20: preloss = 0.06, REGLoss = 0.36         
+Step 15/20: preloss = 0.06, REGLoss = 0.35         
+Step 16/20: preloss = 0.07, REGLoss = 0.35         
+Step 17/20: preloss = 0.07, REGLoss = 0.35         
+Step 18/20: preloss = 0.06, REGLoss = 0.35         
+Step 19/20: preloss = 0.07, REGLoss = 0.35         
+Epoch 82/150, Train: Loss = 0.8523, preLoss = 0.1099  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.35         
+Step 1/20: preloss = 0.04, REGLoss = 0.35         
+Step 2/20: preloss = 0.04, REGLoss = 0.36         
+Step 3/20: preloss = 0.04, REGLoss = 0.36         
+Step 4/20: preloss = 0.03, REGLoss = 0.36         
+Step 5/20: preloss = 0.04, REGLoss = 0.36         
+Step 6/20: preloss = 0.04, REGLoss = 0.36         
+Step 7/20: preloss = 0.06, REGLoss = 0.35         
+Step 8/20: preloss = 0.05, REGLoss = 0.35         
+Step 9/20: preloss = 0.04, REGLoss = 0.35         
+Step 10/20: preloss = 0.05, REGLoss = 0.34         
+Step 11/20: preloss = 0.05, REGLoss = 0.34         
+Step 12/20: preloss = 0.06, REGLoss = 0.33         
+Step 13/20: preloss = 0.05, REGLoss = 0.33         
+Step 14/20: preloss = 0.07, REGLoss = 0.33         
+Step 15/20: preloss = 0.07, REGLoss = 0.33         
+Step 16/20: preloss = 0.06, REGLoss = 0.33         
+Step 17/20: preloss = 0.07, REGLoss = 0.33         
+Step 18/20: preloss = 0.06, REGLoss = 0.33         
+Step 19/20: preloss = 0.06, REGLoss = 0.34         
+Epoch 83/150, Train: Loss = 0.7917, preLoss = 0.1031  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.35         
+Step 1/20: preloss = 0.05, REGLoss = 0.35         
+Step 2/20: preloss = 0.05, REGLoss = 0.35         
+Step 3/20: preloss = 0.05, REGLoss = 0.36         
+Step 4/20: preloss = 0.05, REGLoss = 0.36         
+Step 5/20: preloss = 0.05, REGLoss = 0.36         
+Step 6/20: preloss = 0.04, REGLoss = 0.36         
+Step 7/20: preloss = 0.06, REGLoss = 0.37         
+Step 8/20: preloss = 0.06, REGLoss = 0.37         
+Step 9/20: preloss = 0.04, REGLoss = 0.36         
+Step 10/20: preloss = 0.07, REGLoss = 0.36         
+Step 11/20: preloss = 0.06, REGLoss = 0.36         
+Step 12/20: preloss = 0.06, REGLoss = 0.36         
+Step 13/20: preloss = 0.06, REGLoss = 0.37         
+Step 14/20: preloss = 0.06, REGLoss = 0.36         
+Step 15/20: preloss = 0.07, REGLoss = 0.36         
+Step 16/20: preloss = 0.07, REGLoss = 0.36         
+Step 17/20: preloss = 0.07, REGLoss = 0.36         
+Step 18/20: preloss = 0.07, REGLoss = 0.36         
+Step 19/20: preloss = 0.07, REGLoss = 0.36         
+Epoch 84/150, Train: Loss = 0.8387, preLoss = 0.1159  
+0.31505322
+Steps 0/20: hit10 = 113, ndcg10 = 63
+1.6522226
+Steps 1/20: hit10 = 109, ndcg10 = 57
+0.024174929
+Steps 2/20: hit10 = 111, ndcg10 = 59
+0.7983074
+Steps 3/20: hit10 = 116, ndcg10 = 63
+0.45012665
+Steps 4/20: hit10 = 151, ndcg10 = 85
+0.26652193
+Steps 5/20: hit10 = 149, ndcg10 = 85
+-1.3142302
+Steps 6/20: hit10 = 161, ndcg10 = 99
+-0.73967624
+Steps 7/20: hit10 = 195, ndcg10 = 115
+1.6248884
+Steps 8/20: hit10 = 203, ndcg10 = 121
+-7.6767254
+Steps 9/20: hit10 = 146, ndcg10 = 83
+-0.5697837
+Steps 10/20: hit10 = 163, ndcg10 = 93
+-1.5006268
+Steps 11/20: hit10 = 156, ndcg10 = 90
+2.181921
+Steps 12/20: hit10 = 167, ndcg10 = 95
+-1.9916606
+Steps 13/20: hit10 = 167, ndcg10 = 91
+-3.6655083
+Steps 14/20: hit10 = 197, ndcg10 = 111
+0.58022404
+Steps 15/20: hit10 = 181, ndcg10 = 105
+-3.0824835
+Steps 16/20: hit10 = 179, ndcg10 = 106
+1.625844
+Steps 17/20: hit10 = 208, ndcg10 = 122
+0.28937817
+Steps 18/20: hit10 = 231, ndcg10 = 134
+-0.11042023
+Steps 19/20: hit10 = 123, ndcg10 = 70
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.15443744373333468,epochHit5:0.2251
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.21436065787275807,epochHit20:0.4357
+
+Step 0/20: preloss = 0.04, REGLoss = 0.37         
+Step 1/20: preloss = 0.05, REGLoss = 0.37         
+Step 2/20: preloss = 0.04, REGLoss = 0.37         
+Step 3/20: preloss = 0.04, REGLoss = 0.38         
+Step 4/20: preloss = 0.05, REGLoss = 0.38         
+Step 5/20: preloss = 0.05, REGLoss = 0.38         
+Step 6/20: preloss = 0.06, REGLoss = 0.38         
+Step 7/20: preloss = 0.05, REGLoss = 0.37         
+Step 8/20: preloss = 0.05, REGLoss = 0.37         
+Step 9/20: preloss = 0.06, REGLoss = 0.37         
+Step 10/20: preloss = 0.05, REGLoss = 0.41         
+Step 11/20: preloss = 0.06, REGLoss = 0.36         
+Step 12/20: preloss = 0.07, REGLoss = 0.36         
+Step 13/20: preloss = 0.07, REGLoss = 0.36         
+Step 14/20: preloss = 0.06, REGLoss = 0.36         
+Step 15/20: preloss = 0.07, REGLoss = 0.36         
+Step 16/20: preloss = 0.06, REGLoss = 0.37         
+Step 17/20: preloss = 0.06, REGLoss = 0.37         
+Step 18/20: preloss = 0.08, REGLoss = 0.37         
+Step 19/20: preloss = 0.06, REGLoss = 0.37         
+Epoch 85/150, Train: Loss = 0.8554, preLoss = 0.1122  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.37         
+Step 1/20: preloss = 0.04, REGLoss = 0.38         
+Step 2/20: preloss = 0.05, REGLoss = 0.38         
+Step 3/20: preloss = 0.03, REGLoss = 0.38         
+Step 4/20: preloss = 0.05, REGLoss = 0.38         
+Step 5/20: preloss = 0.04, REGLoss = 0.38         
+Step 6/20: preloss = 0.06, REGLoss = 0.38         
+Step 7/20: preloss = 0.06, REGLoss = 0.38         
+Step 8/20: preloss = 0.05, REGLoss = 0.37         
+Step 9/20: preloss = 0.04, REGLoss = 0.36         
+Step 10/20: preloss = 0.06, REGLoss = 0.36         
+Step 11/20: preloss = 0.06, REGLoss = 0.35         
+Step 12/20: preloss = 0.05, REGLoss = 0.35         
+Step 13/20: preloss = 0.07, REGLoss = 0.35         
+Step 14/20: preloss = 0.07, REGLoss = 0.34         
+Step 15/20: preloss = 0.05, REGLoss = 0.34         
+Step 16/20: preloss = 0.07, REGLoss = 0.34         
+Step 17/20: preloss = 0.07, REGLoss = 0.34         
+Step 18/20: preloss = 0.06, REGLoss = 0.34         
+Step 19/20: preloss = 0.09, REGLoss = 0.33         
+Epoch 86/150, Train: Loss = 0.8301, preLoss = 0.1107  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.34         
+Step 1/20: preloss = 0.05, REGLoss = 0.34         
+Step 2/20: preloss = 0.04, REGLoss = 0.35         
+Step 3/20: preloss = 0.05, REGLoss = 0.35         
+Step 4/20: preloss = 0.04, REGLoss = 0.35         
+Step 5/20: preloss = 0.04, REGLoss = 0.35         
+Step 6/20: preloss = 0.04, REGLoss = 0.35         
+Step 7/20: preloss = 0.05, REGLoss = 0.35         
+Step 8/20: preloss = 0.05, REGLoss = 0.35         
+Step 9/20: preloss = 0.06, REGLoss = 0.35         
+Step 10/20: preloss = 0.05, REGLoss = 0.35         
+Step 11/20: preloss = 0.06, REGLoss = 0.35         
+Step 12/20: preloss = 0.07, REGLoss = 0.35         
+Step 13/20: preloss = 0.06, REGLoss = 0.34         
+Step 14/20: preloss = 0.06, REGLoss = 0.34         
+Step 15/20: preloss = 0.06, REGLoss = 0.35         
+Step 16/20: preloss = 0.06, REGLoss = 0.34         
+Step 17/20: preloss = 0.06, REGLoss = 0.34         
+Step 18/20: preloss = 0.08, REGLoss = 0.34         
+Step 19/20: preloss = 0.08, REGLoss = 0.34         
+Epoch 87/150, Train: Loss = 0.8014, preLoss = 0.1095  
+2.024467
+Steps 0/20: hit10 = 108, ndcg10 = 67
+2.4014816
+Steps 1/20: hit10 = 104, ndcg10 = 60
+2.591525
+Steps 2/20: hit10 = 103, ndcg10 = 56
+2.3424997
+Steps 3/20: hit10 = 134, ndcg10 = 71
+-1.2668567
+Steps 4/20: hit10 = 138, ndcg10 = 76
+-1.5488276
+Steps 5/20: hit10 = 144, ndcg10 = 81
+2.7151368
+Steps 6/20: hit10 = 157, ndcg10 = 92
+-8.957392
+Steps 7/20: hit10 = 192, ndcg10 = 112
+-1.2815652
+Steps 8/20: hit10 = 199, ndcg10 = 113
+2.0898328
+Steps 9/20: hit10 = 144, ndcg10 = 80
+-0.37258577
+Steps 10/20: hit10 = 177, ndcg10 = 99
+0.9889717
+Steps 11/20: hit10 = 138, ndcg10 = 74
+2.1459832
+Steps 12/20: hit10 = 164, ndcg10 = 92
+-2.959905
+Steps 13/20: hit10 = 150, ndcg10 = 87
+0.79720163
+Steps 14/20: hit10 = 207, ndcg10 = 114
+-2.0606403
+Steps 15/20: hit10 = 187, ndcg10 = 108
+0.8144927
+Steps 16/20: hit10 = 214, ndcg10 = 130
+3.4551187
+Steps 17/20: hit10 = 202, ndcg10 = 115
+-0.51821756
+Steps 18/20: hit10 = 228, ndcg10 = 130
+0.8840666
+Steps 19/20: hit10 = 128, ndcg10 = 76
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.15410841333863856,epochHit5:0.2276
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.21128999685611913,epochHit20:0.4282
+
+Step 0/20: preloss = 0.05, REGLoss = 0.35         
+Step 1/20: preloss = 0.05, REGLoss = 0.36         
+Step 2/20: preloss = 0.04, REGLoss = 0.36         
+Step 3/20: preloss = 0.05, REGLoss = 0.36         
+Step 4/20: preloss = 0.07, REGLoss = 0.37         
+Step 5/20: preloss = 0.05, REGLoss = 0.37         
+Step 6/20: preloss = 0.06, REGLoss = 0.37         
+Step 7/20: preloss = 0.06, REGLoss = 0.37         
+Step 8/20: preloss = 0.05, REGLoss = 0.37         
+Step 9/20: preloss = 0.07, REGLoss = 0.37         
+Step 10/20: preloss = 0.06, REGLoss = 0.37         
+Step 11/20: preloss = 0.07, REGLoss = 0.37         
+Step 12/20: preloss = 0.07, REGLoss = 0.37         
+Step 13/20: preloss = 0.06, REGLoss = 0.37         
+Step 14/20: preloss = 0.07, REGLoss = 0.37         
+Step 15/20: preloss = 0.07, REGLoss = 0.37         
+Step 16/20: preloss = 0.07, REGLoss = 0.37         
+Step 17/20: preloss = 0.07, REGLoss = 0.37         
+Step 18/20: preloss = 0.06, REGLoss = 0.37         
+Step 19/20: preloss = 0.07, REGLoss = 0.37         
+Epoch 88/150, Train: Loss = 0.8533, preLoss = 0.1208  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.37         
+Step 1/20: preloss = 0.04, REGLoss = 0.39         
+Step 2/20: preloss = 0.04, REGLoss = 0.37         
+Step 3/20: preloss = 0.05, REGLoss = 0.38         
+Step 4/20: preloss = 0.06, REGLoss = 0.38         
+Step 5/20: preloss = 0.04, REGLoss = 0.38         
+Step 6/20: preloss = 0.05, REGLoss = 0.38         
+Step 7/20: preloss = 0.06, REGLoss = 0.38         
+Step 8/20: preloss = 0.04, REGLoss = 0.38         
+Step 9/20: preloss = 0.04, REGLoss = 0.38         
+Step 10/20: preloss = 0.05, REGLoss = 0.37         
+Step 11/20: preloss = 0.07, REGLoss = 0.37         
+Step 12/20: preloss = 0.06, REGLoss = 0.37         
+Step 13/20: preloss = 0.06, REGLoss = 0.36         
+Step 14/20: preloss = 0.07, REGLoss = 0.36         
+Step 15/20: preloss = 0.08, REGLoss = 0.36         
+Step 16/20: preloss = 0.07, REGLoss = 0.35         
+Step 17/20: preloss = 0.08, REGLoss = 0.35         
+Step 18/20: preloss = 0.06, REGLoss = 0.35         
+Step 19/20: preloss = 0.08, REGLoss = 0.35         
+Epoch 89/150, Train: Loss = 0.8552, preLoss = 0.1156  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.36         
+Step 1/20: preloss = 0.04, REGLoss = 0.36         
+Step 2/20: preloss = 0.04, REGLoss = 0.36         
+Step 3/20: preloss = 0.04, REGLoss = 0.37         
+Step 4/20: preloss = 0.05, REGLoss = 0.37         
+Step 5/20: preloss = 0.05, REGLoss = 0.37         
+Step 6/20: preloss = 0.05, REGLoss = 0.36         
+Step 7/20: preloss = 0.06, REGLoss = 0.36         
+Step 8/20: preloss = 0.05, REGLoss = 0.36         
+Step 9/20: preloss = 0.05, REGLoss = 0.36         
+Step 10/20: preloss = 0.06, REGLoss = 0.35         
+Step 11/20: preloss = 0.06, REGLoss = 0.35         
+Step 12/20: preloss = 0.05, REGLoss = 0.35         
+Step 13/20: preloss = 0.06, REGLoss = 0.36         
+Step 14/20: preloss = 0.06, REGLoss = 0.34         
+Step 15/20: preloss = 0.05, REGLoss = 0.34         
+Step 16/20: preloss = 0.07, REGLoss = 0.34         
+Step 17/20: preloss = 0.07, REGLoss = 0.34         
+Step 18/20: preloss = 0.07, REGLoss = 0.34         
+Step 19/20: preloss = 0.06, REGLoss = 0.34         
+Epoch 90/150, Train: Loss = 0.8167, preLoss = 0.1097  
+0.8954711
+Steps 0/20: hit10 = 105, ndcg10 = 59
+-1.4313364
+Steps 1/20: hit10 = 95, ndcg10 = 50
+1.7774315
+Steps 2/20: hit10 = 106, ndcg10 = 57
+1.7641268
+Steps 3/20: hit10 = 128, ndcg10 = 63
+-0.1151371
+Steps 4/20: hit10 = 148, ndcg10 = 83
+-0.61027
+Steps 5/20: hit10 = 143, ndcg10 = 79
+2.6774836
+Steps 6/20: hit10 = 159, ndcg10 = 84
+-3.2629905
+Steps 7/20: hit10 = 185, ndcg10 = 104
+-0.74302053
+Steps 8/20: hit10 = 209, ndcg10 = 123
+2.625801
+Steps 9/20: hit10 = 140, ndcg10 = 76
+1.498869
+Steps 10/20: hit10 = 172, ndcg10 = 102
+-0.062291384
+Steps 11/20: hit10 = 145, ndcg10 = 73
+3.3117404
+Steps 12/20: hit10 = 152, ndcg10 = 86
+-0.372653
+Steps 13/20: hit10 = 133, ndcg10 = 69
+0.6519022
+Steps 14/20: hit10 = 203, ndcg10 = 116
+-1.7849731
+Steps 15/20: hit10 = 197, ndcg10 = 123
+-7.548592
+Steps 16/20: hit10 = 181, ndcg10 = 94
+0.49848604
+Steps 17/20: hit10 = 202, ndcg10 = 113
+-0.25906754
+Steps 18/20: hit10 = 227, ndcg10 = 118
+-2.7921598
+Steps 19/20: hit10 = 110, ndcg10 = 65
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14178728356934492,epochHit5:0.2121
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.2027066406367769,epochHit20:0.4245
+
+Step 0/20: preloss = 0.04, REGLoss = 0.35         
+Step 1/20: preloss = 0.04, REGLoss = 0.36         
+Step 2/20: preloss = 0.04, REGLoss = 0.36         
+Step 3/20: preloss = 0.05, REGLoss = 0.36         
+Step 4/20: preloss = 0.05, REGLoss = 0.36         
+Step 5/20: preloss = 0.04, REGLoss = 0.38         
+Step 6/20: preloss = 0.05, REGLoss = 0.37         
+Step 7/20: preloss = 0.05, REGLoss = 0.36         
+Step 8/20: preloss = 0.05, REGLoss = 0.36         
+Step 9/20: preloss = 0.05, REGLoss = 0.36         
+Step 10/20: preloss = 0.05, REGLoss = 0.36         
+Step 11/20: preloss = 0.05, REGLoss = 0.36         
+Step 12/20: preloss = 0.06, REGLoss = 0.41         
+Step 13/20: preloss = 0.07, REGLoss = 0.35         
+Step 14/20: preloss = 0.05, REGLoss = 0.35         
+Step 15/20: preloss = 0.06, REGLoss = 0.35         
+Step 16/20: preloss = 0.06, REGLoss = 0.35         
+Step 17/20: preloss = 0.07, REGLoss = 0.35         
+Step 18/20: preloss = 0.06, REGLoss = 0.35         
+Step 19/20: preloss = 0.07, REGLoss = 0.35         
+Epoch 91/150, Train: Loss = 0.8271, preLoss = 0.1066  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.36         
+Step 1/20: preloss = 0.03, REGLoss = 0.36         
+Step 2/20: preloss = 0.04, REGLoss = 0.37         
+Step 3/20: preloss = 0.04, REGLoss = 0.37         
+Step 4/20: preloss = 0.05, REGLoss = 0.37         
+Step 5/20: preloss = 0.05, REGLoss = 0.37         
+Step 6/20: preloss = 0.05, REGLoss = 0.37         
+Step 7/20: preloss = 0.05, REGLoss = 0.37         
+Step 8/20: preloss = 0.05, REGLoss = 0.37         
+Step 9/20: preloss = 0.05, REGLoss = 0.36         
+Step 10/20: preloss = 0.05, REGLoss = 0.36         
+Step 11/20: preloss = 0.06, REGLoss = 0.36         
+Step 12/20: preloss = 0.05, REGLoss = 0.35         
+Step 13/20: preloss = 0.05, REGLoss = 0.35         
+Step 14/20: preloss = 0.06, REGLoss = 0.34         
+Step 15/20: preloss = 0.06, REGLoss = 0.37         
+Step 16/20: preloss = 0.06, REGLoss = 0.34         
+Step 17/20: preloss = 0.06, REGLoss = 0.34         
+Step 18/20: preloss = 0.07, REGLoss = 0.34         
+Step 19/20: preloss = 0.06, REGLoss = 0.34         
+Epoch 92/150, Train: Loss = 0.8196, preLoss = 0.1040  
+
+Step 0/20: preloss = 0.03, REGLoss = 0.34         
+Step 1/20: preloss = 0.03, REGLoss = 0.35         
+Step 2/20: preloss = 0.04, REGLoss = 0.35         
+Step 3/20: preloss = 0.04, REGLoss = 0.36         
+Step 4/20: preloss = 0.04, REGLoss = 0.36         
+Step 5/20: preloss = 0.04, REGLoss = 0.36         
+Step 6/20: preloss = 0.05, REGLoss = 0.36         
+Step 7/20: preloss = 0.05, REGLoss = 0.36         
+Step 8/20: preloss = 0.05, REGLoss = 0.36         
+Step 9/20: preloss = 0.05, REGLoss = 0.36         
+Step 10/20: preloss = 0.05, REGLoss = 0.35         
+Step 11/20: preloss = 0.06, REGLoss = 0.35         
+Step 12/20: preloss = 0.06, REGLoss = 0.34         
+Step 13/20: preloss = 0.05, REGLoss = 0.34         
+Step 14/20: preloss = 0.06, REGLoss = 0.34         
+Step 15/20: preloss = 0.07, REGLoss = 0.33         
+Step 16/20: preloss = 0.06, REGLoss = 0.33         
+Step 17/20: preloss = 0.07, REGLoss = 0.33         
+Step 18/20: preloss = 0.07, REGLoss = 0.34         
+Step 19/20: preloss = 0.07, REGLoss = 0.33         
+Epoch 93/150, Train: Loss = 0.7974, preLoss = 0.1029  
+1.6196108
+Steps 0/20: hit10 = 106, ndcg10 = 61
+-1.3400497
+Steps 1/20: hit10 = 111, ndcg10 = 54
+1.0841122
+Steps 2/20: hit10 = 112, ndcg10 = 61
+-0.41193724
+Steps 3/20: hit10 = 127, ndcg10 = 69
+0.1301732
+Steps 4/20: hit10 = 156, ndcg10 = 84
+-0.109041214
+Steps 5/20: hit10 = 154, ndcg10 = 83
+2.785552
+Steps 6/20: hit10 = 160, ndcg10 = 94
+-1.4114628
+Steps 7/20: hit10 = 197, ndcg10 = 114
+0.2948413
+Steps 8/20: hit10 = 212, ndcg10 = 117
+-0.81054974
+Steps 9/20: hit10 = 140, ndcg10 = 83
+0.42300415
+Steps 10/20: hit10 = 168, ndcg10 = 101
+-3.7580345
+Steps 11/20: hit10 = 143, ndcg10 = 83
+1.0774884
+Steps 12/20: hit10 = 160, ndcg10 = 89
+-1.0011578
+Steps 13/20: hit10 = 161, ndcg10 = 83
+-1.5108519
+Steps 14/20: hit10 = 209, ndcg10 = 115
+0.98155546
+Steps 15/20: hit10 = 172, ndcg10 = 96
+-0.9106798
+Steps 16/20: hit10 = 191, ndcg10 = 113
+-0.4391713
+Steps 17/20: hit10 = 191, ndcg10 = 106
+-3.0971026
+Steps 18/20: hit10 = 221, ndcg10 = 122
+-0.19543123
+Steps 19/20: hit10 = 110, ndcg10 = 66
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.14875810317825505,epochHit5:0.2221
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20872054840469736,epochHit20:0.4328
+
+Step 0/20: preloss = 0.04, REGLoss = 0.34         
+Step 1/20: preloss = 0.04, REGLoss = 0.35         
+Step 2/20: preloss = 0.04, REGLoss = 0.35         
+Step 3/20: preloss = 0.04, REGLoss = 0.35         
+Step 4/20: preloss = 0.05, REGLoss = 0.35         
+Step 5/20: preloss = 0.05, REGLoss = 0.35         
+Step 6/20: preloss = 0.04, REGLoss = 0.35         
+Step 7/20: preloss = 0.06, REGLoss = 0.35         
+Step 8/20: preloss = 0.05, REGLoss = 0.35         
+Step 9/20: preloss = 0.05, REGLoss = 0.34         
+Step 10/20: preloss = 0.06, REGLoss = 0.34         
+Step 11/20: preloss = 0.05, REGLoss = 0.34         
+Step 12/20: preloss = 0.06, REGLoss = 0.34         
+Step 13/20: preloss = 0.07, REGLoss = 0.34         
+Step 14/20: preloss = 0.07, REGLoss = 0.33         
+Step 15/20: preloss = 0.06, REGLoss = 0.34         
+Step 16/20: preloss = 0.07, REGLoss = 0.34         
+Step 17/20: preloss = 0.07, REGLoss = 0.34         
+Step 18/20: preloss = 0.07, REGLoss = 0.34         
+Step 19/20: preloss = 0.09, REGLoss = 0.34         
+Epoch 94/150, Train: Loss = 0.7990, preLoss = 0.1129  
+
+Step 0/20: preloss = 0.05, REGLoss = 0.35         
+Step 1/20: preloss = 0.05, REGLoss = 0.36         
+Step 2/20: preloss = 0.05, REGLoss = 0.36         
+Step 3/20: preloss = 0.04, REGLoss = 0.37         
+Step 4/20: preloss = 0.05, REGLoss = 0.37         
+Step 5/20: preloss = 0.05, REGLoss = 0.38         
+Step 6/20: preloss = 0.05, REGLoss = 0.37         
+Step 7/20: preloss = 0.05, REGLoss = 0.37         
+Step 8/20: preloss = 0.06, REGLoss = 0.37         
+Step 9/20: preloss = 0.05, REGLoss = 0.36         
+Step 10/20: preloss = 0.06, REGLoss = 0.36         
+Step 11/20: preloss = 0.05, REGLoss = 0.36         
+Step 12/20: preloss = 0.05, REGLoss = 0.35         
+Step 13/20: preloss = 0.07, REGLoss = 0.35         
+Step 14/20: preloss = 0.05, REGLoss = 0.35         
+Step 15/20: preloss = 0.06, REGLoss = 0.35         
+Step 16/20: preloss = 0.06, REGLoss = 0.34         
+Step 17/20: preloss = 0.07, REGLoss = 0.34         
+Step 18/20: preloss = 0.07, REGLoss = 0.35         
+Step 19/20: preloss = 0.09, REGLoss = 0.35         
+Epoch 95/150, Train: Loss = 0.8276, preLoss = 0.1105  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.37         
+Step 1/20: preloss = 0.05, REGLoss = 0.36         
+Step 2/20: preloss = 0.04, REGLoss = 0.36         
+Step 3/20: preloss = 0.04, REGLoss = 0.37         
+Step 4/20: preloss = 0.04, REGLoss = 0.37         
+Step 5/20: preloss = 0.06, REGLoss = 0.38         
+Step 6/20: preloss = 0.06, REGLoss = 0.38         
+Step 7/20: preloss = 0.05, REGLoss = 0.38         
+Step 8/20: preloss = 0.06, REGLoss = 0.38         
+Step 9/20: preloss = 0.06, REGLoss = 0.37         
+Step 10/20: preloss = 0.06, REGLoss = 0.37         
+Step 11/20: preloss = 0.05, REGLoss = 0.37         
+Step 12/20: preloss = 0.06, REGLoss = 0.36         
+Step 13/20: preloss = 0.07, REGLoss = 0.36         
+Step 14/20: preloss = 0.07, REGLoss = 0.37         
+Step 15/20: preloss = 0.06, REGLoss = 0.36         
+Step 16/20: preloss = 0.06, REGLoss = 0.36         
+Step 17/20: preloss = 0.07, REGLoss = 0.35         
+Step 18/20: preloss = 0.08, REGLoss = 0.35         
+Step 19/20: preloss = 0.07, REGLoss = 0.35         
+Epoch 96/150, Train: Loss = 0.8450, preLoss = 0.1130  
+1.8144288
+Steps 0/20: hit10 = 105, ndcg10 = 55
+-1.0468297
+Steps 1/20: hit10 = 108, ndcg10 = 57
+0.67329025
+Steps 2/20: hit10 = 95, ndcg10 = 51
+2.2746897
+Steps 3/20: hit10 = 127, ndcg10 = 68
+-4.3425612
+Steps 4/20: hit10 = 136, ndcg10 = 76
+0.5899782
+Steps 5/20: hit10 = 146, ndcg10 = 78
+3.068277
+Steps 6/20: hit10 = 155, ndcg10 = 89
+-0.29353142
+Steps 7/20: hit10 = 209, ndcg10 = 121
+-0.72220397
+Steps 8/20: hit10 = 198, ndcg10 = 112
+3.4900742
+Steps 9/20: hit10 = 140, ndcg10 = 78
+-0.78461504
+Steps 10/20: hit10 = 152, ndcg10 = 86
+-2.392953
+Steps 11/20: hit10 = 141, ndcg10 = 80
+0.84855556
+Steps 12/20: hit10 = 152, ndcg10 = 86
+-1.4194369
+Steps 13/20: hit10 = 158, ndcg10 = 94
+-1.2940865
+Steps 14/20: hit10 = 199, ndcg10 = 117
+-3.6245275
+Steps 15/20: hit10 = 172, ndcg10 = 99
+-5.235426
+Steps 16/20: hit10 = 198, ndcg10 = 118
+1.2956972
+Steps 17/20: hit10 = 196, ndcg10 = 107
+-3.6463714
+Steps 18/20: hit10 = 204, ndcg10 = 114
+-4.391178
+Steps 19/20: hit10 = 121, ndcg10 = 71
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.1455666983732293,epochHit5:0.2147
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.20370078169268696,epochHit20:0.4187
+
+Step 0/20: preloss = 0.04, REGLoss = 0.36         
+Step 1/20: preloss = 0.04, REGLoss = 0.36         
+Step 2/20: preloss = 0.04, REGLoss = 0.36         
+Step 3/20: preloss = 0.04, REGLoss = 0.36         
+Step 4/20: preloss = 0.04, REGLoss = 0.36         
+Step 5/20: preloss = 0.05, REGLoss = 0.36         
+Step 6/20: preloss = 0.04, REGLoss = 0.36         
+Step 7/20: preloss = 0.06, REGLoss = 0.35         
+Step 8/20: preloss = 0.05, REGLoss = 0.35         
+Step 9/20: preloss = 0.05, REGLoss = 0.35         
+Step 10/20: preloss = 0.05, REGLoss = 0.34         
+Step 11/20: preloss = 0.05, REGLoss = 0.34         
+Step 12/20: preloss = 0.05, REGLoss = 0.33         
+Step 13/20: preloss = 0.06, REGLoss = 0.33         
+Step 14/20: preloss = 0.05, REGLoss = 0.33         
+Step 15/20: preloss = 0.06, REGLoss = 0.32         
+Step 16/20: preloss = 0.06, REGLoss = 0.32         
+Step 17/20: preloss = 0.06, REGLoss = 0.32         
+Step 18/20: preloss = 0.06, REGLoss = 0.32         
+Step 19/20: preloss = 0.07, REGLoss = 0.32         
+Epoch 97/150, Train: Loss = 0.7865, preLoss = 0.1043  
+
+Step 0/20: preloss = 0.03, REGLoss = 0.32         
+Step 1/20: preloss = 0.04, REGLoss = 0.32         
+Step 2/20: preloss = 0.05, REGLoss = 0.33         
+Step 3/20: preloss = 0.04, REGLoss = 0.33         
+Step 4/20: preloss = 0.04, REGLoss = 0.33         
+Step 5/20: preloss = 0.04, REGLoss = 0.35         
+Step 6/20: preloss = 0.04, REGLoss = 0.33         
+Step 7/20: preloss = 0.06, REGLoss = 0.33         
+Step 8/20: preloss = 0.05, REGLoss = 0.34         
+Step 9/20: preloss = 0.05, REGLoss = 0.34         
+Step 10/20: preloss = 0.06, REGLoss = 0.34         
+Step 11/20: preloss = 0.05, REGLoss = 0.34         
+Step 12/20: preloss = 0.05, REGLoss = 0.34         
+Step 13/20: preloss = 0.05, REGLoss = 0.34         
+Step 14/20: preloss = 0.06, REGLoss = 0.34         
+Step 15/20: preloss = 0.06, REGLoss = 0.34         
+Step 16/20: preloss = 0.06, REGLoss = 0.33         
+Step 17/20: preloss = 0.07, REGLoss = 0.33         
+Step 18/20: preloss = 0.07, REGLoss = 0.33         
+Step 19/20: preloss = 0.09, REGLoss = 0.33         
+Epoch 98/150, Train: Loss = 0.7734, preLoss = 0.1056  
+
+Step 0/20: preloss = 0.04, REGLoss = 0.34         
+Step 1/20: preloss = 0.03, REGLoss = 0.34         
+Step 2/20: preloss = 0.04, REGLoss = 0.34         
+Step 3/20: preloss = 0.05, REGLoss = 0.35         
+Step 4/20: preloss = 0.04, REGLoss = 0.35         
+Step 5/20: preloss = 0.05, REGLoss = 0.35         
+Step 6/20: preloss = 0.05, REGLoss = 0.35         
+Step 7/20: preloss = 0.04, REGLoss = 0.35         
+Step 8/20: preloss = 0.06, REGLoss = 0.35         
+Step 9/20: preloss = 0.07, REGLoss = 0.35         
+Step 10/20: preloss = 0.04, REGLoss = 0.34         
+Step 11/20: preloss = 0.06, REGLoss = 0.34         
+Step 12/20: preloss = 0.07, REGLoss = 0.34         
+Step 13/20: preloss = 0.06, REGLoss = 0.33         
+Step 14/20: preloss = 0.06, REGLoss = 0.33         
+Step 15/20: preloss = 0.07, REGLoss = 0.33         
+Step 16/20: preloss = 0.07, REGLoss = 0.33         
+Step 17/20: preloss = 0.06, REGLoss = 0.33         
+Step 18/20: preloss = 0.06, REGLoss = 0.33         
+Step 19/20: preloss = 0.07, REGLoss = 0.33         
+Epoch 99/150, Train: Loss = 0.7894, preLoss = 0.1102  
+1.7958531
+Steps 0/20: hit10 = 106, ndcg10 = 61
+1.3257532
+Steps 1/20: hit10 = 110, ndcg10 = 60
+1.5323968
+Steps 2/20: hit10 = 104, ndcg10 = 59
+-1.6252217
+Steps 3/20: hit10 = 128, ndcg10 = 71
+4.7472296
+Steps 4/20: hit10 = 150, ndcg10 = 81
+0.29360342
+Steps 5/20: hit10 = 165, ndcg10 = 90
+0.045451164
+Steps 6/20: hit10 = 158, ndcg10 = 93
+-4.430206
+Steps 7/20: hit10 = 213, ndcg10 = 120
+-1.9136529
+Steps 8/20: hit10 = 219, ndcg10 = 127
+-2.9395502
+Steps 9/20: hit10 = 153, ndcg10 = 89
+1.3302455
+Steps 10/20: hit10 = 168, ndcg10 = 98
+0.91646314
+Steps 11/20: hit10 = 139, ndcg10 = 74
+2.3597655
+Steps 12/20: hit10 = 172, ndcg10 = 96
+2.0471396
+Steps 13/20: hit10 = 161, ndcg10 = 88
+-0.20898485
+Steps 14/20: hit10 = 193, ndcg10 = 101
+-3.2520819
+Steps 15/20: hit10 = 183, ndcg10 = 106
