@@ -378,5 +378,6 @@ class Runner(BaseRunner):
             uLocs.pop()
         while iLocs and iLocs[-1] is None:
             iLocs.pop()
+        print(uLocs_seq[-10:])
         return uLocs, iLocs, temTst, tstLocs, sequence, mask, uLocs_seq, val_list
         
