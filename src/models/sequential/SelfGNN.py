@@ -74,8 +74,9 @@ class SelfGNN(BaseModel):
         timeEmbed = self.time_FC(self.timeEmbed)
         if not mat.is_coalesced():
             mat = mat.coalesce()
-        srcNodes = mat.indices()[1]
-        tgtNodes = mat.indices()[0]
+        srcNodes = torch.squeeze(mat.indices()[1])
+        tgtNodes = torch.squeeze(mat.indices()[0])
+        edgeVals = mat.values
 
         # Ensure srcNodes and tgtNodes are within valid range
         num_nodes = srclats.shape[0]
@@ -83,8 +84,7 @@ class SelfGNN(BaseModel):
         tgtNodes = torch.clamp(tgtNodes, min=0, max=num_nodes - 1)
 
         srcEmbeds = srclats[srcNodes]
-        tgtNodes = tgtNodes.unsqueeze(-1).expand_as(srcEmbeds)
-        lat = torch.zeros_like(srclats).scatter_add_(0, tgtNodes, srcEmbeds)
+        lat = torch.zeros_like(srclats).scatter_add_(0, tgtNodes.unsqueeze(-1).expand_as(srcEmbeds), srcEmbeds)
 
         if type == 'user':
             lat = lat[torch.clamp(self.users, min=0, max=lat.shape[0] - 1)]
