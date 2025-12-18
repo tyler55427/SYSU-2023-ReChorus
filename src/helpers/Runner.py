@@ -53,8 +53,8 @@ class Runner(BaseRunner):
             print(self.makePrint('Train', ep, reses, test))
             if test:
                 reses = self.testEpoch(True)
-                # print(self.makePrint('Test', ep, reses, test))
-                self.makePrint('Test', ep, reses, test)
+                print(self.makePrint('Test', ep, reses, test))
+                # self.makePrint('Test', ep, reses, test)
             if ep % self.args.tstEpoch == 0 and reses['NDCG']>maxndcg:
                 # self.saveHistory()
                 maxndcg=reses['NDCG']
@@ -154,7 +154,6 @@ class Runner(BaseRunner):
             st = i * tstBat
             ed = min((i+1) * tstBat, num)
             batIds = ids[st: ed]
-            feed_dict = {}
             uLocs, iLocs, temTst, tstLocs, sequence, mask, uLocs_seq, val_list = self.sampleTestBatch(batIds, self.handler.trnMat, sign)
             suLocs, siLocs, _ = self.sampleSslBatch(batIds, self.handler.subMat, False)
             uids = torch.tensor(uLocs, dtype=torch.long)
@@ -374,10 +373,5 @@ class Runner(BaseRunner):
             for i in range(batch,self.args.batch):
                 sequence[i]=np.zeros(self.args.pos_length,dtype=int)
                 mask[i]=np.zeros(self.args.pos_length)
-        while uLocs and uLocs[-1] is None:
-            uLocs.pop()
-        while iLocs and iLocs[-1] is None:
-            iLocs.pop()
-        print(uLocs_seq[-10:])
         return uLocs, iLocs, temTst, tstLocs, sequence, mask, uLocs_seq, val_list
         

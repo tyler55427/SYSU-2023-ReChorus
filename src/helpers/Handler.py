@@ -64,7 +64,6 @@ class DataHandler(BaseReader):
     def __init__(self, args):
         self.args = args
         self.args.decay_step = args.trnNum//args.batch
-        self.sign = False
         if self.args.data == 'yelp':
             predir = '../data/Yelp/'
         elif self.args.data == 'gowalla':
@@ -72,13 +71,13 @@ class DataHandler(BaseReader):
         elif self.args.data == 'amazon':
             predir = '../data/amazon/'
         else:
-            self.sign = True
             predir='../data/'+self.args.data+'/'
         self.predir = predir
         self.trnfile = predir + 'trn_mat_time'
         self.tstfile = predir + 'tst_int'
         self.sequencefile=predir+'sequence'
         self.test_dictfile=predir+'test_dict'
+        self.sign = (os.path.exists(self.trnfile) == False)
         self.LoadData()
     def LoadData(self):
         if self.sign==False:
