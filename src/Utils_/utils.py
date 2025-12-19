@@ -29,64 +29,28 @@ def posSamp(user_sequence,sampleNum):
     return user_sequence[indexs.sort()]
 
 def transToLsts(mat, mask=False, norm=False):
-    # --- 情况 1: 输入是 SciPy 稀疏矩阵 (csr_matrix, coo_matrix 等) ---
-    if sp.issparse(mat):
-        # 转为 COO 格式以便提取行/列索引
-        coomat = sp.coo_matrix(mat)
-        
-        # 1. 提取索引和数据
-        # PyTorch 要求 indices 形状为 [2, NNZ]
-        indices = np.vstack((coomat.row, coomat.col))
-        data = coomat.data.astype(np.float32)
-        shape = list(coomat.shape)
+    """将稀疏矩阵转换为列表形式"""
+    shape = [mat.shape[0], mat.shape[1]]
+    coomat = sp.coo_matrix(mat)
+    indices = np.array(list(map(list, zip(coomat.row, coomat.col))), dtype=np.int64)
+    data = coomat.data.astype(np.float32)
 
-        # 2. 归一化处理 (numpy 实现)
-        if norm:
-            row_sum = np.array(coomat.sum(1)).flatten()
-            col_sum = np.array(coomat.sum(0)).flatten()
-            
-            rowD = np.power(row_sum + 1e-8, -0.5)
-            colD = np.power(col_sum + 1e-8, -0.5)
-            
-            # data[k] = data[k] * rowD[row[k]] * colD[col[k]]
-            data = data * rowD[indices[0]] * colD[indices[1]]
+    if norm:
+        rowD = np.squeeze(np.array(1 / (np.sqrt(np.sum(mat, axis=1) + 1e-8) + 1e-8)))
+        colD = np.squeeze(np.array(1 / (np.sqrt(np.sum(mat, axis=0) + 1e-8) + 1e-8)))
+        for i in range(len(data)):
+            row = indices[i, 0]
+            col = indices[i, 1]
+            data[i] = data[i] * rowD[row] * colD[col]
 
-        # 3. Mask 处理
-        if mask:
-            spMask = (np.random.uniform(size=data.shape) > 0.5).astype(np.float32)
-            data = data * spMask
+    if mask:
+        spMask = (np.random.uniform(size=data.shape) > 0.5) * 1.0
+        data = data * spMask
 
-        # 4. 处理空矩阵
-        if indices.shape[1] == 0:
-            indices = np.array([[0], [0]], dtype=np.int64)
-            data = np.array([0.0], dtype=np.float32)
-
-        # 5. 返回 PyTorch Tensor
-        return torch.LongTensor(indices), torch.FloatTensor(data), shape
-
-    # --- 情况 2: 输入已经是 PyTorch 稀疏张量 ---
-    elif torch.is_tensor(mat) and mat.is_sparse:
-        mat = mat.coalesce()
-        indices = mat.indices()
-        data = mat.values()
-        shape = list(mat.shape)
-
-        if norm:
-            row_sum = torch.sparse.sum(mat, [1]).to_dense()
-            col_sum = torch.sparse.sum(mat, [0]).to_dense()
-            rowD = torch.pow(row_sum + 1e-8, -0.5)
-            colD = torch.pow(col_sum + 1e-8, -0.5)
-            data = data * rowD[indices[0]] * colD[indices[1]]
-
-        if mask:
-            spMask = (torch.rand(data.shape) > 0.5).float().to(data.device)
-            data = data * spMask
-            
-        return indices, data, shape
-
-    else:
-        raise ValueError(f"transToLsts received unsupported type: {type(mat)}")
-
+    if indices.shape[0] == 0:
+        indices = np.array([[0, 0]], dtype=np.int64)
+        data = np.array([0.0], dtype=np.float32)
+    return indices, data, shape
 #########################################
 
 paramId = 0
@@ -316,95 +280,96 @@ def trans_to_cuda_sparse(mat):
     v = torch.FloatTensor(values)
     return torch.sparse.FloatTensor(i, v, torch.Size(coo.shape))
 
-class AdditiveAttention_Pytorch(nn.Module):
-    def __init__(self,query_vector_dim,candidate_vector_dim):
-        super(AdditiveAttention_Pytorch, self).__init__()
-        self.query_vector_dim=query_vector_dim
-        self.candidate_vector_dim=candidate_vector_dim
-        self.attention_query_vector = nn.Parameter(torch.FloatTensor(query_vector_dim,1).uniform_(-0.1,0.1))
-        
+class AdditiveAttention(nn.Module):
+    """加性注意力"""
+    def __init__(self, query_vector_dim, candidate_vector_dim):
+        super(AdditiveAttention, self).__init__()
+        self.query_vector_dim = query_vector_dim
+        self.candidate_vector_dim = candidate_vector_dim
+        self.dense = nn.Linear(candidate_vector_dim, query_vector_dim)
+        self.attention_query_vector = nn.Parameter(torch.empty(query_vector_dim, 1).uniform_(-0.1, 0.1))
+
     def forward(self, candidate_vector):
         """
-        Args:
-            candidate_vector: batch_size, candidate_size, candidate_vector_dim
-        Returns:
-            (shape) batch_size, candidate_vector_dim
+        candidate_vector: [batch_size, candidate_size, candidate_vector_dim]
+        return: [batch_size, candidate_vector_dim]
         """
-        dense  = nn.Linear(self.candidate_vector_dim, self.query_vector_dim)(candidate_vector)
-        # batch_size, candidate_size, query_vector_dim
+        dense = self.dense(candidate_vector)
         temp = torch.tanh(dense)
-        # batch_size, candidate_size
-        candidate_weights = F.softmax(torch.squeeze(torch.matmul( temp, self.attention_query_vector),2),dim=1) #* 128
-        # batch_size, 1, candidate_size * batch_size, candidate_size, candidate_vector_dim =
-        # batch_size, candidate_vector_dim
-        target =torch.squeeze( torch.matmul(torch.unsqueeze(candidate_weights,1),candidate_vector),1)
-        #target = tf.multiply(candidate_weights,candidate_vector)
+        candidate_weights = F.softmax(torch.matmul(temp, self.attention_query_vector).squeeze(-1), dim=1)
+        target = torch.matmul(candidate_weights.unsqueeze(1), candidate_vector).squeeze(1)
         return target
- 
-# class ScaledDotProductAttention(object):
-#     def __init__(self, d_k):
-#         self.d_k = d_k
-    
-#     def attention(self, Q, K, V, attn_mask=None):
-#         with tf.name_scope('scaled_attention'): 
-#             # batch_size,head_num, candidate_num, candidate_num
-#             scores = tf.matmul(Q, tf.transpose(K,perm=[0,1,3,2])) / np.sqrt(self.d_k)
-#             scores = tf.exp(scores)
-#             if attn_mask is not None:
-#                 scores = scores * attn_mask
-#             # batch_size,head_num, candidate_num, 1
-#             attn = scores / (tf.expand_dims(tf.reduce_sum(scores, axis=-1),-1) + 1e-8) # 归一化
-#             context = tf.matmul(attn, V)
-#             return context, attn
         
-class ScaledDotProductAttention_Pytorch(nn.Module):
+class ScaledDotProductAttention(nn.Module):
+    """缩放点积注意力"""
     def __init__(self, d_k):
-        super(ScaledDotProductAttention_Pytorch, self).__init__()
+        super(ScaledDotProductAttention, self).__init__()
         self.d_k = d_k
-    
+        self.scale = 1.0 / np.sqrt(d_k)
+
     def forward(self, Q, K, V, attn_mask=None):
-        # batch_size,head_num, candidate_num, candidate_num
-        scores = torch.matmul(Q, K.transpose(-2, -1)) / np.sqrt(self.d_k)
-        scores = torch.exp(scores)
+        # Q, K, V: [batch_size, num_heads, seq_len, d_k]
+        # 使用更高效的计算方式，避免创建过多中间变量
+        scores = torch.matmul(Q, K.transpose(-2, -1)) * self.scale
         if attn_mask is not None:
-            scores = scores * attn_mask
-        # batch_size,head_num, candidate_num, 1
-        attn = scores / (torch.unsqueeze(torch.sum(scores, dim=-1),-1) + 1e-8) # 归一化
+            scores = scores.masked_fill(attn_mask == 0, -1e9)
+        attn = F.softmax(scores, dim=-1)  # 使用softmax替代exp+归一化，更稳定且高效
+        del scores  # 及时释放
         context = torch.matmul(attn, V)
         return context, attn
 
-class MultiHeadSelfAttention_Pytorch(nn.Module):
+class MultiHeadSelfAttention(nn.Module):
+    """多头自注意力机制 - 与TF实现保持一致"""
     def __init__(self, d_model, num_attention_heads):
-        super(MultiHeadSelfAttention_Pytorch, self).__init__()
-        self.d_model = d_model # embedding_size
+        super(MultiHeadSelfAttention, self).__init__()
+        self.d_model = d_model
         self.num_attention_heads = num_attention_heads
         assert d_model % num_attention_heads == 0
-        self.d_k = d_model // num_attention_heads #16
+        self.d_k = d_model // num_attention_heads
         self.d_v = d_model // num_attention_heads
-        self.W_Q = nn.Linear(d_model, d_model)
-        self.W_K = nn.Linear(d_model, d_model)
-        self.W_V = nn.Linear(d_model, d_model)
         
-    def forward(self, Q, K=None, V=None, length=None):
+        # TF使用分开的W_Q, W_K, W_V (tf.layers.dense)
+        # 每个dense层独立初始化xavier_uniform
+        self.W_Q = nn.Linear(d_model, d_model, bias=False)
+        self.W_K = nn.Linear(d_model, d_model, bias=False)
+        self.W_V = nn.Linear(d_model, d_model, bias=False)
+        self.scale = 1.0 / np.sqrt(self.d_k)
+        
+        # Xavier初始化 - 与TF的tf.contrib.layers.xavier_initializer一致
+        nn.init.xavier_uniform_(self.W_Q.weight)
+        nn.init.xavier_uniform_(self.W_K.weight)
+        nn.init.xavier_uniform_(self.W_V.weight)
+
+    def forward(self, Q, K=None, V=None):
         """
-        Q:batch_size,candidate_num,embedding_size
-        return : batch_size,candidate_num,embedding_size
+        Q: [batch_size, seq_len, d_model]
+        return: [batch_size, seq_len, d_model]
         """
         if K is None:
             K = Q
         if V is None:
             V = Q
-        batch_size = Q.shape[0]
-        W_Q = self.W_Q(Q)
-        # batch_size, candidate_num, num_attention_heads,d_k  ;;divide into groups whose num is num_attention_heads
-        # batch_size, num_attention_heads, candidate_num,d_k
-        q_s = W_Q.view(batch_size, -1, self.num_attention_heads,self.d_k).permute(0,2,1,3)
-        W_K = self.W_K(K)
-        k_s = W_K.view(batch_size, -1, self.num_attention_heads,self.d_k).permute(0,2,1,3)
-        W_V = self.W_V(V)
-        v_s = W_V.view(batch_size, -1, self.num_attention_heads,self.d_v).permute(0,2,1,3)
-        # batch_size,head_num, candidate_num, d_k
-        context, attn = ScaledDotProductAttention_Pytorch(self.d_k).forward(q_s, k_s, v_s)#,attn_mask)
-        # batch_size,candidate_num,embedding_size
-        context= context.permute(0,2,1,3).contiguous().view(batch_size, -1, self.num_attention_heads*self.d_v)
+            
+        batch_size = Q.size(0)
+        seq_len = Q.size(1)
+        
+        # 分别计算Q, K, V投影
+        q_s = self.W_Q(Q).view(batch_size, -1, self.num_attention_heads, self.d_k).transpose(1, 2)
+        k_s = self.W_K(K).view(batch_size, -1, self.num_attention_heads, self.d_k).transpose(1, 2)
+        v_s = self.W_V(V).view(batch_size, -1, self.num_attention_heads, self.d_v).transpose(1, 2)
+        
+        # TF原始实现: scores = exp(QK^T/sqrt(d_k)), attn = scores / sum(scores)
+        # 这与softmax数学等价，但使用softmax更稳定
+        scores = torch.matmul(q_s, k_s.transpose(-2, -1)) * self.scale
+        
+        # TF使用 exp + 手动归一化，为了数值一致性我们也这样做
+        scores_exp = torch.exp(scores)
+        attn = scores_exp / (scores_exp.sum(dim=-1, keepdim=True) + 1e-8)
+        del scores, scores_exp
+        
+        context = torch.matmul(attn, v_s)
+        del attn, q_s, k_s, v_s
+        
+        # Concat heads: [batch, heads, seq, d_k] -> [batch, seq, d_model]
+        context = context.transpose(1, 2).contiguous().view(batch_size, seq_len, self.d_model)
         return context

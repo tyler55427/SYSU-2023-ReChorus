@@ -11,7 +11,7 @@ class Runner(BaseRunner):
         self.model = model
         self.handler = model.handler
         self.args = model.args
-        self.regParams = model.regParams
+        # self.regParams = model.regParams
         
         print('USER', self.args.user, 'ITEM', self.args.item)
         self.metrics = dict()
@@ -117,7 +117,7 @@ class Runner(BaseRunner):
                 preLoss = torch.mean(torch.clamp(1.0 - (posPred - negPred), min=0.0))
 
                 # 计算 Regularization Loss
-                regLoss = self.args.reg * RegularizePytorch(self.regParams) + self.args.ssl_reg * sslloss
+                regLoss = self.args.reg * self.model.get_reg_loss() + self.args.ssl_reg * sslloss
                 
                 loss = preLoss + regLoss
 

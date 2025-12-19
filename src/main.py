@@ -17,10 +17,6 @@ from models.context_seq import *
 from models.reranker import *
 from utils import utils
 
-# import helpers.reader as Reader
-# import helpers.runner as Runner
-# import helpers.model as SelfGNN  # to avoid the name conflict with model variable
-
 def parse_global_args(parser):
 	parser.add_argument('--gpu', type=str, default='0',
 						help='Set CUDA_VISIBLE_DEVICES, default for CPU only')
