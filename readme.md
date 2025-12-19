@@ -90,7 +90,7 @@ python src/main.py --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path
 ## 5.1 grocery
 
 ```bash
-python src/main.py --data grocery --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path grocery --epoch 10  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python src/main.py --data grocery --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path grocery --epoch 20  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
 ```
 
 ## 5.2 MovieLens_1M
