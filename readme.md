@@ -16,13 +16,13 @@
 
 ```bash
 git clone https://github.com/tyler55427/SYSU-2023-ReChorus.git
-cd SYSU-2023-Rechorus/src
+cd SYSU-2023-Rechorus
 ```
 
 ## 1. 2 安装依赖
 
 ```bash
-conda create -n selfgnn python==3.6.12
+conda create -n selfgnn python==3.10.4
 conda activate selfgnn
 pip install -r requirements.txt
 ```
@@ -34,19 +34,19 @@ pip install -r requirements.txt
 ## 2.1 amazon
 
 ```bash
-python main.py --data amazon --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path amazon --epoch 150  --batch 512 --sslNum 80 --graphNum 5  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 1000 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python src/main.py --data amazon --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path amazon --epoch 150  --batch 512 --sslNum 80 --graphNum 5  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 1000 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
 ```
 
 ## 2.2 gowalla
 
 ```bash
-python main.py --data gowalla --lr 2e-3 --reg 1e-2 --temp 0.1 --ssl_reg 1e-6 --save_path gowalla  --epoch 150  --batch 512 --sslNum 40 --graphNum 3  --gnn_layer 2  --att_layer 1 --test True --testSize 1000 --ssldim 48 --regenerate 1
+python src/main.py --data gowalla --lr 2e-3 --reg 1e-2 --temp 0.1 --ssl_reg 1e-6 --save_path gowalla  --epoch 150  --batch 512 --sslNum 40 --graphNum 3  --gnn_layer 2  --att_layer 1 --test True --testSize 1000 --ssldim 48 --regenerate 1
 ```
 
 ## 2.3 moveilens
 
 ```bash
-python main.py --data movielens --lr 1e-3 --reg 1e-2 --ssl_reg 1e-6 --save_path movie6 --epoch 150  --batch 512 --sampNum 40 --sslNum 90 --graphNum 6 --gnn_layer 2 --att_layer 3 --test True  --testSize 1000 --ssldim 48 --keepRate 0.5 --pos_length 200 --leaky 0.5 --regenerate 1
+python src/main.py --data movielens --lr 1e-3 --reg 1e-2 --ssl_reg 1e-6 --save_path movie6 --epoch 150  --batch 512 --sampNum 40 --sslNum 90 --graphNum 6 --gnn_layer 2 --att_layer 3 --test True  --testSize 1000 --ssldim 48 --keepRate 0.5 --pos_length 200 --leaky 0.5 --regenerate 1
 ```
 
 ## 2.3 yelp

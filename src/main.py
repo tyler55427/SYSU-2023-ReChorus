@@ -66,7 +66,7 @@ def main():
 	else:
 		corpus = reader_name(args)
 		logging.info('Save corpus to {}'.format(corpus_path))
-		pickle.dump(corpus, open(corpus_path, 'wb'))
+		# pickle.dump(corpus, open(corpus_path, 'wb'))
 
 	# Define model
 	model = model_name(args, corpus).to(args.device)

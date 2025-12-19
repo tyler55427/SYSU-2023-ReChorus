@@ -65,13 +65,13 @@ class DataHandler(BaseReader):
         self.args = args
         self.args.decay_step = args.trnNum//args.batch
         if self.args.data == 'yelp':
-            predir = '../data/Yelp/'
+            predir = './data/Yelp/'
         elif self.args.data == 'gowalla':
-            predir = '../data/gowalla/'
+            predir = './data/gowalla/'
         elif self.args.data == 'amazon':
-            predir = '../data/amazon/'
+            predir = './data/amazon/'
         else:
-            predir='../data/'+self.args.data+'/'
+            predir='./data/'+self.args.data+'/'
         self.predir = predir
         self.trnfile = predir + 'trn_mat_time'
         self.tstfile = predir + 'tst_int'
