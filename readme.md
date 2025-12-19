@@ -1,8 +1,9 @@
 # SYSU 2023 级 机器学习大作业
 
-本仓库为使用 ReChorus 框架对 "[SelfGNN: Self-Supervised Graph Neural Networks for Sequential Recommendation](https://arxiv.org/abs/2405.20878)"[SIGIR'2024]进行复现。
+本仓库为使用 ReChorus 框架对 "[SelfGNN: Self-Supervised Graph Neural Networks for Sequential Recommendation](https://arxiv.org/abs/2405.20878)"[SIGIR'2024]进行复现
 
-本项目基于 [ReChorus](https://github.com/THUwangcy/ReChorus) 框架实现。
+本项目基于 [ReChorus](https://github.com/THUwangcy/ReChorus) 框架实现
+
 论文原始代码仓库地址：[SelfGNN](https://github.com/HKUDS/SelfGNN)
 
 # 相比 ReChorus 增加文件 Handler.py, SelfGNN.py 和 Runner.py
@@ -76,20 +77,20 @@ python src/main.py --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path
 1. 短期学习：全局交互时间表
    [图像占位符]
 2. 长期学习：移除基于注意力的实例级别的序列模式（-ATL）
-   [图像占位符]
+   ![figure2](assets/Figure_2.png)
 3. 个性化降噪自增强：移除自增强损失（-SAL）
-   [图像占位符]
+   ![figure3](assets/Figure_3.png)
 
 # 5. 尝试在 ReChorus 框架上的数据集进行测试
 
 ## 5.1 grocery
 
 ```bash
-python main.py --data grocery --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path grocery --epoch 150  --batch 256 --sslNum 80 --graphNum 5  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python main.py --data grocery --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path grocery --epoch 10  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
 ```
 
 ## 5.2 MovieLens_1M
 
 ```bash
-python main.py --data ml1m --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path ml1m --epoch 150  --batch 256 --sslNum 80 --graphNum 5  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python main.py --data ml1m --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path ml1m --epoch 100  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
 ```
