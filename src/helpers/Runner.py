@@ -40,8 +40,6 @@ class Runner(BaseRunner):
             stloc = len(self.metrics['TrainLoss']) * self.args.tstEpoch - (self.args.tstEpoch - 1)
         else:
             stloc = 0
-            # init = tf.global_variables_initializer()
-            # self.sess.run(init)
             print('Variables Inited')
         maxndcg=0.0
         maxres=dict()
@@ -139,7 +137,7 @@ class Runner(BaseRunner):
         ret['preLoss'] = epochPreLoss / steps
         return ret
     
-    def testEpoch(self, sign):
+    def testEpoch(self, sign=True):
         epochHit, epochNdcg = [0] * 2
         epochHit5, epochNdcg5 = [0] * 2
         epochHit20, epochNdcg20 = [0] * 2

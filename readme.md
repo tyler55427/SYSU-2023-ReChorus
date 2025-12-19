@@ -52,7 +52,7 @@ python src/main.py --data movielens --lr 1e-3 --reg 1e-2 --ssl_reg 1e-6 --save_p
 ## 2.3 yelp
 
 ```bash
-python main.py --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path yelp12 --epoch 150  --batch 512 --sslNum 40 --graphNum 12 --gnn_layer 3  --att_layer 2 --test True --testSize 1000 --ssldim 32 --sampNum 40 --regenerate 1
+python src/main.py --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path yelp12 --epoch 150  --batch 512 --sslNum 40 --graphNum 12 --gnn_layer 3  --att_layer 2 --test True --testSize 1000 --ssldim 32 --sampNum 40 --regenerate 1
 ```
 
 # 3. 调整参数进行实验
