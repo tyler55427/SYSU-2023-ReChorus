@@ -77,9 +77,9 @@ python src/main.py --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path
 1. 短期学习：全局交互时间表
    [图像占位符]
 2. 长期学习：移除基于注意力的实例级别的序列模式（-ATL）
-   ![figure2](assets/Figure_2.png)
+   ![figure2](https://github.com/tyler55427/SYSU-2023-ReChorus/blob/main/assets/Figure_2.png)
 3. 个性化降噪自增强：移除自增强损失（-SAL）
-   ![figure3](assets/Figure_3.png)
+   ![figure3](https://github.com/tyler55427/SYSU-2023-ReChorus/blob/main/assets/Figure_3.png)
 
 # 5. 尝试在 ReChorus 框架上的数据集进行测试
 
