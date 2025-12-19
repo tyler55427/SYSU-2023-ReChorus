@@ -314,3 +314,15 @@ class SelfGNN(BaseModel):
         reg_loss = reg_loss + torch.sum(self.meta2_fc.weight ** 2)
         reg_loss = reg_loss + torch.sum(self.meta3_fc.weight ** 2)
         return reg_loss
+
+    class Dataset(BaseModel.Dataset):
+        def __init__(self, model, handler, phase):
+            self.args = model.args
+            self.model = model
+            self.handler = handler
+            self.phase = phase
+            self.data = {}
+            
+        def prepare(self):
+            pass
+            

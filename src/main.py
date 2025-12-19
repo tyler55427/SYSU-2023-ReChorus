@@ -34,6 +34,7 @@ def parse_global_args(parser):
 						help='To save the final validation and test results or not.')
 	parser.add_argument('--regenerate', type=int, default=0,
 						help='Whether to regenerate intermediate files')
+	parser.add_argument('--data', default='', type=str, help='name of dataset')
 	return parser
 
 
@@ -54,7 +55,9 @@ def main():
 	logging.info('Device: {}'.format(args.device))
 
 	# Read data
-	args.path = os.path.join('../data')
+	args.path = os.path.join('./data')
+	if args.data == '':
+		args.data = args.dataset
 	corpus_path = os.path.join(args.path, args.data, model_name.reader+args.data_appendix+ '.pkl')
 	if not args.regenerate and os.path.exists(corpus_path):
 		logging.info('Load corpus from {}'.format(corpus_path))
@@ -69,29 +72,29 @@ def main():
 	logging.info('#params: {}'.format(model.count_variables()))
 	logging.info(model)
 
-	# # Define dataset
-	# data_dict = dict()
-	# for phase in ['train', 'dev', 'test']:
-	# 	data_dict[phase] = model_name.Dataset(model, corpus, phase)
-	# 	data_dict[phase].prepare()
+	# Define dataset
+	data_dict = dict()
+	for phase in ['train', 'dev', 'test']:
+		data_dict[phase] = model_name.Dataset(model, corpus, phase)
+		data_dict[phase].prepare()
 
 	# Run model
-	runner = runner_name(args, model)
-	logging.info('Test Before Training: ' + runner.print_res('test'))
+	runner = runner_name(args)
+	logging.info('Test Before Training: ' + runner.print_res(data_dict['test']))
 	if args.load > 0:
 		model.load_model()
 	if args.train > 0:
-		runner.train()
+		runner.train(data_dict)
 
 	# Evaluate final results
-	eval_res = runner.print_res('dev')
+	eval_res = runner.print_res(data_dict['dev'])
 	logging.info(os.linesep + 'Dev  After Training: ' + eval_res)
-	eval_res = runner.print_res('test')
+	eval_res = runner.print_res(data_dict['test'])
 	logging.info(os.linesep + 'Test After Training: ' + eval_res)
-	# if args.save_final_results==1: # save the prediction results
-	# 	save_rec_results('dev', runner, 100)
-	# 	save_rec_results('test', runner, 100)
-	# model.actions_after_train()
+	if args.save_final_results==1: # save the prediction results
+		save_rec_results(data_dict['dev'], runner, 100)
+		save_rec_results(data_dict['test'], runner, 100)
+	model.actions_after_train()
 	logging.info(os.linesep + '-' * 45 + ' END: ' + utils.get_time() + ' ' + '-' * 45)
 
 
@@ -162,8 +165,8 @@ if __name__ == '__main__':
 	init_args, init_extras = init_parser.parse_known_args()
 	
 	model_name = eval('{0}.{0}{1}'.format(init_args.model_name,init_args.model_mode))
-	reader_name = eval('{0}.{1}'.format("Handler","DataHandler"))  # model chooses the reader
-	runner_name = eval('{0}.{0}'.format("Runner","Runner"))  # model chooses the runner
+	reader_name = eval('{0}.{0}'.format(model_name.reader))  # model chooses the reader
+	runner_name = eval('{0}.{0}'.format(model_name.runner))  # model chooses the runner
 
 	# Args
 	parser = argparse.ArgumentParser(description='')

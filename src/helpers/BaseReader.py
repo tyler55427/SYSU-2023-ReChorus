@@ -15,8 +15,9 @@ class BaseReader(object):
     def parse_data_args(parser):
         parser.add_argument('--path', type=str, default='data/',
                             help='Input data dir.')
-        parser.add_argument('--dataset', type=str, default='Grocery_and_Gourmet_Food',
-                            help='Choose a dataset.')
+        if parser.get_default('dataset') is None:
+            parser.add_argument('--dataset', type=str, default='Grocery_and_Gourmet_Food',
+                                help='Choose a dataset.')
         parser.add_argument('--sep', type=str, default='\t',
                             help='sep of csv file.')
         return parser
@@ -25,10 +26,7 @@ class BaseReader(object):
         self.sep = args.sep
         self.prefix = args.path
         self.dataset = args.dataset
-        try:
-            self._read_data()
-        except:
-            self.data_df = {'train': pd.DataFrame(), 'dev': pd.DataFrame(), 'test': pd.DataFrame()}
+        self._read_data()
 
         self.train_clicked_set = dict()  # store the clicked item set of each user in training set
         self.residual_clicked_set = dict()  # store the residual clicked item set of each user

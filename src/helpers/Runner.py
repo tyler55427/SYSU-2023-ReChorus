@@ -7,11 +7,12 @@ from Utils_.utils import *
 from random import randint
 
 class Runner(BaseRunner):
-    def __init__(self, args, model):
-        self.model = model
-        self.handler = model.handler
-        self.args = model.args
+    def __init__(self, args):
+        # self.model = model
+        # self.handler = model.handler
+        # self.args = model.args
         # self.regParams = model.regParams
+        self.args = args
         
         print('USER', self.args.user, 'ITEM', self.args.item)
         self.metrics = dict()
@@ -21,13 +22,20 @@ class Runner(BaseRunner):
             self.metrics['Test' + met] = list()
     
     def print_res(self, phase):
+        self.model = phase.model
+        self.handler = phase.handler
+        self.args = phase.args
+        phase = phase.phase
         if phase == 'dev':
             reses = self.testEpoch(False)
         elif phase == 'test':
             reses = self.testEpoch(True)
         return self.makePrint(phase, 0, reses, True)
     
-    def train(self):
+    def train(self, data_dict):
+        self.model = data_dict['train'].model
+        self.handler = data_dict['train'].handler
+        self.args = data_dict['train'].args
         globalStep = 0
         optimizer = torch.optim.Adam(self.model.parameters(), lr=self.args.lr)
         scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=self.args.decay_step, gamma=self.args.decay)

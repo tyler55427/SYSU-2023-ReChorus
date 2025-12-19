@@ -12,10 +12,10 @@ import csv
 from scipy.sparse import csr_matrix
 from Utils_.utils import *
 
-class DataHandler(BaseReader):
+class Handler(BaseReader):
     @staticmethod
     def parse_data_args(parser):
-        parser.add_argument('--data', default='yelp', type=str, help='name of dataset')
+        # parser.add_argument('--data', default='', type=str, help='name of dataset')
         parser.add_argument('--percent', default=0.0, type=float, help='percent of noise for noise robust test')
         parser.add_argument('--slot', default=1, type=float, help='length of time slots')
         parser.add_argument('--graphSampleN', default=15000, type=int, help='use 25000 for training and 200000 for testing, empirically')
