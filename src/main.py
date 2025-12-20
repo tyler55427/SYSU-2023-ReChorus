@@ -164,7 +164,7 @@ if __name__ == '__main__':
 				  					for rerankers to select "General" or "Sequential" Baseranker.')
 	init_args, init_extras = init_parser.parse_known_args()
 	
-	model_name = eval('{0}.{0}{1}'.format(init_args.model_name,init_args.model_mode))
+	model_name = eval('{0}.{0}'.format(init_args.model_name))
 	reader_name = eval('{0}.{0}'.format(model_name.reader))  # model chooses the reader
 	runner_name = eval('{0}.{0}'.format(model_name.runner))  # model chooses the runner
 
@@ -181,19 +181,19 @@ if __name__ == '__main__':
 		args.data_appendix = '_context%d%d%d'%(args.include_item_features,args.include_user_features,
 										args.include_situation_features)
 
-	# # Logging configuration
-	# log_args = [init_args.model_name+init_args.model_mode, args.dataset+args.data_appendix, str(args.random_seed)]
-	# for arg in ['lr', 'l2'] + model_name.extra_log_args:
-	# 	log_args.append(arg + '=' + str(eval('args.' + arg)))
-	# log_file_name = '__'.join(log_args).replace(' ', '__')
-	# if args.log_file == '':
-	# 	args.log_file = '../log/{}/{}.txt'.format(init_args.model_name+init_args.model_mode, log_file_name)
-	# if args.model_path == '':
-	# 	args.model_path = '../model/{}/{}.pt'.format(init_args.model_name+init_args.model_mode, log_file_name)
+	# Logging configuration
+	log_args = [init_args.model_name+init_args.model_mode, args.data+args.data_appendix, str(args.random_seed)]
+	for arg in ['lr', 'l2'] + model_name.extra_log_args:
+		log_args.append(arg + '=' + str(eval('args.' + arg)))
+	log_file_name = '__'.join(log_args).replace(' ', '__')
+	if args.log_file == '':
+		args.log_file = './log/{}/{}.txt'.format(init_args.model_name+init_args.model_mode, log_file_name)
+	if args.model_path == '':
+		args.model_path = './model/{}/{}.pt'.format(init_args.model_name+init_args.model_mode, log_file_name)
 
-	# utils.check_dir(args.log_file)
-	# logging.basicConfig(filename=args.log_file, level=args.verbose)
-	# logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
+	utils.check_dir(args.log_file)
+	logging.basicConfig(filename=args.log_file, level=args.verbose)
+	logging.getLogger().addHandler(logging.StreamHandler(sys.stdout))
 	logging.info(init_args)
 
 	main()

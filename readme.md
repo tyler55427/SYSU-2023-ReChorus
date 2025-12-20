@@ -36,13 +36,13 @@ pip install -r requirements.txt
 
 ```bash
 # Amazon
-python src/main.py --data amazon --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path amazon --epoch 150  --batch 512 --sslNum 80 --graphNum 5  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 1000 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python src/main.py --model_name SelfGNN --model_mode other --data amazon --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path amazon --epoch 150  --batch 512 --sslNum 80 --graphNum 5  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 1000 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
 # Gowalla
-python src/main.py --data gowalla --lr 2e-3 --reg 1e-2 --temp 0.1 --ssl_reg 1e-6 --save_path gowalla  --epoch 150  --batch 512 --sslNum 40 --graphNum 3  --gnn_layer 2  --att_layer 1 --test True --testSize 1000 --ssldim 48 --regenerate 1
+python src/main.py --model_name SelfGNN --model_mode other --data gowalla --lr 2e-3 --reg 1e-2 --temp 0.1 --ssl_reg 1e-6 --save_path gowalla  --epoch 150  --batch 512 --sslNum 40 --graphNum 3  --gnn_layer 2  --att_layer 1 --test True --testSize 1000 --ssldim 48 --regenerate 1
 # MovieLens
-python src/main.py --data movielens --lr 1e-3 --reg 1e-2 --ssl_reg 1e-6 --save_path movie6 --epoch 150  --batch 512 --sampNum 40 --sslNum 90 --graphNum 6 --gnn_layer 2 --att_layer 3 --test True  --testSize 1000 --ssldim 48 --keepRate 0.5 --pos_length 200 --leaky 0.5 --regenerate 1
+python src/main.py --model_name SelfGNN --model_mode other --data movielens --lr 1e-3 --reg 1e-2 --ssl_reg 1e-6 --save_path movie6 --epoch 150  --batch 512 --sampNum 40 --sslNum 90 --graphNum 6 --gnn_layer 2 --att_layer 3 --test True  --testSize 1000 --ssldim 48 --keepRate 0.5 --pos_length 200 --leaky 0.5 --regenerate 1
 # Yelp
-python src/main.py --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path yelp12 --epoch 150  --batch 512 --sslNum 40 --graphNum 12 --gnn_layer 3  --att_layer 2 --test True --testSize 1000 --ssldim 32 --sampNum 40 --regenerate 1
+python src/main.py --model_name SelfGNN --model_mode other --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path yelp12 --epoch 150  --batch 512 --sslNum 40 --graphNum 12 --gnn_layer 3  --att_layer 2 --test True --testSize 1000 --ssldim 32 --sampNum 40 --regenerate 1
 ```
 
 
@@ -80,7 +80,7 @@ python src/main.py --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path
 
 ```bash
 # 运行SelfGNN
-python src/main.py --data grocery --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path grocery --epoch 20  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python src/main.py --model_name SelfGNN --model_mode other --data grocery --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path grocery --epoch 20  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
 # 运行GRU4Rec
 python src/main.py --model_name GRU4Rec --emb_size 64 --hidden_size 100 --lr 1e-3 --l2 1e-4 --history_max 20 --dataset grocery
 # 运行TiSASRec
@@ -91,7 +91,7 @@ python src/main.py --model_name TiSASRec --emb_size 64 --num_layers 1 --num_head
 
 ```bash
 # 运行SelfGNN
-python src/main.py --data ml1m --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path ml1m --epoch 100  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python src/main.py --model_name SelfGNN --model_mode other --data ml1m --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path ml1m --epoch 100  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
 # 运行GRU4Rec
 python src/main.py --model_name GRU4Rec --emb_size 64 --hidden_size 100 --lr 1e-3 --l2 1e-4 --history_max 20 --dataset ml1m
 # 运行TiSASRec

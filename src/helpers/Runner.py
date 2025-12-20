@@ -8,6 +8,7 @@ from random import randint
 
 class Runner(BaseRunner):
     def __init__(self, args):
+        super(Runner, self).__init__(args)
         # self.model = model
         # self.handler = model.handler
         # self.args = model.args
@@ -92,8 +93,8 @@ class Runner(BaseRunner):
                 # 将采样得到的数据赋值给 self 变量，因为 ours_pytorch 方法中使用了 self.uids 等
                 uids = torch.tensor(uLocs, dtype=torch.long)
                 iids = torch.tensor(iLocs, dtype=torch.long)
-                sequence = torch.tensor(sequence, dtype=torch.long)
-                mask = torch.tensor(mask, dtype=torch.float32)
+                sequence = torch.tensor(np.array(sequence), dtype=torch.long)
+                mask = torch.tensor(np.array(mask), dtype=torch.float32)
                 uLocs_seq = torch.tensor(uLocs_seq, dtype=torch.long)
 
                 # 处理 SSL 数据的列表结构
@@ -164,8 +165,8 @@ class Runner(BaseRunner):
             suLocs, siLocs, _ = self.sampleSslBatch(batIds, self.handler.subMat, False)
             uids = torch.tensor(uLocs, dtype=torch.long)
             iids = torch.tensor(iLocs, dtype=torch.long)
-            sequence = torch.tensor(sequence, dtype=torch.long)
-            mask = torch.tensor(mask, dtype=torch.float32)
+            sequence = torch.tensor(np.array(sequence), dtype=torch.long)
+            mask = torch.tensor(np.array(mask), dtype=torch.float32)
             uLocs_seq = torch.tensor(uLocs_seq, dtype=torch.long)
 
             # 处理 SSL 数据的列表结构
