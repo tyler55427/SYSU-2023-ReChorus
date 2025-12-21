@@ -33,7 +33,6 @@ pip install -r requirements.txt
 
 保持论文的参数设置
 
-
 ```bash
 # Amazon
 python src/main.py --model_name SelfGNN --model_mode other --data amazon --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path amazon --epoch 150  --batch 512 --sslNum 80 --graphNum 5  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 1000 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
@@ -44,7 +43,6 @@ python src/main.py --model_name SelfGNN --model_mode other --data movielens --lr
 # Yelp
 python src/main.py --model_name SelfGNN --model_mode other --data yelp --reg 1e-2 --temp 0.1 --ssl_reg 1e-7  --save_path yelp12 --epoch 150  --batch 512 --sslNum 40 --graphNum 12 --gnn_layer 3  --att_layer 2 --test True --testSize 1000 --ssldim 32 --sampNum 40 --regenerate 1
 ```
-
 
 # 3. 调整参数进行实验
 
@@ -66,13 +64,13 @@ python src/main.py --model_name SelfGNN --model_mode other --data yelp --reg 1e-
 2. 长期学习：移除基于注意力的实例级别的序列模式（-ATL）
 3. 个性化降噪自增强：移除自增强损失（-SAL）
 
-| 模型变体 | HR@10 | NDCG@10 |
-| :--- | :--- | :--- |
-| **SelfGNN (Full)** | **0.3918** | **0.2400** |
-| --- | --- | --- |
-| w/o 短期协作图编码 | 0.2731 | 0.1525 |
-| w/o 实例级序列建模 | 0.2795 | 0.1704 |
-| w/o 个性化去噪自增强学习 | 0.2818 | 0.1716 |
+| 模型变体                 | HR@10      | NDCG@10    |
+| :----------------------- | :--------- | :--------- |
+| **SelfGNN (Full)**       | **0.3918** | **0.2400** |
+| ---                      | ---        | ---        |
+| w/o 短期协作图编码       | 0.2731     | 0.1525     |
+| w/o 实例级序列建模       | 0.3227     | 0.1930     |
+| w/o 个性化去噪自增强学习 | 0.3628     | 0.2195     |
 
 # 5. 尝试在 ReChorus 框架上的数据集进行测试
 
@@ -80,7 +78,7 @@ python src/main.py --model_name SelfGNN --model_mode other --data yelp --reg 1e-
 
 ```bash
 # 运行SelfGNN
-python src/main.py --model_name SelfGNN --model_mode other --data grocery --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path grocery --epoch 20  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python src/main.py --model_name SelfGNN --model_mode other --data grocery --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path grocery --epoch 10  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
 # 运行GRU4Rec
 python src/main.py --model_name GRU4Rec --emb_size 64 --hidden_size 100 --lr 1e-3 --l2 1e-4 --history_max 20 --dataset grocery
 # 运行TiSASRec

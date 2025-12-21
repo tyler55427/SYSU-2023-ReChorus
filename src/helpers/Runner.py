@@ -2,7 +2,8 @@ import torch
 # import torch.optim as optim
 import numpy as np
 from helpers.BaseRunner import BaseRunner
-# import pickle
+import pickle
+import os
 from Utils_.utils import *
 from random import randint
 
@@ -63,7 +64,7 @@ class Runner(BaseRunner):
                 print(self.makePrint('Test', ep, reses, test))
                 # self.makePrint('Test', ep, reses, test)
             if ep % self.args.tstEpoch == 0 and reses['NDCG']>maxndcg:
-                # self.saveHistory()
+                self.saveHistory()
                 maxndcg=reses['NDCG']
                 maxres=reses
                 maxepoch=ep
@@ -71,6 +72,8 @@ class Runner(BaseRunner):
         reses = self.testEpoch()
         print(self.makePrint('Test', self.args.epoch, reses, True))
         print(self.makePrint('max', maxepoch, maxres, True))
+        # 保存最终模型
+        self.saveHistory(final=True)
     
     def trainEpoch(self, globalStep, optimizer, scheduler):
         num = self.args.user
@@ -381,4 +384,49 @@ class Runner(BaseRunner):
                 sequence[i]=np.zeros(self.args.pos_length,dtype=int)
                 mask[i]=np.zeros(self.args.pos_length)
         return uLocs, iLocs, temTst, tstLocs, sequence, mask, uLocs_seq, val_list
+    
+    def saveHistory(self, final=False):
+        if self.args.epoch == 0:
+            return
+        
+        # 创建保存目录
+        os.makedirs('History', exist_ok=True)
+        os.makedirs('Models', exist_ok=True)
+        
+        # 保存训练历史指标
+        with open('History/' + self.args.save_path + '.his', 'wb') as fs:
+            pickle.dump(self.metrics, fs)
+        
+        # 保存 PyTorch 模型
+        save_path = 'Models/' + self.args.save_path
+        if final:
+            save_path += '_final'
+        
+        torch.save({
+            'model_state_dict': self.model.state_dict(),
+            'metrics': self.metrics,
+            'args': self.args
+        }, save_path + '.pth')
+        
+        print('Model Saved: %s' % (save_path + '.pth'))
+
+    def loadModel(self):
+        # 加载 PyTorch 模型
+        load_path = 'Models/' + self.args.load_model + '.pth'
+        
+        if os.path.exists(load_path):
+            checkpoint = torch.load(load_path, map_location=torch.device('cuda' if torch.cuda.is_available() else 'cpu'))
+            self.model.load_state_dict(checkpoint['model_state_dict'])
+            
+            if 'metrics' in checkpoint:
+                self.metrics = checkpoint['metrics']
+            
+            print('Model Loaded from: %s' % load_path)
+        else:
+            # 兼容旧格式：尝试加载历史文件
+            his_path = 'History/' + self.args.load_model + '.his'
+            if os.path.exists(his_path):
+                with open(his_path, 'rb') as fs:
+                    self.metrics = pickle.load(fs)
+            print('Model Loaded (history only): %s' % his_path)
         
