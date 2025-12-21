@@ -348,12 +348,16 @@ class Handler(BaseReader):
                 data[i][3] = (data[i][3][1:-1]).split(' ')
                 data[i][3] = [int(x) for x in data[i][3]]
         data = np.array(data)
-        # 形状： (num_test_samples, 3)
+        # 形状： (num_test_samples, 4)
         # 每个样本格式为 [user_id, item_id, timestamp, [negative_item_ids]]
         test_data = data
 
-        self.tstInt = test_data[:, 1].astype(np.int32)
-        self.tstUsrs = test_data[:, 0].astype(np.int32)
+        # self.tstInt = test_data[:, 1].astype(np.int32)
+        # self.tstUsrs = test_data[:, 0].astype(np.int32)
+        self.tstInt = [None] * num_users
+        self.tstInt = np.array(self.tstInt)
+        self.tstInt[data[:, 0].astype(np.int32)] = data[:, 1].astype(np.int32)
+        self.tstUsrs = np.reshape(np.argwhere(self.tstInt != None), [-1])
         self.test_dict = dict()
         for i in range(len(test_data)):
             user_id = test_data[i][0] + 1
