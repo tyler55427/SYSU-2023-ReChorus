@@ -65,7 +65,7 @@ class Handler(BaseReader):
         self.args = args
         self.args.decay_step = args.trnNum//args.batch
         if self.args.data == 'yelp':
-            predir = './data/Yelp/'
+            predir = './data/yelp/'
         elif self.args.data == 'gowalla':
             predir = './data/gowalla/'
         elif self.args.data == 'amazon':
