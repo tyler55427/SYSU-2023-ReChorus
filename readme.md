@@ -89,7 +89,7 @@ python src/main.py --model_name TiSASRec --emb_size 64 --num_layers 1 --num_head
 
 ```bash
 # 运行SelfGNN
-python src/main.py --model_name SelfGNN --model_mode other --data ml1m --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path ml1m --epoch 100  --batch 256 --sslNum 80 --graphNum 3  --pred_num 0 --gnn_layer 3 --test True --att_layer 4 --testSize 100 --keepRate 0.5 --sampNum 40 --pos_length 200 --regenerate 1
+python src/main.py --model_name SelfGNN --model_mode other --data ml1m --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path ml1m --epoch 20  --batch 256 --sslNum 20 --graphNum 3  --pred_num 0 --gnn_layer 1 --test True --att_layer 1 --testSize 100 --keepRate 0.5 --sampNum 10 --pos_length 200 --regenerate 1
 # 运行GRU4Rec
 python src/main.py --model_name GRU4Rec --emb_size 64 --hidden_size 100 --lr 1e-3 --l2 1e-4 --history_max 20 --dataset ml1m
 # 运行TiSASRec
