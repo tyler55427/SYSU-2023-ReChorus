@@ -1,0 +1,107 @@
+Namespace(model_name='GRU4Rec', model_mode='')
+--------------------------------------------- BEGIN: 2025-12-20 09:48:14 ---------------------------------------------
+
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | ml1m      
+ dropout            | 0         
+ early_stop         | 10        
+ emb_size           | 64        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ hidden_size        | 100       
+ history_max        | 20        
+ l2                 | 0.0001    
+ lr                 | 0.001     
+ main_metric        |           
+ num_neg            | 1         
+ num_workers        | 5         
+ optimizer          | Adam      
+ random_seed        | 0         
+ save_final_results | 1         
+ test_all           | 0         
+ topk               | 5,10,20,50
+=================================
+Device: cuda
+Load corpus from data/ml1m/SeqReader.pkl
+#params: 293512
+GRU4Rec(
+  (i_embeddings): Embedding(3707, 64)
+  (rnn): GRU(64, 100, batch_first=True)
+  (out): Linear(in_features=100, out_features=64, bias=True)
+)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Test Before Training: (HR@5:0.0488,NDCG@5:0.0285,HR@10:0.1008,NDCG@10:0.0451,HR@20:0.1997,NDCG@20:0.0695,HR@50:0.4962,NDCG@50:0.1274)
+Optimizer: Adam
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Epoch 1     loss=0.2829 [75.2 s]	dev=(HR@5:0.4338,NDCG@5:0.2942) [0.4 s] *
+Epoch 2     loss=0.2070 [68.8 s]	dev=(HR@5:0.5179,NDCG@5:0.3586) [0.4 s] *
+Epoch 3     loss=0.1714 [69.1 s]	dev=(HR@5:0.5586,NDCG@5:0.3944) [0.4 s] *
+Epoch 4     loss=0.1591 [68.9 s]	dev=(HR@5:0.5826,NDCG@5:0.4162) [0.4 s] *
+Epoch 5     loss=0.1512 [69.7 s]	dev=(HR@5:0.5906,NDCG@5:0.4227) [0.4 s] *
+Epoch 6     loss=0.1472 [69.6 s]	dev=(HR@5:0.5980,NDCG@5:0.4283) [0.5 s] *
+Epoch 7     loss=0.1450 [69.6 s]	dev=(HR@5:0.5985,NDCG@5:0.4265) [0.4 s]
+Epoch 8     loss=0.1437 [69.7 s]	dev=(HR@5:0.5997,NDCG@5:0.4310) [0.4 s] *
+Epoch 9     loss=0.1428 [71.4 s]	dev=(HR@5:0.6088,NDCG@5:0.4347) [0.6 s] *
+Epoch 10    loss=0.1400 [69.4 s]	dev=(HR@5:0.6144,NDCG@5:0.4400) [0.4 s] *
+Epoch 11    loss=0.1374 [69.3 s]	dev=(HR@5:0.6156,NDCG@5:0.4474) [0.4 s] *
+Epoch 12    loss=0.1360 [69.6 s]	dev=(HR@5:0.6247,NDCG@5:0.4522) [0.4 s] *
+Epoch 13    loss=0.1347 [69.5 s]	dev=(HR@5:0.6233,NDCG@5:0.4514) [0.4 s]
+Epoch 14    loss=0.1333 [69.3 s]	dev=(HR@5:0.6354,NDCG@5:0.4580) [0.4 s] *
+Epoch 15    loss=0.1325 [69.7 s]	dev=(HR@5:0.6247,NDCG@5:0.4580) [0.4 s] *
+Epoch 16    loss=0.1327 [69.5 s]	dev=(HR@5:0.6389,NDCG@5:0.4645) [0.6 s] *
+Epoch 17    loss=0.1308 [69.9 s]	dev=(HR@5:0.6379,NDCG@5:0.4666) [0.6 s] *
+Epoch 18    loss=0.1303 [69.4 s]	dev=(HR@5:0.6434,NDCG@5:0.4707) [0.4 s] *
+Epoch 19    loss=0.1292 [70.2 s]	dev=(HR@5:0.6437,NDCG@5:0.4711) [0.4 s] *
+Epoch 20    loss=0.1291 [70.6 s]	dev=(HR@5:0.6333,NDCG@5:0.4675) [0.4 s]
+Epoch 21    loss=0.1288 [70.0 s]	dev=(HR@5:0.6406,NDCG@5:0.4690) [0.4 s]
+Epoch 22    loss=0.1283 [70.4 s]	dev=(HR@5:0.6469,NDCG@5:0.4745) [0.7 s] *
+Epoch 23    loss=0.1280 [71.2 s]	dev=(HR@5:0.6439,NDCG@5:0.4709) [0.4 s]
+Epoch 24    loss=0.1274 [69.9 s]	dev=(HR@5:0.6382,NDCG@5:0.4653) [0.4 s]
+Epoch 25    loss=0.1265 [70.2 s]	dev=(HR@5:0.6460,NDCG@5:0.4746) [0.4 s] *
+Epoch 26    loss=0.1261 [70.4 s]	dev=(HR@5:0.6439,NDCG@5:0.4719) [0.4 s]
+Epoch 27    loss=0.1265 [70.3 s]	dev=(HR@5:0.6485,NDCG@5:0.4737) [0.4 s]
+Epoch 28    loss=0.1259 [69.7 s]	dev=(HR@5:0.6472,NDCG@5:0.4760) [0.6 s] *
+Epoch 29    loss=0.1258 [72.6 s]	dev=(HR@5:0.6482,NDCG@5:0.4758) [0.4 s]
+Epoch 30    loss=0.1260 [72.6 s]	dev=(HR@5:0.6478,NDCG@5:0.4738) [0.4 s]
+Epoch 31    loss=0.1251 [71.0 s]	dev=(HR@5:0.6520,NDCG@5:0.4779) [0.7 s] *
+Epoch 32    loss=0.1247 [71.0 s]	dev=(HR@5:0.6394,NDCG@5:0.4698) [0.4 s]
+Epoch 33    loss=0.1255 [69.7 s]	dev=(HR@5:0.6459,NDCG@5:0.4712) [0.5 s]
+Epoch 34    loss=0.1246 [70.5 s]	dev=(HR@5:0.6432,NDCG@5:0.4717) [0.4 s]
+Epoch 35    loss=0.1250 [70.5 s]	dev=(HR@5:0.6455,NDCG@5:0.4757) [0.4 s]
+Epoch 36    loss=0.1239 [70.7 s]	dev=(HR@5:0.6447,NDCG@5:0.4699) [0.6 s]
+Epoch 37    loss=0.1245 [70.6 s]	dev=(HR@5:0.6487,NDCG@5:0.4739) [0.4 s]
+Epoch 38    loss=0.1246 [71.3 s]	dev=(HR@5:0.6482,NDCG@5:0.4778) [0.4 s]
+Epoch 39    loss=0.1242 [71.4 s]	dev=(HR@5:0.6576,NDCG@5:0.4823) [0.4 s] *
+Epoch 40    loss=0.1246 [71.4 s]	dev=(HR@5:0.6474,NDCG@5:0.4764) [0.6 s]
+Epoch 41    loss=0.1238 [72.3 s]	dev=(HR@5:0.6482,NDCG@5:0.4758) [0.4 s]
+Epoch 42    loss=0.1237 [71.3 s]	dev=(HR@5:0.6495,NDCG@5:0.4744) [0.4 s]
+Epoch 43    loss=0.1235 [71.4 s]	dev=(HR@5:0.6535,NDCG@5:0.4789) [0.5 s]
+Epoch 44    loss=0.1237 [72.4 s]	dev=(HR@5:0.6550,NDCG@5:0.4777) [0.4 s]
+Epoch 45    loss=0.1238 [71.8 s]	dev=(HR@5:0.6556,NDCG@5:0.4817) [0.4 s]
+Epoch 46    loss=0.1225 [71.4 s]	dev=(HR@5:0.6480,NDCG@5:0.4732) [0.5 s]
+Epoch 47    loss=0.1235 [72.0 s]	dev=(HR@5:0.6449,NDCG@5:0.4763) [0.6 s]
+Epoch 48    loss=0.1229 [71.7 s]	dev=(HR@5:0.6540,NDCG@5:0.4791) [0.4 s]
+Early stop at 48 based on dev result.
+
+Best Iter(dev)=   39	 dev=(HR@5:0.6576,NDCG@5:0.4823) [3410.9 s] 
+Load model from ../model/GRU4Rec/GRU4Rec__ml1m__0__lr=0.001__l2=0.0001__emb_size=64__hidden_size=100.pt
+                                                                                                    
+Dev  After Training: (HR@5:0.6576,NDCG@5:0.4823,HR@10:0.7925,NDCG@10:0.5262,HR@20:0.8902,NDCG@20:0.5511,HR@50:0.9775,NDCG@50:0.5687)
+                                                                                                    
+Test After Training: (HR@5:0.6293,NDCG@5:0.4575,HR@10:0.7608,NDCG@10:0.5003,HR@20:0.8687,NDCG@20:0.5276,HR@50:0.9719,NDCG@50:0.5483)
+make dirs: ../log/GRU4Rec/GRU4Rec__ml1m__0__lr=0
+Saving top-100 recommendation results to: ../log/GRU4Rec/GRU4Rec__ml1m__0__lr=0/rec-GRU4Rec-dev.csv
+dev Prediction results saved!
+Saving top-100 recommendation results to: ../log/GRU4Rec/GRU4Rec__ml1m__0__lr=0/rec-GRU4Rec-test.csv
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+test Prediction results saved!
+
+--------------------------------------------- END: 2025-12-20 10:45:12 ---------------------------------------------

@@ -45,7 +45,7 @@ class Handler(BaseReader):
         parser.add_argument('--mult', default=100, type=float, help='multiplier for the result')
         parser.add_argument('--keepRate', default=0.5, type=float, help='rate for dropout')
         parser.add_argument('--divSize', default=10000, type=int, help='div size for smallTestEpoch')
-        parser.add_argument('--tstEpoch', default=3, type=int, help='number of epoch to test while training')
+        parser.add_argument('--tstEpoch', default=1, type=int, help='number of epoch to test while training')
         parser.add_argument('--subUsrSize', default=10, type=int, help='number of item for each sub-user')
         parser.add_argument('--subUsrDcy', default=0.9, type=float, help='decay factor for sub-users over time')
         parser.add_argument('--hyperReg', default=1e-4, type=float, help='regularizer for hyper connections')

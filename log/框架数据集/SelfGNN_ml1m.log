@@ -1,0 +1,2120 @@
+(selfgnn) PS D:\A1111\School\中大课件\大三上\机器学习实验\大作业\SYSU-2023-ReChorus> python src/main.py --model_name SelfGNN --model_mode other --data ml1m --reg 1e-2 --lr 1e-3 --temp 0.1 --ssl_reg 1e-6 --save_path ml1m --epoch 20  --batch 256 --sslNum 20 --graphNum 3  --pred_num 0 --gnn_layer 1 --test True --att_layer 1 --testSize 100 --keepRate 0.5 --sampNum 10 --pos_length 200 --regenerate 1
+Namespace(model_name='SelfGNN', model_mode='other')
+--------------------------------------------- BEGIN: 2025-12-21 17:12:07 ---------------------------------------------
+
+==================================
+ Arguments           | Values
+==================================
+ att_layer           | 1
+ att_size            | 12000
+ batch               | 256
+ batch_size          | 256
+ data                | ml1m
+ data_appendix       |
+ decay               | 0.96
+ deep_layer          | 0
+ divSize             | 10000
+ early_stop          | 10
+ epoch               | 20
+ eval_batch_size     | 256
+ gnn_layer           | 1
+ gpu                 | 0
+ graphNum            | 3
+ graphSampleN        | 15000
+ hyperNum            | 128
+ hyperReg            | 0.0001
+ keepRate            | 0.5
+ l2                  | 0
+ latdim              | 64
+ leaky               | 0.5
+ lr                  | 0.001
+ main_metric         |
+ memosize            | 2
+ mult                | 100
+ nfs                 | False
+ num_attention_heads | 16
+ num_workers         | 5
+ optimizer           | Adam
+ percent             | 0.0
+ pos_length          | 200
+ pred_num            | 0
+ query_vector_dim    | 64
+ random_seed         | 0
+ rank                | 4
+ reg                 | 0.01
+ sampNum             | 10
+ save_final_results  | 1
+ save_path           | ml1m
+ shoot               | 10
+ slot                | 1
+ ssl                 | True
+ sslNum              | 20
+ ssl_reg             | 1e-06
+ ssldim              | 32
+ subUsrDcy           | 0.9
+ subUsrSize          | 10
+ target              | buy
+ temp                | 0.1
+ test                | True
+ testSize            | 100
+ testbatch           | 64
+ topk                | 5,10,20,50
+ trnNum              | 10000
+ tstEpoch            | 1
+ uid                 | 0
+==================================
+Device: cpu
+['user_id\titem_id\ttime']
+['user_id\titem_id\ttime']
+D:\A1111\School\中大课件\大三上\机器学习实验\大作业\SYSU-2023-ReChorus\src\helpers\Handler.py:302: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  self.sequence = np.array(sequence)
+['user_id\titem_id\ttime\tneg_items']
+['user_id\titem_id\ttime\tneg_items']
+D:\A1111\School\中大课件\大三上\机器学习实验\大作业\SYSU-2023-ReChorus\src\helpers\Handler.py:350: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  data = np.array(data)
+1046454548 3
+  (0, 0)        978824268
+  (0, 144)      978301777
+  (0, 253)      978300760
+  (0, 513)      978824195
+  (0, 517)      978302149
+  (0, 574)      978824268
+  (0, 580)      978302268
+  (0, 581)      978824268
+  (0, 593)      978301398
+  (0, 639)      978302109
+  (0, 689)      978300760
+  (0, 708)      978824268
+  (0, 740)      978824291
+  (0, 853)      978301968
+  (0, 858)      978301368
+  (0, 877)      978301752
+  (0, 957)      978300055
+  (0, 963)      978301777
+  (0, 964)      978302205
+  (0, 970)      978301753
+  (0, 1025)     978301953
+  (0, 1104)     978300760
+  (0, 1107)     978302268
+  (0, 1117)     978300719
+  (0, 1154)     978302091
+  :     :
+  (6039, 3004)  956716750
+  (6039, 3038)  957716451
+  (6039, 3063)  956704305
+  (6039, 3107)  960971875
+  (6039, 3115)  956715910
+  (6039, 3130)  957717322
+  (6039, 3132)  956715455
+  (6039, 3157)  956716407
+  (6039, 3186)  957717158
+  (6039, 3190)  956715865
+  (6039, 3192)  956715421
+  (6039, 3217)  956715966
+  (6039, 3238)  957717463
+  (6039, 3271)  960971857
+  (6039, 3272)  956704056
+  (6039, 3288)  956715569
+  (6039, 3291)  956716263
+  (6039, 3309)  956715383
+  (6039, 3313)  960972741
+  (6039, 3318)  956715942
+  (6039, 3441)  960971696
+  (6039, 3461)  964828575
+  (6039, 3493)  960971654
+  (6039, 3508)  964828782
+  (6039, 3575)  963272166
+  (19, 1276)    1009669115
+  (19, 1357)    1009669071
+  (19, 1406)    1009669181
+  (19, 1556)    1009669071
+  (19, 2439)    1009669115
+  (19, 2651)    1009669071
+  (19, 3294)    1009669181
+  (19, 3475)    1009669071
+  (19, 3510)    1009669116
+  (21, 969)     991149472
+  (21, 1025)    991149289
+  (21, 1704)    991149055
+  (21, 1831)    991149352
+  (21, 1865)    991149306
+  (21, 2183)    991149140
+  (21, 3294)    991149320
+  (21, 3456)    991149352
+  (21, 3650)    991149493
+  (22, 317)     993706949
+  (22, 854)     993706477
+  (22, 1018)    993706407
+  (22, 1114)    993706407
+  (22, 1132)    993706407
+  (22, 1166)    993706407
+  (22, 1289)    993706949
+  :     :
+  (6015, 3589)  994455087
+  (6015, 3615)  994453746
+  (6015, 3648)  994454260
+  (6015, 3662)  994455188
+  (6015, 3663)  994454585
+  (6039, 225)   997454398
+  (6039, 443)   997454349
+  (6039, 892)   997454160
+  (6039, 1121)  997454080
+  (6039, 1122)  997453796
+  (6039, 1166)  997453909
+  (6039, 1178)  997453960
+  (6039, 1236)  997454140
+  (6039, 1536)  997454212
+  (6039, 1618)  997454464
+  (6039, 1741)  997454464
+  (6039, 1767)  997454036
+  (6039, 1887)  997453982
+  (6039, 2374)  997454126
+  (6039, 2378)  997453762
+  (6039, 2520)  997454180
+  (6039, 2709)  997454429
+  (6039, 3133)  997453796
+  (6039, 3189)  997453909
+  (6039, 3429)  997454367
+  (35, 240)     1040545068
+  (35, 287)     1040545019
+  (35, 581)     1040545109
+  (35, 1174)    1040545109
+  (35, 1560)    1040544350
+  (35, 2079)    1040544350
+  (35, 2176)    1040544564
+  (35, 2490)    1040544494
+  (35, 2508)    1040544662
+  (35, 2957)    1040544685
+  (35, 3543)    1040544521
+  (58, 16)      1041963037
+  (58, 24)      1041963069
+  (58, 31)      1041967144
+  (58, 56)      1041967787
+  (58, 106)     1041968282
+  (58, 193)     1041966969
+  (58, 217)     1041967802
+  (58, 293)     1041963264
+  (58, 305)     1041962835
+  (58, 367)     1041963214
+  (58, 495)     1041967732
+  (58, 501)     1041968028
+  (58, 527)     1041967123
+  (58, 576)     1041967475
+  :     :
+  (5995, 3132)  1020096557
+  (5995, 3189)  1020096923
+  (5995, 3266)  1020096679
+  (5995, 3293)  1020108866
+  (5995, 3315)  1020096724
+  (5995, 3318)  1020097200
+  (5995, 3327)  1020112392
+  (5995, 3368)  1020097508
+  (5995, 3394)  1020109386
+  (5995, 3429)  1020096507
+  (5995, 3430)  1020097620
+  (5995, 3439)  1020096557
+  (5995, 3457)  1020097667
+  (5995, 3465)  1020111375
+  (5995, 3470)  1020097849
+  (5995, 3473)  1020111141
+  (5995, 3474)  1020112230
+  (5995, 3481)  1020097158
+  (5995, 3510)  1020097399
+  (5995, 3548)  1020110319
+  (5995, 3566)  1020110188
+  (5995, 3582)  1020111017
+  (5995, 3590)  1020113184
+  (5995, 3599)  1020097414
+  (5995, 3651)  1020096234
+  (0, 0)        978824268
+  (0, 144)      978301777
+  (0, 253)      978300760
+  (0, 513)      978824195
+  (0, 517)      978302149
+  (0, 574)      978824268
+  (0, 580)      978302268
+  (0, 581)      978824268
+  (0, 593)      978301398
+  (0, 639)      978302109
+  (0, 689)      978300760
+  (0, 708)      978824268
+  (0, 740)      978824291
+  (0, 853)      978301968
+  (0, 858)      978301368
+  (0, 877)      978301752
+  (0, 957)      978300055
+  (0, 963)      978301777
+  (0, 964)      978302205
+  (0, 970)      978301753
+  (0, 1025)     978301953
+  (0, 1104)     978300760
+  (0, 1107)     978302268
+  (0, 1117)     978300719
+  (0, 1154)     978302091
+  :     :
+  (6039, 3004)  956716750
+  (6039, 3038)  957716451
+  (6039, 3063)  956704305
+  (6039, 3107)  960971875
+  (6039, 3115)  956715910
+  (6039, 3130)  957717322
+  (6039, 3132)  956715455
+  (6039, 3157)  956716407
+  (6039, 3186)  957717158
+  (6039, 3190)  956715865
+  (6039, 3192)  956715421
+  (6039, 3217)  956715966
+  (6039, 3238)  957717463
+  (6039, 3271)  960971857
+  (6039, 3272)  956704056
+  (6039, 3288)  956715569
+  (6039, 3291)  956716263
+  (6039, 3309)  956715383
+  (6039, 3313)  960972741
+  (6039, 3318)  956715942
+  (6039, 3441)  960971696
+  (6039, 3461)  964828575
+  (6039, 3493)  960971654
+  (6039, 3508)  964828782
+  (6039, 3575)  963272166   (35, 240)   1040545068
+  (35, 287)     1040545019
+  (35, 581)     1040545109
+  (35, 1174)    1040545109
+  (35, 1560)    1040544350
+  (35, 2079)    1040544350
+  (35, 2176)    1040544564
+  (35, 2490)    1040544494
+  (35, 2508)    1040544662
+  (35, 2957)    1040544685
+  (35, 3543)    1040544521
+  (58, 16)      1041963037
+  (58, 24)      1041963069
+  (58, 31)      1041967144
+  (58, 56)      1041967787
+  (58, 106)     1041968282
+  (58, 193)     1041966969
+  (58, 217)     1041967802
+  (58, 293)     1041963264
+  (58, 305)     1041962835
+  (58, 367)     1041963214
+  (58, 495)     1041967732
+  (58, 501)     1041968028
+  (58, 527)     1041967123
+  (58, 576)     1041967475
+  :     :
+  (5995, 3132)  1020096557
+  (5995, 3189)  1020096923
+  (5995, 3266)  1020096679
+  (5995, 3293)  1020108866
+  (5995, 3315)  1020096724
+  (5995, 3318)  1020097200
+  (5995, 3327)  1020112392
+  (5995, 3368)  1020097508
+  (5995, 3394)  1020109386
+  (5995, 3429)  1020096507
+  (5995, 3430)  1020097620
+  (5995, 3439)  1020096557
+  (5995, 3457)  1020097667
+  (5995, 3465)  1020111375
+  (5995, 3470)  1020097849
+  (5995, 3473)  1020111141
+  (5995, 3474)  1020112230
+  (5995, 3481)  1020097158
+  (5995, 3510)  1020097399
+  (5995, 3548)  1020110319
+  (5995, 3566)  1020110188
+  (5995, 3582)  1020111017
+  (5995, 3590)  1020113184
+  (5995, 3599)  1020097414
+  (5995, 3651)  1020096234
+Save corpus to ./data\ml1m\Handler.pkl
+D:\A1111\School\中大课件\大三上\机器学习实验\大作业\SYSU-2023-ReChorus\src\Utils_\utils.py:39: RuntimeWarning: invalid value encountered in sqrt
+  rowD = np.squeeze(np.array(1 / (np.sqrt(np.sum(mat, axis=1) + 1e-8) + 1e-8)))
+D:\A1111\School\中大课件\大三上\机器学习实验\大作业\SYSU-2023-ReChorus\src\Utils_\utils.py:40: RuntimeWarning: invalid value encountered in sqrt
+  colD = np.squeeze(np.array(1 / (np.sqrt(np.sum(mat, axis=0) + 1e-8) + 1e-8)))
+#params: 1964801
+SelfGNN(
+  (time_fc): Linear(in_features=64, out_features=64, bias=True)
+  (lstm): LSTM(64, 64, batch_first=True)
+  (multihead_self_attention0): MultiHeadSelfAttention(
+    (W_Q): Linear(in_features=64, out_features=64, bias=False)
+    (W_K): Linear(in_features=64, out_features=64, bias=False)
+    (W_V): Linear(in_features=64, out_features=64, bias=False)
+  )
+  (multihead_self_attention1): MultiHeadSelfAttention(
+    (W_Q): Linear(in_features=64, out_features=64, bias=False)
+    (W_K): Linear(in_features=64, out_features=64, bias=False)
+    (W_V): Linear(in_features=64, out_features=64, bias=False)
+  )
+  (multihead_self_attention_sequence): ModuleList(
+    (0): MultiHeadSelfAttention(
+      (W_Q): Linear(in_features=64, out_features=64, bias=False)
+      (W_K): Linear(in_features=64, out_features=64, bias=False)
+      (W_V): Linear(in_features=64, out_features=64, bias=False)
+    )
+  )
+  (meta2_fc): Linear(in_features=192, out_features=32, bias=True)
+  (meta3_fc): Linear(in_features=32, out_features=1, bias=True)
+  (layer_norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+)
+USER 6040 ITEM 3706
+18.148212
+Steps 0/24: hit10 = 66, ndcg10 = 34
+20.730728
+Steps 1/24: hit10 = 74, ndcg10 = 37
+26.704718
+Steps 2/24: hit10 = 69, ndcg10 = 31
+29.40216
+Steps 3/24: hit10 = 65, ndcg10 = 31
+26.982092
+Steps 4/24: hit10 = 67, ndcg10 = 33
+20.113005
+Steps 5/24: hit10 = 71, ndcg10 = 37
+29.819677
+Steps 6/24: hit10 = 70, ndcg10 = 35
+28.83403
+Steps 7/24: hit10 = 63, ndcg10 = 30
+40.955135
+Steps 8/24: hit10 = 71, ndcg10 = 38
+24.535416
+Steps 9/24: hit10 = 77, ndcg10 = 37
+26.325863
+Steps 10/24: hit10 = 71, ndcg10 = 35
+26.491644
+Steps 11/24: hit10 = 82, ndcg10 = 43
+22.368416
+Steps 12/24: hit10 = 52, ndcg10 = 26
+36.64299
+Steps 13/24: hit10 = 76, ndcg10 = 36
+33.90621
+Steps 14/24: hit10 = 70, ndcg10 = 34
+33.399796
+Steps 15/24: hit10 = 72, ndcg10 = 38
+28.229738
+Steps 16/24: hit10 = 79, ndcg10 = 38
+17.571812
+Steps 17/24: hit10 = 56, ndcg10 = 27
+32.284576
+Steps 18/24: hit10 = 58, ndcg10 = 26
+37.179768
+Steps 19/24: hit10 = 73, ndcg10 = 34
+30.74636
+Steps 20/24: hit10 = 64, ndcg10 = 32
+35.490993
+Steps 21/24: hit10 = 60, ndcg10 = 30
+37.21841
+Steps 22/24: hit10 = 71, ndcg10 = 34
+29.070505
+Steps 23/24: hit10 = 40, ndcg10 = 19
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.09950696754269081,epochHit5:0.16158940397350993
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.169338198815292,epochHit20:0.40860927152317883
+Test Before Training: Epoch 0/20, test: HR = 0.2677, NDCG = 0.1338
+Model Prepared
+Variables Inited
+Step 0/24: preloss = 4.07, REGLoss = 9.16
+Step 1/24: preloss = 2.74, REGLoss = 8.83
+Step 2/24: preloss = 2.38, REGLoss = 8.50
+Step 3/24: preloss = 1.93, REGLoss = 8.19
+Step 4/24: preloss = 1.45, REGLoss = 7.88
+Step 5/24: preloss = 1.34, REGLoss = 7.59
+Step 6/24: preloss = 1.42, REGLoss = 7.31
+Step 7/24: preloss = 1.44, REGLoss = 7.06
+Step 8/24: preloss = 1.05, REGLoss = 6.81
+Step 9/24: preloss = 1.24, REGLoss = 6.58
+Step 10/24: preloss = 1.25, REGLoss = 6.36
+Step 11/24: preloss = 1.11, REGLoss = 6.15
+Step 12/24: preloss = 1.01, REGLoss = 5.96
+Step 13/24: preloss = 1.20, REGLoss = 5.77
+Step 14/24: preloss = 1.16, REGLoss = 5.60
+Step 15/24: preloss = 1.08, REGLoss = 5.43
+Step 16/24: preloss = 1.01, REGLoss = 5.27
+Step 17/24: preloss = 1.07, REGLoss = 5.13
+Step 18/24: preloss = 1.02, REGLoss = 4.99
+Step 19/24: preloss = 1.07, REGLoss = 4.86
+Step 20/24: preloss = 1.00, REGLoss = 4.73
+Step 21/24: preloss = 0.83, REGLoss = 4.62
+Step 22/24: preloss = 0.94, REGLoss = 4.50
+Step 23/24: preloss = 0.80, REGLoss = 4.40
+Epoch 0/20, Train: Loss = 15.4395, preLoss = 2.8009
+4.0958786
+Steps 0/24: hit10 = 128, ndcg10 = 66
+-7.573448
+Steps 1/24: hit10 = 141, ndcg10 = 80
+-6.231699
+Steps 2/24: hit10 = 135, ndcg10 = 75
+0.55802345
+Steps 3/24: hit10 = 133, ndcg10 = 76
+5.154045
+Steps 4/24: hit10 = 136, ndcg10 = 77
+-3.2076359
+Steps 5/24: hit10 = 142, ndcg10 = 77
+8.909613
+Steps 6/24: hit10 = 126, ndcg10 = 69
+-0.9752159
+Steps 7/24: hit10 = 126, ndcg10 = 72
+21.174183
+Steps 8/24: hit10 = 133, ndcg10 = 73
+-4.4494133
+Steps 9/24: hit10 = 125, ndcg10 = 68
+4.369341
+Steps 10/24: hit10 = 142, ndcg10 = 74
+-8.189129
+Steps 11/24: hit10 = 134, ndcg10 = 79
+-5.412081
+Steps 12/24: hit10 = 134, ndcg10 = 74
+2.650713
+Steps 13/24: hit10 = 134, ndcg10 = 70
+8.910231
+Steps 14/24: hit10 = 131, ndcg10 = 74
+-1.08284
+Steps 15/24: hit10 = 132, ndcg10 = 76
+12.1992655
+Steps 16/24: hit10 = 128, ndcg10 = 67
+-10.527185
+Steps 17/24: hit10 = 125, ndcg10 = 68
+-5.1313896
+Steps 18/24: hit10 = 118, ndcg10 = 66
+0.4130726
+Steps 19/24: hit10 = 135, ndcg10 = 77
+1.220253
+Steps 20/24: hit10 = 144, ndcg10 = 78
+2.7480469
+Steps 21/24: hit10 = 128, ndcg10 = 65
+15.68022
+Steps 22/24: hit10 = 124, ndcg10 = 70
+4.714409
+Steps 23/24: hit10 = 79, ndcg10 = 40
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.23155388116816733,epochHit5:0.3481788079470199
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3322775342533652,epochHit20:0.7009933774834437
+Epoch 0/20, Test: HR = 0.5154, NDCG = 0.2855
+Model Saved: Models/ml1m.pth
+
+Step 0/24: preloss = 0.71, REGLoss = 4.30
+Step 1/24: preloss = 0.91, REGLoss = 4.21
+Step 2/24: preloss = 0.79, REGLoss = 4.11
+Step 3/24: preloss = 0.83, REGLoss = 4.03
+Step 4/24: preloss = 0.73, REGLoss = 3.95
+Step 5/24: preloss = 0.65, REGLoss = 3.87
+Step 6/24: preloss = 0.82, REGLoss = 3.79
+Step 7/24: preloss = 0.72, REGLoss = 3.72
+Step 8/24: preloss = 0.77, REGLoss = 3.65
+Step 9/24: preloss = 0.74, REGLoss = 3.59
+Step 10/24: preloss = 0.76, REGLoss = 3.52
+Step 11/24: preloss = 0.67, REGLoss = 3.46
+Step 12/24: preloss = 0.68, REGLoss = 3.40
+Step 13/24: preloss = 0.73, REGLoss = 3.35
+Step 14/24: preloss = 0.60, REGLoss = 3.29
+Step 15/24: preloss = 0.68, REGLoss = 3.24
+Step 16/24: preloss = 0.66, REGLoss = 3.19
+Step 17/24: preloss = 0.66, REGLoss = 3.14
+Step 18/24: preloss = 0.67, REGLoss = 3.09
+Step 19/24: preloss = 0.65, REGLoss = 3.04
+Step 20/24: preloss = 0.56, REGLoss = 3.00
+Step 21/24: preloss = 0.57, REGLoss = 2.95
+Step 22/24: preloss = 0.78, REGLoss = 2.91
+Step 23/24: preloss = 0.54, REGLoss = 2.86
+Epoch 1/20, Train: Loss = 8.3767, preLoss = 1.4066
+-3.4767723
+Steps 0/24: hit10 = 134, ndcg10 = 70
+-13.272356
+Steps 1/24: hit10 = 140, ndcg10 = 82
+-10.159055
+Steps 2/24: hit10 = 149, ndcg10 = 81
+-8.700792
+Steps 3/24: hit10 = 142, ndcg10 = 85
+-2.3100204
+Steps 4/24: hit10 = 143, ndcg10 = 83
+-5.875326
+Steps 5/24: hit10 = 156, ndcg10 = 86
+0.7001591
+Steps 6/24: hit10 = 139, ndcg10 = 75
+-4.3965416
+Steps 7/24: hit10 = 139, ndcg10 = 81
+11.323717
+Steps 8/24: hit10 = 140, ndcg10 = 80
+-7.416337
+Steps 9/24: hit10 = 138, ndcg10 = 72
+-1.4902954
+Steps 10/24: hit10 = 149, ndcg10 = 80
+-12.547213
+Steps 11/24: hit10 = 145, ndcg10 = 85
+-11.302914
+Steps 12/24: hit10 = 151, ndcg10 = 82
+-6.8195744
+Steps 13/24: hit10 = 146, ndcg10 = 78
+2.6015663
+Steps 14/24: hit10 = 132, ndcg10 = 75
+-3.2898617
+Steps 15/24: hit10 = 140, ndcg10 = 82
+1.1493282
+Steps 16/24: hit10 = 144, ndcg10 = 76
+-14.437923
+Steps 17/24: hit10 = 135, ndcg10 = 76
+-9.353323
+Steps 18/24: hit10 = 128, ndcg10 = 73
+-4.0401497
+Steps 19/24: hit10 = 136, ndcg10 = 82
+-3.4709797
+Steps 20/24: hit10 = 157, ndcg10 = 85
+-6.0304756
+Steps 21/24: hit10 = 136, ndcg10 = 72
+4.476389
+Steps 22/24: hit10 = 131, ndcg10 = 74
+-4.308573
+Steps 23/24: hit10 = 86, ndcg10 = 45
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.25416482900652526,epochHit5:0.3804635761589404
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3580846837696559,epochHit20:0.743046357615894
+Epoch 1/20, Test: HR = 0.5523, NDCG = 0.3098
+Model Saved: Models/ml1m.pth
+
+Step 0/24: preloss = 0.60, REGLoss = 2.82
+Step 1/24: preloss = 0.64, REGLoss = 2.78
+Step 2/24: preloss = 0.64, REGLoss = 2.74
+Step 3/24: preloss = 0.42, REGLoss = 2.71
+Step 4/24: preloss = 0.60, REGLoss = 2.67
+Step 5/24: preloss = 0.58, REGLoss = 2.63
+Step 6/24: preloss = 0.55, REGLoss = 2.60
+Step 7/24: preloss = 0.56, REGLoss = 2.56
+Step 8/24: preloss = 0.54, REGLoss = 2.53
+Step 9/24: preloss = 0.77, REGLoss = 2.50
+Step 10/24: preloss = 0.65, REGLoss = 2.46
+Step 11/24: preloss = 0.53, REGLoss = 2.43
+Step 12/24: preloss = 0.48, REGLoss = 2.40
+Step 13/24: preloss = 0.49, REGLoss = 2.37
+Step 14/24: preloss = 0.54, REGLoss = 2.34
+Step 15/24: preloss = 0.59, REGLoss = 2.31
+Step 16/24: preloss = 0.51, REGLoss = 2.28
+Step 17/24: preloss = 0.60, REGLoss = 2.26
+Step 18/24: preloss = 0.48, REGLoss = 2.23
+Step 19/24: preloss = 0.55, REGLoss = 2.20
+Step 20/24: preloss = 0.44, REGLoss = 2.18
+Step 21/24: preloss = 0.59, REGLoss = 2.15
+Step 22/24: preloss = 0.50, REGLoss = 2.12
+Step 23/24: preloss = 0.62, REGLoss = 2.10
+Epoch 2/20, Train: Loss = 5.9905, preLoss = 1.1254
+-3.9447136
+Steps 0/24: hit10 = 142, ndcg10 = 77
+-13.01721
+Steps 1/24: hit10 = 147, ndcg10 = 88
+-11.696591
+Steps 2/24: hit10 = 150, ndcg10 = 82
+-10.108648
+Steps 3/24: hit10 = 150, ndcg10 = 88
+-2.3137608
+Steps 4/24: hit10 = 156, ndcg10 = 92
+-6.113409
+Steps 5/24: hit10 = 156, ndcg10 = 89
+-2.1186752
+Steps 6/24: hit10 = 150, ndcg10 = 82
+-5.363226
+Steps 7/24: hit10 = 144, ndcg10 = 83
+11.032013
+Steps 8/24: hit10 = 148, ndcg10 = 86
+-7.201661
+Steps 9/24: hit10 = 141, ndcg10 = 81
+-1.133419
+Steps 10/24: hit10 = 145, ndcg10 = 77
+-12.574917
+Steps 11/24: hit10 = 147, ndcg10 = 85
+-13.081446
+Steps 12/24: hit10 = 154, ndcg10 = 86
+-7.5417175
+Steps 13/24: hit10 = 150, ndcg10 = 80
+2.172123
+Steps 14/24: hit10 = 140, ndcg10 = 78
+-5.118018
+Steps 15/24: hit10 = 140, ndcg10 = 86
+0.21283913
+Steps 16/24: hit10 = 148, ndcg10 = 78
+-15.308584
+Steps 17/24: hit10 = 138, ndcg10 = 77
+-10.521772
+Steps 18/24: hit10 = 122, ndcg10 = 70
+-7.1332703
+Steps 19/24: hit10 = 142, ndcg10 = 82
+-4.953285
+Steps 20/24: hit10 = 155, ndcg10 = 83
+-6.9581203
+Steps 21/24: hit10 = 132, ndcg10 = 70
+3.5245018
+Steps 22/24: hit10 = 137, ndcg10 = 77
+-5.37232
+Steps 23/24: hit10 = 84, ndcg10 = 46
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.2627463084587584,epochHit5:0.38725165562913905
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.36739043052367937,epochHit20:0.7519867549668874
+Epoch 2/20, Test: HR = 0.5659, NDCG = 0.3204
+Model Saved: Models/ml1m.pth
+
+Step 0/24: preloss = 0.51, REGLoss = 2.07
+Step 1/24: preloss = 0.53, REGLoss = 2.05
+Step 2/24: preloss = 0.46, REGLoss = 2.03
+Step 3/24: preloss = 0.47, REGLoss = 2.00
+Step 4/24: preloss = 0.52, REGLoss = 1.98
+Step 5/24: preloss = 0.45, REGLoss = 1.96
+Step 6/24: preloss = 0.46, REGLoss = 1.94
+Step 7/24: preloss = 0.47, REGLoss = 1.92
+Step 8/24: preloss = 0.45, REGLoss = 1.89
+Step 9/24: preloss = 0.47, REGLoss = 1.87
+Step 10/24: preloss = 0.42, REGLoss = 1.85
+Step 11/24: preloss = 0.43, REGLoss = 1.83
+Step 12/24: preloss = 0.38, REGLoss = 1.81
+Step 13/24: preloss = 0.44, REGLoss = 1.79
+Step 14/24: preloss = 0.44, REGLoss = 1.77
+Step 15/24: preloss = 0.49, REGLoss = 1.76
+Step 16/24: preloss = 0.36, REGLoss = 1.74
+Step 17/24: preloss = 0.39, REGLoss = 1.72
+Step 18/24: preloss = 0.41, REGLoss = 1.70
+Step 19/24: preloss = 0.44, REGLoss = 1.68
+Step 20/24: preloss = 0.43, REGLoss = 1.67
+Step 21/24: preloss = 0.47, REGLoss = 1.65
+Step 22/24: preloss = 0.50, REGLoss = 1.63
+Step 23/24: preloss = 0.44, REGLoss = 1.61
+Epoch 3/20, Train: Loss = 4.5658, preLoss = 0.9037
+-4.91675
+Steps 0/24: hit10 = 148, ndcg10 = 80
+-12.420452
+Steps 1/24: hit10 = 147, ndcg10 = 90
+-11.143111
+Steps 2/24: hit10 = 158, ndcg10 = 88
+-10.127737
+Steps 3/24: hit10 = 154, ndcg10 = 90
+-4.987158
+Steps 4/24: hit10 = 152, ndcg10 = 90
+-4.4868774
+Steps 5/24: hit10 = 169, ndcg10 = 94
+-2.128065
+Steps 6/24: hit10 = 149, ndcg10 = 86
+-6.20002
+Steps 7/24: hit10 = 146, ndcg10 = 87
+7.4213257
+Steps 8/24: hit10 = 153, ndcg10 = 88
+-5.8727093
+Steps 9/24: hit10 = 150, ndcg10 = 82
+-1.303896
+Steps 10/24: hit10 = 152, ndcg10 = 80
+-11.864758
+Steps 11/24: hit10 = 145, ndcg10 = 86
+-13.884776
+Steps 12/24: hit10 = 155, ndcg10 = 86
+-8.762308
+Steps 13/24: hit10 = 159, ndcg10 = 88
+-0.4908905
+Steps 14/24: hit10 = 146, ndcg10 = 81
+-6.201947
+Steps 15/24: hit10 = 150, ndcg10 = 90
+-2.8831596
+Steps 16/24: hit10 = 150, ndcg10 = 80
+-13.7520075
+Steps 17/24: hit10 = 144, ndcg10 = 80
+-10.425035
+Steps 18/24: hit10 = 129, ndcg10 = 78
+-6.979928
+Steps 19/24: hit10 = 148, ndcg10 = 85
+-3.5558662
+Steps 20/24: hit10 = 166, ndcg10 = 90
+-6.086527
+Steps 21/24: hit10 = 139, ndcg10 = 76
+1.7493057
+Steps 22/24: hit10 = 144, ndcg10 = 81
+-6.9248447
+Steps 23/24: hit10 = 91, ndcg10 = 49
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.276304320936915,epochHit5:0.40844370860927154
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.37895702509850354,epochHit20:0.7649006622516556
+Epoch 3/20, Test: HR = 0.5868, NDCG = 0.3338
+Model Saved: Models/ml1m.pth
+
+Step 0/24: preloss = 0.33, REGLoss = 1.60
+Step 1/24: preloss = 0.36, REGLoss = 1.58
+Step 2/24: preloss = 0.36, REGLoss = 1.57
+Step 3/24: preloss = 0.34, REGLoss = 1.55
+Step 4/24: preloss = 0.40, REGLoss = 1.54
+Step 5/24: preloss = 0.29, REGLoss = 1.52
+Step 6/24: preloss = 0.36, REGLoss = 1.51
+Step 7/24: preloss = 0.42, REGLoss = 1.49
+Step 8/24: preloss = 0.41, REGLoss = 1.48
+Step 9/24: preloss = 0.46, REGLoss = 1.46
+Step 10/24: preloss = 0.35, REGLoss = 1.45
+Step 11/24: preloss = 0.40, REGLoss = 1.43
+Step 12/24: preloss = 0.37, REGLoss = 1.42
+Step 13/24: preloss = 0.41, REGLoss = 1.41
+Step 14/24: preloss = 0.36, REGLoss = 1.40
+Step 15/24: preloss = 0.37, REGLoss = 1.38
+Step 16/24: preloss = 0.37, REGLoss = 1.37
+Step 17/24: preloss = 0.39, REGLoss = 1.36
+Step 18/24: preloss = 0.33, REGLoss = 1.35
+Step 19/24: preloss = 0.39, REGLoss = 1.33
+Step 20/24: preloss = 0.44, REGLoss = 1.32
+Step 21/24: preloss = 0.40, REGLoss = 1.31
+Step 22/24: preloss = 0.37, REGLoss = 1.30
+Step 23/24: preloss = 0.35, REGLoss = 1.29
+Epoch 4/20, Train: Loss = 3.6211, preLoss = 0.7539
+-4.718136
+Steps 0/24: hit10 = 145, ndcg10 = 80
+-13.055237
+Steps 1/24: hit10 = 155, ndcg10 = 92
+-10.428186
+Steps 2/24: hit10 = 158, ndcg10 = 88
+-10.910742
+Steps 3/24: hit10 = 159, ndcg10 = 94
+-5.893691
+Steps 4/24: hit10 = 155, ndcg10 = 95
+-5.4162054
+Steps 5/24: hit10 = 159, ndcg10 = 92
+-1.5142403
+Steps 6/24: hit10 = 154, ndcg10 = 86
+-6.9821568
+Steps 7/24: hit10 = 159, ndcg10 = 92
+2.7586784
+Steps 8/24: hit10 = 153, ndcg10 = 87
+-6.9453106
+Steps 9/24: hit10 = 158, ndcg10 = 86
+-2.3247528
+Steps 10/24: hit10 = 159, ndcg10 = 84
+-12.414983
+Steps 11/24: hit10 = 144, ndcg10 = 86
+-14.987537
+Steps 12/24: hit10 = 154, ndcg10 = 86
+-11.073072
+Steps 13/24: hit10 = 161, ndcg10 = 90
+-1.2222347
+Steps 14/24: hit10 = 142, ndcg10 = 82
+-8.021033
+Steps 15/24: hit10 = 154, ndcg10 = 91
+-3.893015
+Steps 16/24: hit10 = 153, ndcg10 = 83
+-12.566117
+Steps 17/24: hit10 = 142, ndcg10 = 81
+-14.045115
+Steps 18/24: hit10 = 137, ndcg10 = 80
+-9.664769
+Steps 19/24: hit10 = 149, ndcg10 = 88
+-4.228752
+Steps 20/24: hit10 = 165, ndcg10 = 92
+-6.4220276
+Steps 21/24: hit10 = 137, ndcg10 = 76
+-0.38614082
+Steps 22/24: hit10 = 149, ndcg10 = 87
+-9.1229515
+Steps 23/24: hit10 = 91, ndcg10 = 52
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.2832861479296453,epochHit5:0.4147350993377483
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3872575295506423,epochHit20:0.776158940397351
+Epoch 4/20, Test: HR = 0.5947, NDCG = 0.3411
+Model Saved: Models/ml1m.pth
+
+Step 0/24: preloss = 0.31, REGLoss = 1.28
+Step 1/24: preloss = 0.31, REGLoss = 1.27
+Step 2/24: preloss = 0.36, REGLoss = 1.25
+Step 3/24: preloss = 0.33, REGLoss = 1.24
+Step 4/24: preloss = 0.32, REGLoss = 1.23
+Step 5/24: preloss = 0.30, REGLoss = 1.22
+Step 6/24: preloss = 0.28, REGLoss = 1.21
+Step 7/24: preloss = 0.34, REGLoss = 1.20
+Step 8/24: preloss = 0.31, REGLoss = 1.19
+Step 9/24: preloss = 0.36, REGLoss = 1.18
+Step 10/24: preloss = 0.29, REGLoss = 1.17
+Step 11/24: preloss = 0.33, REGLoss = 1.16
+Step 12/24: preloss = 0.41, REGLoss = 1.15
+Step 13/24: preloss = 0.28, REGLoss = 1.14
+Step 14/24: preloss = 0.33, REGLoss = 1.14
+Step 15/24: preloss = 0.34, REGLoss = 1.13
+Step 16/24: preloss = 0.36, REGLoss = 1.12
+Step 17/24: preloss = 0.31, REGLoss = 1.11
+Step 18/24: preloss = 0.33, REGLoss = 1.10
+Step 19/24: preloss = 0.41, REGLoss = 1.09
+Step 20/24: preloss = 0.32, REGLoss = 1.08
+Step 21/24: preloss = 0.33, REGLoss = 1.07
+Step 22/24: preloss = 0.41, REGLoss = 1.06
+Step 23/24: preloss = 0.35, REGLoss = 1.05
+Epoch 5/20, Train: Loss = 2.9900, preLoss = 0.6677
+-4.7295628
+Steps 0/24: hit10 = 153, ndcg10 = 84
+-10.550812
+Steps 1/24: hit10 = 150, ndcg10 = 84
+-9.778835
+Steps 2/24: hit10 = 154, ndcg10 = 85
+-10.750106
+Steps 3/24: hit10 = 159, ndcg10 = 92
+-3.1667309
+Steps 4/24: hit10 = 153, ndcg10 = 94
+-3.7275229
+Steps 5/24: hit10 = 167, ndcg10 = 91
+-0.50650215
+Steps 6/24: hit10 = 144, ndcg10 = 82
+-6.365447
+Steps 7/24: hit10 = 160, ndcg10 = 90
+6.005825
+Steps 8/24: hit10 = 149, ndcg10 = 86
+-6.7348795
+Steps 9/24: hit10 = 150, ndcg10 = 82
+-2.4337664
+Steps 10/24: hit10 = 152, ndcg10 = 82
+-9.607394
+Steps 11/24: hit10 = 144, ndcg10 = 88
+-12.511902
+Steps 12/24: hit10 = 156, ndcg10 = 88
+-11.2241
+Steps 13/24: hit10 = 157, ndcg10 = 88
+-2.9708405
+Steps 14/24: hit10 = 142, ndcg10 = 79
+-5.606429
+Steps 15/24: hit10 = 156, ndcg10 = 91
+-1.5658646
+Steps 16/24: hit10 = 144, ndcg10 = 77
+-8.147097
+Steps 17/24: hit10 = 138, ndcg10 = 86
+-12.305253
+Steps 18/24: hit10 = 146, ndcg10 = 80
+-6.9812727
+Steps 19/24: hit10 = 150, ndcg10 = 94
+-2.8574924
+Steps 20/24: hit10 = 151, ndcg10 = 83
+-5.5704594
+Steps 21/24: hit10 = 142, ndcg10 = 78
+2.0829277
+Steps 22/24: hit10 = 139, ndcg10 = 81
+-8.308312
+Steps 23/24: hit10 = 87, ndcg10 = 44
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.27637750572433184,epochHit5:0.4061258278145695
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.38004263726572296,epochHit20:0.7658940397350993
+Epoch 5/20, Test: HR = 0.5866, NDCG = 0.3346
+
+Step 0/24: preloss = 0.29, REGLoss = 1.05
+Step 1/24: preloss = 0.27, REGLoss = 1.04
+Step 2/24: preloss = 0.25, REGLoss = 1.03
+Step 3/24: preloss = 0.32, REGLoss = 1.02
+Step 4/24: preloss = 0.28, REGLoss = 1.02
+Step 5/24: preloss = 0.28, REGLoss = 1.01
+Step 6/24: preloss = 0.26, REGLoss = 1.00
+Step 7/24: preloss = 0.30, REGLoss = 0.99
+Step 8/24: preloss = 0.29, REGLoss = 0.99
+Step 9/24: preloss = 0.30, REGLoss = 0.98
+Step 10/24: preloss = 0.23, REGLoss = 0.97
+Step 11/24: preloss = 0.28, REGLoss = 0.97
+Step 12/24: preloss = 0.28, REGLoss = 0.96
+Step 13/24: preloss = 0.25, REGLoss = 0.95
+Step 14/24: preloss = 0.26, REGLoss = 0.94
+Step 15/24: preloss = 0.29, REGLoss = 0.94
+Step 16/24: preloss = 0.24, REGLoss = 0.93
+Step 17/24: preloss = 0.32, REGLoss = 0.92
+Step 18/24: preloss = 0.30, REGLoss = 0.92
+Step 19/24: preloss = 0.27, REGLoss = 0.91
+Step 20/24: preloss = 0.26, REGLoss = 0.90
+Step 21/24: preloss = 0.32, REGLoss = 0.89
+Step 22/24: preloss = 0.29, REGLoss = 0.89
+Step 23/24: preloss = 0.33, REGLoss = 0.88
+Epoch 6/20, Train: Loss = 2.4891, preLoss = 0.5642
+-2.687006
+Steps 0/24: hit10 = 152, ndcg10 = 84
+-10.121014
+Steps 1/24: hit10 = 153, ndcg10 = 88
+-10.152596
+Steps 2/24: hit10 = 155, ndcg10 = 85
+-10.687547
+Steps 3/24: hit10 = 159, ndcg10 = 97
+-5.9600954
+Steps 4/24: hit10 = 155, ndcg10 = 94
+-6.509926
+Steps 5/24: hit10 = 165, ndcg10 = 94
+-1.5936794
+Steps 6/24: hit10 = 149, ndcg10 = 85
+-6.137534
+Steps 7/24: hit10 = 151, ndcg10 = 88
+4.609337
+Steps 8/24: hit10 = 161, ndcg10 = 89
+-8.931775
+Steps 9/24: hit10 = 153, ndcg10 = 85
+-3.8904762
+Steps 10/24: hit10 = 164, ndcg10 = 89
+-11.589743
+Steps 11/24: hit10 = 146, ndcg10 = 88
+-13.679698
+Steps 12/24: hit10 = 155, ndcg10 = 90
+-11.897795
+Steps 13/24: hit10 = 158, ndcg10 = 85
+-5.0371017
+Steps 14/24: hit10 = 146, ndcg10 = 83
+-11.578394
+Steps 15/24: hit10 = 154, ndcg10 = 91
+-5.5577927
+Steps 16/24: hit10 = 149, ndcg10 = 83
+-7.3942413
+Steps 17/24: hit10 = 158, ndcg10 = 87
+-12.459236
+Steps 18/24: hit10 = 145, ndcg10 = 82
+-10.218966
+Steps 19/24: hit10 = 149, ndcg10 = 88
+-6.2068615
+Steps 20/24: hit10 = 171, ndcg10 = 91
+-5.178829
+Steps 21/24: hit10 = 146, ndcg10 = 80
+3.1888866
+Steps 22/24: hit10 = 147, ndcg10 = 84
+-8.000234
+Steps 23/24: hit10 = 88, ndcg10 = 47
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.2851711496870726,epochHit5:0.422682119205298
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.38732652726654365,epochHit20:0.7778145695364238
+Epoch 6/20, Test: HR = 0.6008, NDCG = 0.3425
+Model Saved: Models/ml1m.pth
+
+Step 0/24: preloss = 0.25, REGLoss = 0.88
+Step 1/24: preloss = 0.27, REGLoss = 0.87
+Step 2/24: preloss = 0.20, REGLoss = 0.86
+Step 3/24: preloss = 0.26, REGLoss = 0.86
+Step 4/24: preloss = 0.30, REGLoss = 0.85
+Step 5/24: preloss = 0.27, REGLoss = 0.85
+Step 6/24: preloss = 0.24, REGLoss = 0.84
+Step 7/24: preloss = 0.23, REGLoss = 0.84
+Step 8/24: preloss = 0.24, REGLoss = 0.83
+Step 9/24: preloss = 0.24, REGLoss = 0.83
+Step 10/24: preloss = 0.23, REGLoss = 0.82
+Step 11/24: preloss = 0.26, REGLoss = 0.82
+Step 12/24: preloss = 0.23, REGLoss = 0.81
+Step 13/24: preloss = 0.24, REGLoss = 0.81
+Step 14/24: preloss = 0.24, REGLoss = 0.80
+Step 15/24: preloss = 0.27, REGLoss = 0.79
+Step 16/24: preloss = 0.26, REGLoss = 0.79
+Step 17/24: preloss = 0.25, REGLoss = 0.78
+Step 18/24: preloss = 0.25, REGLoss = 0.78
+Step 19/24: preloss = 0.22, REGLoss = 0.77
+Step 20/24: preloss = 0.22, REGLoss = 0.77
+Step 21/24: preloss = 0.28, REGLoss = 0.76
+Step 22/24: preloss = 0.27, REGLoss = 0.76
+Step 23/24: preloss = 0.29, REGLoss = 0.75
+Epoch 7/20, Train: Loss = 2.1293, preLoss = 0.5021
+-3.698021
+Steps 0/24: hit10 = 156, ndcg10 = 86
+-9.646846
+Steps 1/24: hit10 = 159, ndcg10 = 93
+-9.711079
+Steps 2/24: hit10 = 159, ndcg10 = 92
+-10.519072
+Steps 3/24: hit10 = 159, ndcg10 = 99
+-6.7262497
+Steps 4/24: hit10 = 155, ndcg10 = 94
+-3.0553102
+Steps 5/24: hit10 = 155, ndcg10 = 91
+-1.8919449
+Steps 6/24: hit10 = 151, ndcg10 = 86
+-3.7330198
+Steps 7/24: hit10 = 156, ndcg10 = 89
+4.350624
+Steps 8/24: hit10 = 156, ndcg10 = 91
+-8.050098
+Steps 9/24: hit10 = 153, ndcg10 = 90
+-4.1002254
+Steps 10/24: hit10 = 162, ndcg10 = 88
+-10.854988
+Steps 11/24: hit10 = 149, ndcg10 = 92
+-14.079293
+Steps 12/24: hit10 = 158, ndcg10 = 91
+-13.364501
+Steps 13/24: hit10 = 150, ndcg10 = 85
+-4.8460426
+Steps 14/24: hit10 = 158, ndcg10 = 87
+-9.96196
+Steps 15/24: hit10 = 155, ndcg10 = 91
+-4.887083
+Steps 16/24: hit10 = 157, ndcg10 = 88
+-5.0702963
+Steps 17/24: hit10 = 150, ndcg10 = 89
+-11.831017
+Steps 18/24: hit10 = 150, ndcg10 = 85
+-10.279243
+Steps 19/24: hit10 = 162, ndcg10 = 95
+-3.2763805
+Steps 20/24: hit10 = 156, ndcg10 = 86
+-8.004311
+Steps 21/24: hit10 = 140, ndcg10 = 78
+3.3213425
+Steps 22/24: hit10 = 150, ndcg10 = 89
+-8.111834
+Steps 23/24: hit10 = 92, ndcg10 = 50
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.29549447508158,epochHit5:0.43443708609271525
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3947592351632593,epochHit20:0.7793046357615894
+Epoch 7/20, Test: HR = 0.6040, NDCG = 0.3502
+Model Saved: Models/ml1m.pth
+
+Step 0/24: preloss = 0.22, REGLoss = 0.75
+Step 1/24: preloss = 0.22, REGLoss = 0.74
+Step 2/24: preloss = 0.25, REGLoss = 0.74
+Step 3/24: preloss = 0.20, REGLoss = 0.73
+Step 4/24: preloss = 0.21, REGLoss = 0.73
+Step 5/24: preloss = 0.21, REGLoss = 0.72
+Step 6/24: preloss = 0.20, REGLoss = 0.72
+Step 7/24: preloss = 0.17, REGLoss = 0.72
+Step 8/24: preloss = 0.20, REGLoss = 0.71
+Step 9/24: preloss = 0.21, REGLoss = 0.71
+Step 10/24: preloss = 0.20, REGLoss = 0.70
+Step 11/24: preloss = 0.23, REGLoss = 0.70
+Step 12/24: preloss = 0.24, REGLoss = 0.69
+Step 13/24: preloss = 0.25, REGLoss = 0.69
+Step 14/24: preloss = 0.22, REGLoss = 0.69
+Step 15/24: preloss = 0.22, REGLoss = 0.68
+Step 16/24: preloss = 0.22, REGLoss = 0.68
+Step 17/24: preloss = 0.26, REGLoss = 0.67
+Step 18/24: preloss = 0.23, REGLoss = 0.67
+Step 19/24: preloss = 0.26, REGLoss = 0.66
+Step 20/24: preloss = 0.23, REGLoss = 0.66
+Step 21/24: preloss = 0.21, REGLoss = 0.66
+Step 22/24: preloss = 0.28, REGLoss = 0.65
+Step 23/24: preloss = 0.23, REGLoss = 0.65
+Epoch 8/20, Train: Loss = 1.8405, preLoss = 0.4460
+-4.225065
+Steps 0/24: hit10 = 149, ndcg10 = 88
+-11.262293
+Steps 1/24: hit10 = 153, ndcg10 = 86
+-10.352095
+Steps 2/24: hit10 = 148, ndcg10 = 84
+-8.688793
+Steps 3/24: hit10 = 156, ndcg10 = 94
+-8.997463
+Steps 4/24: hit10 = 160, ndcg10 = 93
+-4.140114
+Steps 5/24: hit10 = 151, ndcg10 = 87
+-5.033619
+Steps 6/24: hit10 = 153, ndcg10 = 87
+-6.681778
+Steps 7/24: hit10 = 151, ndcg10 = 84
+1.0268517
+Steps 8/24: hit10 = 159, ndcg10 = 91
+-6.9123077
+Steps 9/24: hit10 = 155, ndcg10 = 86
+-5.177944
+Steps 10/24: hit10 = 165, ndcg10 = 86
+-12.031086
+Steps 11/24: hit10 = 144, ndcg10 = 86
+-14.217699
+Steps 12/24: hit10 = 145, ndcg10 = 82
+-12.164717
+Steps 13/24: hit10 = 150, ndcg10 = 82
+-2.0827312
+Steps 14/24: hit10 = 152, ndcg10 = 79
+-7.8506165
+Steps 15/24: hit10 = 147, ndcg10 = 87
+-6.6673813
+Steps 16/24: hit10 = 153, ndcg10 = 84
+-9.876104
+Steps 17/24: hit10 = 157, ndcg10 = 87
+-12.346973
+Steps 18/24: hit10 = 143, ndcg10 = 81
+-9.021769
+Steps 19/24: hit10 = 168, ndcg10 = 94
+-6.185501
+Steps 20/24: hit10 = 157, ndcg10 = 86
+-8.185326
+Steps 21/24: hit10 = 144, ndcg10 = 77
+-0.03350258
+Steps 22/24: hit10 = 148, ndcg10 = 85
+-8.685749
+Steps 23/24: hit10 = 84, ndcg10 = 45
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.27732318257421845,epochHit5:0.4117549668874172
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3811846287879029,epochHit20:0.7715231788079471
+Epoch 8/20, Test: HR = 0.5947, NDCG = 0.3365
+
+Step 0/24: preloss = 0.18, REGLoss = 0.65
+Step 1/24: preloss = 0.21, REGLoss = 0.64
+Step 2/24: preloss = 0.18, REGLoss = 0.64
+Step 3/24: preloss = 0.17, REGLoss = 0.64
+Step 4/24: preloss = 0.17, REGLoss = 0.63
+Step 5/24: preloss = 0.19, REGLoss = 0.63
+Step 6/24: preloss = 0.18, REGLoss = 0.63
+Step 7/24: preloss = 0.20, REGLoss = 0.62
+Step 8/24: preloss = 0.18, REGLoss = 0.62
+Step 9/24: preloss = 0.18, REGLoss = 0.62
+Step 10/24: preloss = 0.20, REGLoss = 0.61
+Step 11/24: preloss = 0.20, REGLoss = 0.61
+Step 12/24: preloss = 0.21, REGLoss = 0.61
+Step 13/24: preloss = 0.18, REGLoss = 0.60
+Step 14/24: preloss = 0.21, REGLoss = 0.60
+Step 15/24: preloss = 0.22, REGLoss = 0.59
+Step 16/24: preloss = 0.23, REGLoss = 0.59
+Step 17/24: preloss = 0.23, REGLoss = 0.59
+Step 18/24: preloss = 0.22, REGLoss = 0.58
+Step 19/24: preloss = 0.20, REGLoss = 0.58
+Step 20/24: preloss = 0.18, REGLoss = 0.58
+Step 21/24: preloss = 0.21, REGLoss = 0.57
+Step 22/24: preloss = 0.21, REGLoss = 0.57
+Step 23/24: preloss = 0.25, REGLoss = 0.56
+Epoch 9/20, Train: Loss = 1.6129, preLoss = 0.3995
+-7.5448685
+Steps 0/24: hit10 = 145, ndcg10 = 84
+-9.236885
+Steps 1/24: hit10 = 155, ndcg10 = 87
+-9.272169
+Steps 2/24: hit10 = 139, ndcg10 = 78
+-9.595197
+Steps 3/24: hit10 = 152, ndcg10 = 90
+-10.097012
+Steps 4/24: hit10 = 147, ndcg10 = 92
+0.115623474
+Steps 5/24: hit10 = 158, ndcg10 = 89
+-2.4201317
+Steps 6/24: hit10 = 143, ndcg10 = 84
+-6.411376
+Steps 7/24: hit10 = 145, ndcg10 = 81
+0.3254509
+Steps 8/24: hit10 = 151, ndcg10 = 86
+-7.1925097
+Steps 9/24: hit10 = 156, ndcg10 = 83
+-6.9430027
+Steps 10/24: hit10 = 153, ndcg10 = 84
+-11.404139
+Steps 11/24: hit10 = 138, ndcg10 = 81
+-13.254738
+Steps 12/24: hit10 = 140, ndcg10 = 77
+-10.232744
+Steps 13/24: hit10 = 151, ndcg10 = 82
+0.31840324
+Steps 14/24: hit10 = 143, ndcg10 = 73
+-6.7773275
+Steps 15/24: hit10 = 153, ndcg10 = 88
+-8.6863575
+Steps 16/24: hit10 = 140, ndcg10 = 77
+-8.570588
+Steps 17/24: hit10 = 140, ndcg10 = 78
+-9.579537
+Steps 18/24: hit10 = 132, ndcg10 = 74
+-6.594715
+Steps 19/24: hit10 = 152, ndcg10 = 89
+-1.951416
+Steps 20/24: hit10 = 150, ndcg10 = 86
+-8.080721
+Steps 21/24: hit10 = 144, ndcg10 = 77
+-0.5032234
+Steps 22/24: hit10 = 144, ndcg10 = 85
+-10.015049
+Steps 23/24: hit10 = 82, ndcg10 = 42
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.2688794179244785,epochHit5:0.40066225165562913
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3712790032090232,epochHit20:0.7571192052980132
+Epoch 9/20, Test: HR = 0.5717, NDCG = 0.3243
+
+Step 0/24: preloss = 0.15, REGLoss = 0.56
+Step 1/24: preloss = 0.18, REGLoss = 0.56
+Step 2/24: preloss = 0.15, REGLoss = 0.56
+Step 3/24: preloss = 0.14, REGLoss = 0.56
+Step 4/24: preloss = 0.16, REGLoss = 0.55
+Step 5/24: preloss = 0.14, REGLoss = 0.55
+Step 6/24: preloss = 0.20, REGLoss = 0.55
+Step 7/24: preloss = 0.19, REGLoss = 0.54
+Step 8/24: preloss = 0.16, REGLoss = 0.54
+Step 9/24: preloss = 0.19, REGLoss = 0.54
+Step 10/24: preloss = 0.19, REGLoss = 0.54
+Step 11/24: preloss = 0.15, REGLoss = 0.53
+Step 12/24: preloss = 0.21, REGLoss = 0.53
+Step 13/24: preloss = 0.21, REGLoss = 0.53
+Step 14/24: preloss = 0.19, REGLoss = 0.52
+Step 15/24: preloss = 0.20, REGLoss = 0.52
+Step 16/24: preloss = 0.19, REGLoss = 0.52
+Step 17/24: preloss = 0.20, REGLoss = 0.52
+Step 18/24: preloss = 0.18, REGLoss = 0.51
+Step 19/24: preloss = 0.22, REGLoss = 0.51
+Step 20/24: preloss = 0.22, REGLoss = 0.51
+Step 21/24: preloss = 0.21, REGLoss = 0.51
+Step 22/24: preloss = 0.19, REGLoss = 0.50
+Step 23/24: preloss = 0.28, REGLoss = 0.50
+Epoch 10/20, Train: Loss = 1.4381, preLoss = 0.3744
+-5.2851124
+Steps 0/24: hit10 = 146, ndcg10 = 83
+-8.786368
+Steps 1/24: hit10 = 141, ndcg10 = 81
+-9.913538
+Steps 2/24: hit10 = 142, ndcg10 = 80
+-7.424097
+Steps 3/24: hit10 = 150, ndcg10 = 87
+-6.12611
+Steps 4/24: hit10 = 148, ndcg10 = 91
+2.2709522
+Steps 5/24: hit10 = 146, ndcg10 = 76
+-3.0006084
+Steps 6/24: hit10 = 139, ndcg10 = 74
+-4.3844223
+Steps 7/24: hit10 = 134, ndcg10 = 79
+5.11726
+Steps 8/24: hit10 = 145, ndcg10 = 84
+-4.8539944
+Steps 9/24: hit10 = 145, ndcg10 = 80
+-2.3543386
+Steps 10/24: hit10 = 149, ndcg10 = 77
+-8.413111
+Steps 11/24: hit10 = 144, ndcg10 = 82
+-10.762123
+Steps 12/24: hit10 = 131, ndcg10 = 69
+-8.727802
+Steps 13/24: hit10 = 128, ndcg10 = 72
+0.69995594
+Steps 14/24: hit10 = 132, ndcg10 = 68
+-6.3459997
+Steps 15/24: hit10 = 147, ndcg10 = 85
+-3.989255
+Steps 16/24: hit10 = 141, ndcg10 = 77
+-3.7080326
+Steps 17/24: hit10 = 141, ndcg10 = 81
+-8.927038
+Steps 18/24: hit10 = 139, ndcg10 = 76
+-0.23573208
+Steps 19/24: hit10 = 145, ndcg10 = 80
+4.0713253
+Steps 20/24: hit10 = 135, ndcg10 = 80
+-8.025589
+Steps 21/24: hit10 = 137, ndcg10 = 71
+3.031105
+Steps 22/24: hit10 = 140, ndcg10 = 75
+-6.8981647
+Steps 23/24: hit10 = 87, ndcg10 = 46
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.25204808515909705,epochHit5:0.37566225165562916
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.35634530575745493,epochHit20:0.7397350993377484
+Epoch 10/20, Test: HR = 0.5517, NDCG = 0.3089
+
+Step 0/24: preloss = 0.17, REGLoss = 0.50
+Step 1/24: preloss = 0.15, REGLoss = 0.50
+Step 2/24: preloss = 0.18, REGLoss = 0.50
+Step 3/24: preloss = 0.22, REGLoss = 0.50
+Step 4/24: preloss = 0.15, REGLoss = 0.50
+Step 5/24: preloss = 0.15, REGLoss = 0.50
+Step 6/24: preloss = 0.18, REGLoss = 0.50
+Step 7/24: preloss = 0.19, REGLoss = 0.50
+Step 8/24: preloss = 0.18, REGLoss = 0.49
+Step 9/24: preloss = 0.19, REGLoss = 0.49
+Step 10/24: preloss = 0.17, REGLoss = 0.49
+Step 11/24: preloss = 0.19, REGLoss = 0.49
+Step 12/24: preloss = 0.18, REGLoss = 0.49
+Step 13/24: preloss = 0.24, REGLoss = 0.49
+Step 14/24: preloss = 0.19, REGLoss = 0.48
+Step 15/24: preloss = 0.21, REGLoss = 0.48
+Step 16/24: preloss = 0.19, REGLoss = 0.48
+Step 17/24: preloss = 0.18, REGLoss = 0.48
+Step 18/24: preloss = 0.18, REGLoss = 0.47
+Step 19/24: preloss = 0.22, REGLoss = 0.47
+Step 20/24: preloss = 0.21, REGLoss = 0.47
+Step 21/24: preloss = 0.17, REGLoss = 0.47
+Step 22/24: preloss = 0.20, REGLoss = 0.46
+Step 23/24: preloss = 0.23, REGLoss = 0.46
+Epoch 11/20, Train: Loss = 1.3482, preLoss = 0.3757
+-3.281992
+Steps 0/24: hit10 = 145, ndcg10 = 84
+-7.3976216
+Steps 1/24: hit10 = 152, ndcg10 = 91
+-11.169882
+Steps 2/24: hit10 = 150, ndcg10 = 83
+-7.5851183
+Steps 3/24: hit10 = 151, ndcg10 = 88
+-4.502824
+Steps 4/24: hit10 = 162, ndcg10 = 96
+-0.7451172
+Steps 5/24: hit10 = 144, ndcg10 = 81
+-2.0099754
+Steps 6/24: hit10 = 148, ndcg10 = 83
+-7.186549
+Steps 7/24: hit10 = 149, ndcg10 = 82
+2.1719036
+Steps 8/24: hit10 = 152, ndcg10 = 92
+-5.073695
+Steps 9/24: hit10 = 161, ndcg10 = 87
+-4.7938795
+Steps 10/24: hit10 = 157, ndcg10 = 84
+-8.178313
+Steps 11/24: hit10 = 152, ndcg10 = 87
+-12.191543
+Steps 12/24: hit10 = 143, ndcg10 = 81
+-10.920673
+Steps 13/24: hit10 = 153, ndcg10 = 84
+-0.099573135
+Steps 14/24: hit10 = 152, ndcg10 = 79
+-6.4343977
+Steps 15/24: hit10 = 160, ndcg10 = 91
+-6.4169407
+Steps 16/24: hit10 = 155, ndcg10 = 85
+-6.2184525
+Steps 17/24: hit10 = 148, ndcg10 = 83
+-8.528801
+Steps 18/24: hit10 = 147, ndcg10 = 81
+-6.0865536
+Steps 19/24: hit10 = 167, ndcg10 = 96
+-2.0139713
+Steps 20/24: hit10 = 153, ndcg10 = 85
+-6.182534
+Steps 21/24: hit10 = 145, ndcg10 = 77
+3.6553898
+Steps 22/24: hit10 = 151, ndcg10 = 87
+-4.8615704
+Steps 23/24: hit10 = 91, ndcg10 = 45
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.27990473488465933,epochHit5:0.42251655629139073
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.38115989178977794,epochHit20:0.7763245033112582
+Epoch 11/20, Test: HR = 0.5940, NDCG = 0.3350
+
+Step 0/24: preloss = 0.14, REGLoss = 0.46
+Step 1/24: preloss = 0.17, REGLoss = 0.46
+Step 2/24: preloss = 0.15, REGLoss = 0.46
+Step 3/24: preloss = 0.14, REGLoss = 0.45
+Step 4/24: preloss = 0.16, REGLoss = 0.45
+Step 5/24: preloss = 0.14, REGLoss = 0.45
+Step 6/24: preloss = 0.18, REGLoss = 0.45
+Step 7/24: preloss = 0.17, REGLoss = 0.44
+Step 8/24: preloss = 0.19, REGLoss = 0.44
+Step 9/24: preloss = 0.18, REGLoss = 0.44
+Step 10/24: preloss = 0.19, REGLoss = 0.44
+Step 11/24: preloss = 0.15, REGLoss = 0.44
+Step 12/24: preloss = 0.14, REGLoss = 0.43
+Step 13/24: preloss = 0.16, REGLoss = 0.43
+Step 14/24: preloss = 0.21, REGLoss = 0.43
+Step 15/24: preloss = 0.17, REGLoss = 0.43
+Step 16/24: preloss = 0.19, REGLoss = 0.42
+Step 17/24: preloss = 0.17, REGLoss = 0.42
+Step 18/24: preloss = 0.18, REGLoss = 0.42
+Step 19/24: preloss = 0.18, REGLoss = 0.42
+Step 20/24: preloss = 0.16, REGLoss = 0.41
+Step 21/24: preloss = 0.21, REGLoss = 0.41
+Step 22/24: preloss = 0.17, REGLoss = 0.41
+Step 23/24: preloss = 0.19, REGLoss = 0.41
+Epoch 12/20, Train: Loss = 1.2076, preLoss = 0.3395
+-7.526829
+Steps 0/24: hit10 = 151, ndcg10 = 83
+-5.2496405
+Steps 1/24: hit10 = 155, ndcg10 = 85
+-9.054577
+Steps 2/24: hit10 = 145, ndcg10 = 78
+-7.263275
+Steps 3/24: hit10 = 155, ndcg10 = 90
+-6.2000895
+Steps 4/24: hit10 = 153, ndcg10 = 91
+2.892085
+Steps 5/24: hit10 = 150, ndcg10 = 90
+-4.2930126
+Steps 6/24: hit10 = 153, ndcg10 = 79
+-4.9862156
+Steps 7/24: hit10 = 144, ndcg10 = 79
+1.5563164
+Steps 8/24: hit10 = 151, ndcg10 = 84
+-4.7984676
+Steps 9/24: hit10 = 147, ndcg10 = 80
+-2.687625
+Steps 10/24: hit10 = 159, ndcg10 = 86
+-8.436408
+Steps 11/24: hit10 = 146, ndcg10 = 81
+-10.139754
+Steps 12/24: hit10 = 150, ndcg10 = 79
+-9.761919
+Steps 13/24: hit10 = 146, ndcg10 = 78
+2.3490305
+Steps 14/24: hit10 = 149, ndcg10 = 76
+-7.056138
+Steps 15/24: hit10 = 149, ndcg10 = 85
+-5.1524353
+Steps 16/24: hit10 = 142, ndcg10 = 74
+-5.14845
+Steps 17/24: hit10 = 149, ndcg10 = 84
+-7.947059
+Steps 18/24: hit10 = 143, ndcg10 = 75
+-3.5021114
+Steps 19/24: hit10 = 156, ndcg10 = 94
+0.18321705
+Steps 20/24: hit10 = 149, ndcg10 = 81
+-8.20332
+Steps 21/24: hit10 = 136, ndcg10 = 70
+3.7446613
+Steps 22/24: hit10 = 143, ndcg10 = 83
+-4.903723
+Steps 23/24: hit10 = 80, ndcg10 = 44
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.2629859961776571,epochHit5:0.39834437086092717
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3686510930879406,epochHit20:0.7650662251655629
+Epoch 12/20, Test: HR = 0.5796, NDCG = 0.3216
+
+Step 0/24: preloss = 0.12, REGLoss = 0.41
+Step 1/24: preloss = 0.13, REGLoss = 0.41
+Step 2/24: preloss = 0.13, REGLoss = 0.40
+Step 3/24: preloss = 0.14, REGLoss = 0.40
+Step 4/24: preloss = 0.13, REGLoss = 0.40
+Step 5/24: preloss = 0.15, REGLoss = 0.40
+Step 6/24: preloss = 0.14, REGLoss = 0.40
+Step 7/24: preloss = 0.12, REGLoss = 0.40
+Step 8/24: preloss = 0.16, REGLoss = 0.39
+Step 9/24: preloss = 0.14, REGLoss = 0.39
+Step 10/24: preloss = 0.17, REGLoss = 0.39
+Step 11/24: preloss = 0.16, REGLoss = 0.39
+Step 12/24: preloss = 0.15, REGLoss = 0.39
+Step 13/24: preloss = 0.13, REGLoss = 0.38
+Step 14/24: preloss = 0.15, REGLoss = 0.38
+Step 15/24: preloss = 0.17, REGLoss = 0.38
+Step 16/24: preloss = 0.17, REGLoss = 0.38
+Step 17/24: preloss = 0.13, REGLoss = 0.38
+Step 18/24: preloss = 0.16, REGLoss = 0.38
+Step 19/24: preloss = 0.20, REGLoss = 0.37
+Step 20/24: preloss = 0.16, REGLoss = 0.37
+Step 21/24: preloss = 0.17, REGLoss = 0.37
+Step 22/24: preloss = 0.19, REGLoss = 0.37
+Step 23/24: preloss = 0.15, REGLoss = 0.37
+Epoch 13/20, Train: Loss = 1.0788, preLoss = 0.3038
+-5.652258
+Steps 0/24: hit10 = 149, ndcg10 = 84
+-4.4553366
+Steps 1/24: hit10 = 154, ndcg10 = 91
+-9.30708
+Steps 2/24: hit10 = 151, ndcg10 = 85
+-3.6283817
+Steps 3/24: hit10 = 147, ndcg10 = 90
+-3.526019
+Steps 4/24: hit10 = 159, ndcg10 = 92
+1.8081551
+Steps 5/24: hit10 = 152, ndcg10 = 85
+-3.1609592
+Steps 6/24: hit10 = 154, ndcg10 = 84
+-6.090042
+Steps 7/24: hit10 = 158, ndcg10 = 87
+1.8530407
+Steps 8/24: hit10 = 156, ndcg10 = 89
+-6.0876803
+Steps 9/24: hit10 = 162, ndcg10 = 87
+-3.4920807
+Steps 10/24: hit10 = 153, ndcg10 = 89
+-8.50839
+Steps 11/24: hit10 = 147, ndcg10 = 84
+-9.811398
+Steps 12/24: hit10 = 139, ndcg10 = 80
+-6.0574017
+Steps 13/24: hit10 = 145, ndcg10 = 81
+0.2595501
+Steps 14/24: hit10 = 142, ndcg10 = 79
+-8.897099
+Steps 15/24: hit10 = 158, ndcg10 = 94
+-1.178545
+Steps 16/24: hit10 = 146, ndcg10 = 81
+-7.9129457
+Steps 17/24: hit10 = 139, ndcg10 = 79
+-6.3594003
+Steps 18/24: hit10 = 144, ndcg10 = 80
+-5.99162
+Steps 19/24: hit10 = 159, ndcg10 = 98
+-1.3837833
+Steps 20/24: hit10 = 148, ndcg10 = 83
+-5.4319363
+Steps 21/24: hit10 = 145, ndcg10 = 79
+3.9137154
+Steps 22/24: hit10 = 146, ndcg10 = 82
+-3.352831
+Steps 23/24: hit10 = 88, ndcg10 = 48
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.2789073747248633,epochHit5:0.41324503311258276
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.37938836783405905,epochHit20:0.7629139072847683
+Epoch 13/20, Test: HR = 0.5863, NDCG = 0.3347
+
+Step 0/24: preloss = 0.13, REGLoss = 0.37
+Step 1/24: preloss = 0.13, REGLoss = 0.37
+Step 2/24: preloss = 0.13, REGLoss = 0.36
+Step 3/24: preloss = 0.12, REGLoss = 0.36
+Step 4/24: preloss = 0.14, REGLoss = 0.36
+Step 5/24: preloss = 0.12, REGLoss = 0.36
+Step 6/24: preloss = 0.12, REGLoss = 0.36
+Step 7/24: preloss = 0.14, REGLoss = 0.36
+Step 8/24: preloss = 0.13, REGLoss = 0.36
+Step 9/24: preloss = 0.12, REGLoss = 0.36
+Step 10/24: preloss = 0.10, REGLoss = 0.35
+Step 11/24: preloss = 0.14, REGLoss = 0.35
+Step 12/24: preloss = 0.12, REGLoss = 0.35
+Step 13/24: preloss = 0.13, REGLoss = 0.35
+Step 14/24: preloss = 0.13, REGLoss = 0.35
+Step 15/24: preloss = 0.15, REGLoss = 0.35
+Step 16/24: preloss = 0.13, REGLoss = 0.34
+Step 17/24: preloss = 0.14, REGLoss = 0.34
+Step 18/24: preloss = 0.14, REGLoss = 0.34
+Step 19/24: preloss = 0.16, REGLoss = 0.34
+Step 20/24: preloss = 0.16, REGLoss = 0.34
+Step 21/24: preloss = 0.18, REGLoss = 0.34
+Step 22/24: preloss = 0.17, REGLoss = 0.34
+Step 23/24: preloss = 0.20, REGLoss = 0.33
+Epoch 14/20, Train: Loss = 0.9782, preLoss = 0.2766
+-3.5861015
+Steps 0/24: hit10 = 148, ndcg10 = 81
+-3.2648258
+Steps 1/24: hit10 = 159, ndcg10 = 91
+-8.351316
+Steps 2/24: hit10 = 141, ndcg10 = 79
+-2.784689
+Steps 3/24: hit10 = 148, ndcg10 = 87
+-3.2313423
+Steps 4/24: hit10 = 151, ndcg10 = 85
+-2.196991
+Steps 5/24: hit10 = 152, ndcg10 = 86
+-2.1947956
+Steps 6/24: hit10 = 138, ndcg10 = 79
+-6.066703
+Steps 7/24: hit10 = 144, ndcg10 = 82
+3.8096886
+Steps 8/24: hit10 = 161, ndcg10 = 89
+-4.6222095
+Steps 9/24: hit10 = 155, ndcg10 = 82
+-3.350729
+Steps 10/24: hit10 = 153, ndcg10 = 79
+-6.2230864
+Steps 11/24: hit10 = 153, ndcg10 = 85
+-7.605096
+Steps 12/24: hit10 = 130, ndcg10 = 70
+-6.420109
+Steps 13/24: hit10 = 148, ndcg10 = 80
+-0.2813282
+Steps 14/24: hit10 = 141, ndcg10 = 69
+-6.0849953
+Steps 15/24: hit10 = 149, ndcg10 = 86
+3.071886
+Steps 16/24: hit10 = 144, ndcg10 = 78
+-4.3588295
+Steps 17/24: hit10 = 140, ndcg10 = 81
+-6.105502
+Steps 18/24: hit10 = 137, ndcg10 = 69
+-3.8812046
+Steps 19/24: hit10 = 154, ndcg10 = 88
+-0.8698349
+Steps 20/24: hit10 = 154, ndcg10 = 87
+-4.479108
+Steps 21/24: hit10 = 142, ndcg10 = 78
+4.5797195
+Steps 22/24: hit10 = 147, ndcg10 = 81
+-3.076126
+Steps 23/24: hit10 = 89, ndcg10 = 47
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.26173803076665114,epochHit5:0.3968543046357616
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3662963846109273,epochHit20:0.7600993377483444
+Epoch 14/20, Test: HR = 0.5758, NDCG = 0.3196
+
+Step 0/24: preloss = 0.13, REGLoss = 0.33
+Step 1/24: preloss = 0.12, REGLoss = 0.33
+Step 2/24: preloss = 0.13, REGLoss = 0.33
+Step 3/24: preloss = 0.13, REGLoss = 0.33
+Step 4/24: preloss = 0.11, REGLoss = 0.33
+Step 5/24: preloss = 0.13, REGLoss = 0.33
+Step 6/24: preloss = 0.16, REGLoss = 0.33
+Step 7/24: preloss = 0.13, REGLoss = 0.33
+Step 8/24: preloss = 0.13, REGLoss = 0.33
+Step 9/24: preloss = 0.15, REGLoss = 0.33
+Step 10/24: preloss = 0.13, REGLoss = 0.33
+Step 11/24: preloss = 0.16, REGLoss = 0.33
+Step 12/24: preloss = 0.14, REGLoss = 0.33
+Step 13/24: preloss = 0.16, REGLoss = 0.33
+Step 14/24: preloss = 0.15, REGLoss = 0.33
+Step 15/24: preloss = 0.16, REGLoss = 0.33
+Step 16/24: preloss = 0.13, REGLoss = 0.32
+Step 17/24: preloss = 0.15, REGLoss = 0.32
+Step 18/24: preloss = 0.15, REGLoss = 0.32
+Step 19/24: preloss = 0.15, REGLoss = 0.32
+Step 20/24: preloss = 0.16, REGLoss = 0.32
+Step 21/24: preloss = 0.17, REGLoss = 0.32
+Step 22/24: preloss = 0.18, REGLoss = 0.32
+Step 23/24: preloss = 0.16, REGLoss = 0.32
+Epoch 15/20, Train: Loss = 0.9432, preLoss = 0.2889
+-1.9995289
+Steps 0/24: hit10 = 141, ndcg10 = 76
+-5.0501595
+Steps 1/24: hit10 = 150, ndcg10 = 82
+-7.9973154
+Steps 2/24: hit10 = 138, ndcg10 = 73
+-6.0306473
+Steps 3/24: hit10 = 150, ndcg10 = 83
+-6.6960373
+Steps 4/24: hit10 = 143, ndcg10 = 77
+0.7408905
+Steps 5/24: hit10 = 146, ndcg10 = 78
+-1.8787403
+Steps 6/24: hit10 = 133, ndcg10 = 77
+-3.5117111
+Steps 7/24: hit10 = 139, ndcg10 = 72
+-1.9138966
+Steps 8/24: hit10 = 159, ndcg10 = 90
+-8.558798
+Steps 9/24: hit10 = 150, ndcg10 = 78
+-5.490654
+Steps 10/24: hit10 = 140, ndcg10 = 73
+-5.4617405
+Steps 11/24: hit10 = 149, ndcg10 = 79
+-7.1792755
+Steps 12/24: hit10 = 134, ndcg10 = 68
+-5.0583115
+Steps 13/24: hit10 = 136, ndcg10 = 72
+-2.2318192
+Steps 14/24: hit10 = 133, ndcg10 = 69
+-2.9086847
+Steps 15/24: hit10 = 146, ndcg10 = 84
+-1.1349335
+Steps 16/24: hit10 = 143, ndcg10 = 74
+-3.1202908
+Steps 17/24: hit10 = 136, ndcg10 = 75
+-4.6442046
+Steps 18/24: hit10 = 129, ndcg10 = 67
+-2.140562
+Steps 19/24: hit10 = 159, ndcg10 = 82
+-2.567832
+Steps 20/24: hit10 = 150, ndcg10 = 79
+-5.779584
+Steps 21/24: hit10 = 134, ndcg10 = 70
+2.874116
+Steps 22/24: hit10 = 144, ndcg10 = 78
+-2.096737
+Steps 23/24: hit10 = 87, ndcg10 = 44
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.23850169108611574,epochHit5:0.3673841059602649
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3462143369090963,epochHit20:0.7402317880794702
+Epoch 15/20, Test: HR = 0.5578, NDCG = 0.3000
+
+Step 0/24: preloss = 0.14, REGLoss = 0.32
+Step 1/24: preloss = 0.14, REGLoss = 0.32
+Step 2/24: preloss = 0.13, REGLoss = 0.32
+Step 3/24: preloss = 0.11, REGLoss = 0.32
+Step 4/24: preloss = 0.12, REGLoss = 0.32
+Step 5/24: preloss = 0.15, REGLoss = 0.32
+Step 6/24: preloss = 0.13, REGLoss = 0.32
+Step 7/24: preloss = 0.12, REGLoss = 0.31
+Step 8/24: preloss = 0.11, REGLoss = 0.31
+Step 9/24: preloss = 0.13, REGLoss = 0.31
+Step 10/24: preloss = 0.14, REGLoss = 0.31
+Step 11/24: preloss = 0.14, REGLoss = 0.31
+Step 12/24: preloss = 0.14, REGLoss = 0.31
+Step 13/24: preloss = 0.15, REGLoss = 0.31
+Step 14/24: preloss = 0.15, REGLoss = 0.31
+Step 15/24: preloss = 0.13, REGLoss = 0.30
+Step 16/24: preloss = 0.15, REGLoss = 0.30
+Step 17/24: preloss = 0.15, REGLoss = 0.30
+Step 18/24: preloss = 0.16, REGLoss = 0.30
+Step 19/24: preloss = 0.16, REGLoss = 0.30
+Step 20/24: preloss = 0.12, REGLoss = 0.30
+Step 21/24: preloss = 0.16, REGLoss = 0.30
+Step 22/24: preloss = 0.17, REGLoss = 0.30
+Step 23/24: preloss = 0.18, REGLoss = 0.29
+Epoch 16/20, Train: Loss = 0.8989, preLoss = 0.2824
+-0.58299446
+Steps 0/24: hit10 = 145, ndcg10 = 79
+-3.0510597
+Steps 1/24: hit10 = 163, ndcg10 = 95
+-10.324097
+Steps 2/24: hit10 = 139, ndcg10 = 80
+-4.567752
+Steps 3/24: hit10 = 142, ndcg10 = 84
+-3.9577637
+Steps 4/24: hit10 = 154, ndcg10 = 91
+-0.80758
+Steps 5/24: hit10 = 154, ndcg10 = 86
+-0.23110771
+Steps 6/24: hit10 = 149, ndcg10 = 85
+-4.5081863
+Steps 7/24: hit10 = 156, ndcg10 = 85
+1.1286945
+Steps 8/24: hit10 = 163, ndcg10 = 93
+-7.557673
+Steps 9/24: hit10 = 158, ndcg10 = 88
+-6.3448515
+Steps 10/24: hit10 = 150, ndcg10 = 80
+-6.067891
+Steps 11/24: hit10 = 146, ndcg10 = 86
+-6.368472
+Steps 12/24: hit10 = 143, ndcg10 = 81
+-6.948121
+Steps 13/24: hit10 = 151, ndcg10 = 83
+2.1374998
+Steps 14/24: hit10 = 142, ndcg10 = 79
+-6.1719203
+Steps 15/24: hit10 = 147, ndcg10 = 86
+-1.7481327
+Steps 16/24: hit10 = 148, ndcg10 = 78
+-1.6498613
+Steps 17/24: hit10 = 146, ndcg10 = 79
+-8.686316
+Steps 18/24: hit10 = 138, ndcg10 = 73
+-7.4749007
+Steps 19/24: hit10 = 156, ndcg10 = 91
+-2.7043953
+Steps 20/24: hit10 = 156, ndcg10 = 86
+-7.91448
+Steps 21/24: hit10 = 139, ndcg10 = 78
+5.138488
+Steps 22/24: hit10 = 147, ndcg10 = 82
+-4.9214096
+Steps 23/24: hit10 = 86, ndcg10 = 48
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.2723524710193213,epochHit5:0.40711920529801326
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3741679258627312,epochHit20:0.7596026490066226
+Epoch 16/20, Test: HR = 0.5825, NDCG = 0.3292
+
+Step 0/24: preloss = 0.12, REGLoss = 0.30
+Step 1/24: preloss = 0.10, REGLoss = 0.30
+Step 2/24: preloss = 0.12, REGLoss = 0.30
+Step 3/24: preloss = 0.12, REGLoss = 0.30
+Step 4/24: preloss = 0.12, REGLoss = 0.30
+Step 5/24: preloss = 0.14, REGLoss = 0.30
+Step 6/24: preloss = 0.12, REGLoss = 0.30
+Step 7/24: preloss = 0.11, REGLoss = 0.30
+Step 8/24: preloss = 0.11, REGLoss = 0.29
+Step 9/24: preloss = 0.14, REGLoss = 0.29
+Step 10/24: preloss = 0.14, REGLoss = 0.29
+Step 11/24: preloss = 0.12, REGLoss = 0.29
+Step 12/24: preloss = 0.12, REGLoss = 0.29
+Step 13/24: preloss = 0.13, REGLoss = 0.29
+Step 14/24: preloss = 0.15, REGLoss = 0.29
+Step 15/24: preloss = 0.14, REGLoss = 0.29
+Step 16/24: preloss = 0.14, REGLoss = 0.29
+Step 17/24: preloss = 0.12, REGLoss = 0.28
+Step 18/24: preloss = 0.16, REGLoss = 0.28
+Step 19/24: preloss = 0.15, REGLoss = 0.28
+Step 20/24: preloss = 0.15, REGLoss = 0.28
+Step 21/24: preloss = 0.13, REGLoss = 0.28
+Step 22/24: preloss = 0.16, REGLoss = 0.28
+Step 23/24: preloss = 0.19, REGLoss = 0.28
+Epoch 17/20, Train: Loss = 0.8454, preLoss = 0.2662
+-1.2944584
+Steps 0/24: hit10 = 141, ndcg10 = 82
+-3.2010765
+Steps 1/24: hit10 = 153, ndcg10 = 90
+-7.955448
+Steps 2/24: hit10 = 144, ndcg10 = 81
+-3.1666107
+Steps 3/24: hit10 = 149, ndcg10 = 91
+-4.2323256
+Steps 4/24: hit10 = 152, ndcg10 = 93
+0.20330429
+Steps 5/24: hit10 = 157, ndcg10 = 89
+-1.6310482
+Steps 6/24: hit10 = 155, ndcg10 = 87
+-2.3172264
+Steps 7/24: hit10 = 152, ndcg10 = 88
+3.8755379
+Steps 8/24: hit10 = 151, ndcg10 = 89
+-1.9933882
+Steps 9/24: hit10 = 157, ndcg10 = 86
+-5.702161
+Steps 10/24: hit10 = 153, ndcg10 = 82
+-5.576826
+Steps 11/24: hit10 = 150, ndcg10 = 88
+-5.6933994
+Steps 12/24: hit10 = 151, ndcg10 = 84
+-5.9505033
+Steps 13/24: hit10 = 152, ndcg10 = 82
+-4.287011
+Steps 14/24: hit10 = 149, ndcg10 = 81
+-8.661287
+Steps 15/24: hit10 = 160, ndcg10 = 95
+-1.651185
+Steps 16/24: hit10 = 145, ndcg10 = 82
+-0.9662552
+Steps 17/24: hit10 = 146, ndcg10 = 81
+-4.9381905
+Steps 18/24: hit10 = 142, ndcg10 = 79
+-4.8329277
+Steps 19/24: hit10 = 161, ndcg10 = 96
+-0.055233
+Steps 20/24: hit10 = 164, ndcg10 = 91
+-5.568199
+Steps 21/24: hit10 = 153, ndcg10 = 83
+6.678293
+Steps 22/24: hit10 = 155, ndcg10 = 89
+-4.3858604
+Steps 23/24: hit10 = 90, ndcg10 = 49
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.28338094126168883,epochHit5:0.42102649006622517
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3845841123939549,epochHit20:0.7725165562913907
+Epoch 17/20, Test: HR = 0.5930, NDCG = 0.3390
+
+Step 0/24: preloss = 0.08, REGLoss = 0.28
+Step 1/24: preloss = 0.09, REGLoss = 0.28
+Step 2/24: preloss = 0.11, REGLoss = 0.28
+Step 3/24: preloss = 0.10, REGLoss = 0.28
+Step 4/24: preloss = 0.13, REGLoss = 0.28
+Step 5/24: preloss = 0.11, REGLoss = 0.27
+Step 6/24: preloss = 0.10, REGLoss = 0.27
+Step 7/24: preloss = 0.12, REGLoss = 0.27
+Step 8/24: preloss = 0.12, REGLoss = 0.27
+Step 9/24: preloss = 0.11, REGLoss = 0.27
+Step 10/24: preloss = 0.13, REGLoss = 0.27
+Step 11/24: preloss = 0.14, REGLoss = 0.27
+Step 12/24: preloss = 0.11, REGLoss = 0.27
+Step 13/24: preloss = 0.13, REGLoss = 0.27
+Step 14/24: preloss = 0.10, REGLoss = 0.27
+Step 15/24: preloss = 0.14, REGLoss = 0.27
+Step 16/24: preloss = 0.12, REGLoss = 0.26
+Step 17/24: preloss = 0.13, REGLoss = 0.26
+Step 18/24: preloss = 0.11, REGLoss = 0.26
+Step 19/24: preloss = 0.14, REGLoss = 0.26
+Step 20/24: preloss = 0.14, REGLoss = 0.26
+Step 21/24: preloss = 0.13, REGLoss = 0.26
+Step 22/24: preloss = 0.14, REGLoss = 0.26
+Step 23/24: preloss = 0.11, REGLoss = 0.26
+Epoch 18/20, Train: Loss = 0.7739, preLoss = 0.2365
+-1.3201542
+Steps 0/24: hit10 = 152, ndcg10 = 84
+-4.3486843
+Steps 1/24: hit10 = 149, ndcg10 = 84
+-8.27584
+Steps 2/24: hit10 = 140, ndcg10 = 77
+-5.2729177
+Steps 3/24: hit10 = 150, ndcg10 = 85
+-4.3989134
+Steps 4/24: hit10 = 147, ndcg10 = 89
+-3.0676556
+Steps 5/24: hit10 = 145, ndcg10 = 84
+-3.2072983
+Steps 6/24: hit10 = 143, ndcg10 = 84
+-7.4535427
+Steps 7/24: hit10 = 145, ndcg10 = 79
+-0.326519
+Steps 8/24: hit10 = 149, ndcg10 = 86
+-0.14613152
+Steps 9/24: hit10 = 154, ndcg10 = 90
+-6.496669
+Steps 10/24: hit10 = 156, ndcg10 = 86
+-7.495561
+Steps 11/24: hit10 = 145, ndcg10 = 87
+-8.145286
+Steps 12/24: hit10 = 139, ndcg10 = 77
+-7.1057644
+Steps 13/24: hit10 = 151, ndcg10 = 82
+-5.6598005
+Steps 14/24: hit10 = 147, ndcg10 = 78
+-10.8223715
+Steps 15/24: hit10 = 153, ndcg10 = 91
+-5.3441133
+Steps 16/24: hit10 = 136, ndcg10 = 78
+-4.293296
+Steps 17/24: hit10 = 146, ndcg10 = 81
+-4.747637
+Steps 18/24: hit10 = 141, ndcg10 = 76
+-9.2208395
+Steps 19/24: hit10 = 157, ndcg10 = 91
+-3.5988083
+Steps 20/24: hit10 = 153, ndcg10 = 86
+-7.3009205
+Steps 21/24: hit10 = 150, ndcg10 = 81
+2.7704554
+Steps 22/24: hit10 = 146, ndcg10 = 83
+-4.8216953
+Steps 23/24: hit10 = 93, ndcg10 = 51
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.27329246476593716,epochHit5:0.40711920529801326
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3725731149037921,epochHit20:0.7529801324503311
+Epoch 18/20, Test: HR = 0.5773, NDCG = 0.3282
+
+Step 0/24: preloss = 0.08, REGLoss = 0.26
+Step 1/24: preloss = 0.09, REGLoss = 0.26
+Step 2/24: preloss = 0.11, REGLoss = 0.26
+Step 3/24: preloss = 0.09, REGLoss = 0.26
+Step 4/24: preloss = 0.08, REGLoss = 0.26
+Step 5/24: preloss = 0.09, REGLoss = 0.26
+Step 6/24: preloss = 0.10, REGLoss = 0.26
+Step 7/24: preloss = 0.11, REGLoss = 0.26
+Step 8/24: preloss = 0.12, REGLoss = 0.26
+Step 9/24: preloss = 0.11, REGLoss = 0.26
+Step 10/24: preloss = 0.13, REGLoss = 0.26
+Step 11/24: preloss = 0.11, REGLoss = 0.25
+Step 12/24: preloss = 0.11, REGLoss = 0.25
+Step 13/24: preloss = 0.11, REGLoss = 0.25
+Step 14/24: preloss = 0.13, REGLoss = 0.25
+Step 15/24: preloss = 0.15, REGLoss = 0.25
+Step 16/24: preloss = 0.11, REGLoss = 0.25
+Step 17/24: preloss = 0.13, REGLoss = 0.25
+Step 18/24: preloss = 0.15, REGLoss = 0.25
+Step 19/24: preloss = 0.14, REGLoss = 0.25
+Step 20/24: preloss = 0.15, REGLoss = 0.25
+Step 21/24: preloss = 0.14, REGLoss = 0.24
+Step 22/24: preloss = 0.15, REGLoss = 0.25
+Step 23/24: preloss = 0.16, REGLoss = 0.24
+Epoch 19/20, Train: Loss = 0.7439, preLoss = 0.2386
+0.105472565
+Steps 0/24: hit10 = 151, ndcg10 = 79
+-3.2069159
+Steps 1/24: hit10 = 148, ndcg10 = 84
+-3.6739635
+Steps 2/24: hit10 = 146, ndcg10 = 79
+-6.193303
+Steps 3/24: hit10 = 150, ndcg10 = 85
+-3.865141
+Steps 4/24: hit10 = 142, ndcg10 = 87
+5.487071
+Steps 5/24: hit10 = 154, ndcg10 = 84
+-0.61233425
+Steps 6/24: hit10 = 147, ndcg10 = 80
+0.71920204
+Steps 7/24: hit10 = 143, ndcg10 = 77
+1.5631294
+Steps 8/24: hit10 = 150, ndcg10 = 87
+2.0439863
+Steps 9/24: hit10 = 162, ndcg10 = 89
+-6.981118
+Steps 10/24: hit10 = 148, ndcg10 = 81
+-4.1364565
+Steps 11/24: hit10 = 153, ndcg10 = 86
+-5.389619
+Steps 12/24: hit10 = 147, ndcg10 = 82
+-4.7562113
+Steps 13/24: hit10 = 144, ndcg10 = 79
+-7.612089
+Steps 14/24: hit10 = 145, ndcg10 = 79
+-6.9140606
+Steps 15/24: hit10 = 162, ndcg10 = 93
+-1.7859573
+Steps 16/24: hit10 = 140, ndcg10 = 76
+-1.9477358
+Steps 17/24: hit10 = 141, ndcg10 = 82
+-5.6613693
+Steps 18/24: hit10 = 133, ndcg10 = 69
+-4.822097
+Steps 19/24: hit10 = 168, ndcg10 = 93
+2.4542713
+Steps 20/24: hit10 = 159, ndcg10 = 91
+-2.8768902
+Steps 21/24: hit10 = 144, ndcg10 = 79
+2.7743874
+Steps 22/24: hit10 = 149, ndcg10 = 82
+-3.5845032
+Steps 23/24: hit10 = 95, ndcg10 = 51
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.26706417893940726,epochHit5:0.40264900662251657
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3701866830836492,epochHit20:0.759271523178808
+Epoch 19/20, Test: HR = 0.5829, NDCG = 0.3254
+
+0.105472565
+Steps 0/24: hit10 = 151, ndcg10 = 79
+-3.2069159
+Steps 1/24: hit10 = 148, ndcg10 = 84
+-3.6739635
+Steps 2/24: hit10 = 146, ndcg10 = 79
+-6.193303
+Steps 3/24: hit10 = 150, ndcg10 = 85
+-3.865141
+Steps 4/24: hit10 = 142, ndcg10 = 87
+5.487071
+Steps 5/24: hit10 = 154, ndcg10 = 84
+-0.61233425
+Steps 6/24: hit10 = 147, ndcg10 = 80
+0.71920204
+Steps 7/24: hit10 = 143, ndcg10 = 77
+1.5631294
+Steps 8/24: hit10 = 150, ndcg10 = 87
+2.0439863
+Steps 9/24: hit10 = 162, ndcg10 = 89
+-6.981118
+Steps 10/24: hit10 = 148, ndcg10 = 81
+-4.1364565
+Steps 11/24: hit10 = 153, ndcg10 = 86
+-5.389619
+Steps 12/24: hit10 = 147, ndcg10 = 82
+-4.7562113
+Steps 13/24: hit10 = 144, ndcg10 = 79
+-7.612089
+Steps 14/24: hit10 = 145, ndcg10 = 79
+-6.9140606
+Steps 15/24: hit10 = 162, ndcg10 = 93
+-1.7859573
+Steps 16/24: hit10 = 140, ndcg10 = 76
+-1.9477358
+Steps 17/24: hit10 = 141, ndcg10 = 82
+-5.6613693
+Steps 18/24: hit10 = 133, ndcg10 = 69
+-4.822097
+Steps 19/24: hit10 = 168, ndcg10 = 93
+2.4542713
+Steps 20/24: hit10 = 159, ndcg10 = 91
+-2.8768902
+Steps 21/24: hit10 = 144, ndcg10 = 79
+2.7743874
+Steps 22/24: hit10 = 149, ndcg10 = 82
+-3.5845032
+Steps 23/24: hit10 = 95, ndcg10 = 51
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.26706417893940726,epochHit5:0.40264900662251657
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3701866830836492,epochHit20:0.759271523178808
+Epoch 20/20, Test: HR = 0.5829, NDCG = 0.3254
+Epoch 7/20, max: HR = 0.6040, NDCG = 0.3502
+Model Saved: Models/ml1m_final.pth
+0.105472565
+Steps 0/24: hit10 = 162, ndcg10 = 93
+-3.2069159
+Steps 1/24: hit10 = 166, ndcg10 = 99
+-3.6739635
+Steps 2/24: hit10 = 153, ndcg10 = 87
+-6.193303
+Steps 3/24: hit10 = 164, ndcg10 = 94
+-3.865141
+Steps 4/24: hit10 = 152, ndcg10 = 85
+5.487071
+Steps 5/24: hit10 = 163, ndcg10 = 97
+-0.61233425
+Steps 6/24: hit10 = 155, ndcg10 = 89
+0.71920204
+Steps 7/24: hit10 = 158, ndcg10 = 92
+1.5631294
+Steps 8/24: hit10 = 159, ndcg10 = 87
+2.0439863
+Steps 9/24: hit10 = 166, ndcg10 = 95
+-6.981118
+Steps 10/24: hit10 = 154, ndcg10 = 90
+-4.1364565
+Steps 11/24: hit10 = 160, ndcg10 = 95
+-5.389619
+Steps 12/24: hit10 = 169, ndcg10 = 97
+-4.7562113
+Steps 13/24: hit10 = 171, ndcg10 = 97
+-7.612089
+Steps 14/24: hit10 = 158, ndcg10 = 86
+-6.9140606
+Steps 15/24: hit10 = 173, ndcg10 = 104
+-1.7859573
+Steps 16/24: hit10 = 147, ndcg10 = 77
+-1.9477358
+Steps 17/24: hit10 = 147, ndcg10 = 81
+-5.6613693
+Steps 18/24: hit10 = 127, ndcg10 = 75
+-4.822097
+Steps 19/24: hit10 = 139, ndcg10 = 77
+2.4542713
+Steps 20/24: hit10 = 170, ndcg10 = 96
+-2.8768902
+Steps 21/24: hit10 = 142, ndcg10 = 80
+2.7743874
+Steps 22/24: hit10 = 146, ndcg10 = 83
+-3.5845032
+Steps 23/24: hit10 = 88, ndcg10 = 49
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.29311767834095837,epochHit5:0.4336092715231788
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3945605412012435,epochHit20:0.7852649006622516
+
+Dev  After Training: Epoch 0/20, dev: HR = 0.6108, NDCG = 0.3504
+0.105472565
+Steps 0/24: hit10 = 151, ndcg10 = 79
+-3.2069159
+Steps 1/24: hit10 = 148, ndcg10 = 84
+-3.6739635
+Steps 2/24: hit10 = 146, ndcg10 = 79
+-6.193303
+Steps 3/24: hit10 = 150, ndcg10 = 85
+-3.865141
+Steps 4/24: hit10 = 142, ndcg10 = 87
+5.487071
+Steps 5/24: hit10 = 154, ndcg10 = 84
+-0.61233425
+Steps 6/24: hit10 = 147, ndcg10 = 80
+0.71920204
+Steps 7/24: hit10 = 143, ndcg10 = 77
+1.5631294
+Steps 8/24: hit10 = 150, ndcg10 = 87
+2.0439863
+Steps 9/24: hit10 = 162, ndcg10 = 89
+-6.981118
+Steps 10/24: hit10 = 148, ndcg10 = 81
+-4.1364565
+Steps 11/24: hit10 = 153, ndcg10 = 86
+-5.389619
+Steps 12/24: hit10 = 147, ndcg10 = 82
+-4.7562113
+Steps 13/24: hit10 = 144, ndcg10 = 79
+-7.612089
+Steps 14/24: hit10 = 145, ndcg10 = 79
+-6.9140606
+Steps 15/24: hit10 = 162, ndcg10 = 93
+-1.7859573
+Steps 16/24: hit10 = 140, ndcg10 = 76
+-1.9477358
+Steps 17/24: hit10 = 141, ndcg10 = 82
+-5.6613693
+Steps 18/24: hit10 = 133, ndcg10 = 69
+-4.822097
+Steps 19/24: hit10 = 168, ndcg10 = 93
+2.4542713
+Steps 20/24: hit10 = 159, ndcg10 = 91
+-2.8768902
+Steps 21/24: hit10 = 144, ndcg10 = 79
+2.7743874
+Steps 22/24: hit10 = 149, ndcg10 = 82
+-3.5845032
+Steps 23/24: hit10 = 95, ndcg10 = 51
+epochNdcg1:0.0,epochHit1:0.0,epochNdcg5:0.26706417893940726,epochHit5:0.40264900662251657
+epochNdcg15:0.0,epochHit15:0.0,epochNdcg20:0.3701866830836492,epochHit20:0.759271523178808
+
+Test After Training: Epoch 0/20, test: HR = 0.5829, NDCG = 0.3254
+make dirs: ./log/SelfGNNother\SelfGNNother__ml1m__0__lr=0
+
+--------------------------------------------- END: 2025-12-21 17:24:04 ---------------------------------------------

@@ -1,0 +1,122 @@
+Namespace(model_name='TiSASRec', model_mode='')
+--------------------------------------------- BEGIN: 2025-12-20 10:48:07 ---------------------------------------------
+
+=================================
+ Arguments          | Values     
+=================================
+ batch_size         | 256       
+ data_appendix      |           
+ dataset            | ml1m      
+ dropout            | 0         
+ early_stop         | 10        
+ emb_size           | 64        
+ epoch              | 200       
+ eval_batch_size    | 256       
+ gpu                | 0         
+ history_max        | 20        
+ l2                 | 1e-06     
+ lr                 | 0.0001    
+ main_metric        |           
+ num_heads          | 1         
+ num_layers         | 1         
+ num_neg            | 1         
+ num_workers        | 5         
+ optimizer          | Adam      
+ random_seed        | 0         
+ save_final_results | 1         
+ test_all           | 0         
+ time_max           | 512       
+ topk               | 5,10,20,50
+=================================
+Device: cuda
+Load corpus from data/ml1m/SeqReader.pkl
+#params: 326656
+TiSASRec(
+  (i_embeddings): Embedding(3707, 64)
+  (p_k_embeddings): Embedding(21, 64)
+  (p_v_embeddings): Embedding(21, 64)
+  (t_k_embeddings): Embedding(513, 64)
+  (t_v_embeddings): Embedding(513, 64)
+  (transformer_block): ModuleList(
+    (0): TimeIntervalTransformerLayer(
+      (masked_attn_head): TimeIntervalMultiHeadAttention(
+        (v_linear): Linear(in_features=64, out_features=64, bias=True)
+        (k_linear): Linear(in_features=64, out_features=64, bias=True)
+        (q_linear): Linear(in_features=64, out_features=64, bias=True)
+      )
+      (layer_norm1): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (dropout1): Dropout(p=0, inplace=False)
+      (linear1): Linear(in_features=64, out_features=64, bias=True)
+      (linear2): Linear(in_features=64, out_features=64, bias=True)
+      (layer_norm2): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+      (dropout2): Dropout(p=0, inplace=False)
+    )
+  )
+)
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Test Before Training: (HR@5:0.0477,NDCG@5:0.0272,HR@10:0.0937,NDCG@10:0.0420,HR@20:0.1924,NDCG@20:0.0666,HR@50:0.4952,NDCG@50:0.1258)
+Optimizer: Adam
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Epoch 1     loss=0.3706 [83.5 s]	dev=(HR@5:0.3268,NDCG@5:0.2166) [0.5 s] *
+Epoch 2     loss=0.2570 [82.7 s]	dev=(HR@5:0.4728,NDCG@5:0.3278) [0.5 s] *
+Epoch 3     loss=0.1935 [82.8 s]	dev=(HR@5:0.5810,NDCG@5:0.4209) [0.5 s] *
+Epoch 4     loss=0.1565 [82.6 s]	dev=(HR@5:0.6295,NDCG@5:0.4677) [0.8 s] *
+Epoch 5     loss=0.1370 [83.3 s]	dev=(HR@5:0.6507,NDCG@5:0.4897) [0.6 s] *
+Epoch 6     loss=0.1264 [82.2 s]	dev=(HR@5:0.6636,NDCG@5:0.5049) [0.5 s] *
+Epoch 7     loss=0.1197 [82.4 s]	dev=(HR@5:0.6790,NDCG@5:0.5159) [0.5 s] *
+Epoch 8     loss=0.1141 [82.7 s]	dev=(HR@5:0.6929,NDCG@5:0.5299) [0.5 s] *
+Epoch 9     loss=0.1101 [82.7 s]	dev=(HR@5:0.6993,NDCG@5:0.5371) [0.5 s] *
+Epoch 10    loss=0.1054 [83.3 s]	dev=(HR@5:0.7093,NDCG@5:0.5475) [0.5 s] *
+Epoch 11    loss=0.1017 [82.6 s]	dev=(HR@5:0.7162,NDCG@5:0.5543) [0.5 s] *
+Epoch 12    loss=0.0988 [82.6 s]	dev=(HR@5:0.7152,NDCG@5:0.5548) [0.5 s] *
+Epoch 13    loss=0.0963 [82.3 s]	dev=(HR@5:0.7230,NDCG@5:0.5626) [0.5 s] *
+Epoch 14    loss=0.0938 [81.7 s]	dev=(HR@5:0.7262,NDCG@5:0.5663) [0.8 s] *
+Epoch 15    loss=0.0915 [81.9 s]	dev=(HR@5:0.7268,NDCG@5:0.5685) [0.8 s] *
+Epoch 16    loss=0.0906 [82.3 s]	dev=(HR@5:0.7313,NDCG@5:0.5707) [0.6 s] *
+Epoch 17    loss=0.0879 [81.8 s]	dev=(HR@5:0.7339,NDCG@5:0.5766) [0.5 s] *
+Epoch 18    loss=0.0869 [81.5 s]	dev=(HR@5:0.7331,NDCG@5:0.5739) [0.5 s]
+Epoch 19    loss=0.0846 [81.4 s]	dev=(HR@5:0.7366,NDCG@5:0.5790) [0.5 s] *
+Epoch 20    loss=0.0837 [80.5 s]	dev=(HR@5:0.7387,NDCG@5:0.5789) [0.7 s]
+Epoch 21    loss=0.0826 [80.0 s]	dev=(HR@5:0.7298,NDCG@5:0.5741) [0.7 s]
+Epoch 22    loss=0.0814 [81.7 s]	dev=(HR@5:0.7384,NDCG@5:0.5778) [0.7 s]
+Epoch 23    loss=0.0804 [82.7 s]	dev=(HR@5:0.7399,NDCG@5:0.5802) [0.5 s] *
+Epoch 24    loss=0.0792 [83.1 s]	dev=(HR@5:0.7391,NDCG@5:0.5830) [0.5 s] *
+Epoch 25    loss=0.0782 [81.6 s]	dev=(HR@5:0.7417,NDCG@5:0.5811) [0.4 s]
+Epoch 26    loss=0.0770 [81.0 s]	dev=(HR@5:0.7353,NDCG@5:0.5790) [0.4 s]
+Epoch 27    loss=0.0771 [80.8 s]	dev=(HR@5:0.7358,NDCG@5:0.5811) [0.5 s]
+Epoch 28    loss=0.0759 [80.9 s]	dev=(HR@5:0.7414,NDCG@5:0.5837) [0.4 s] *
+Epoch 29    loss=0.0755 [80.3 s]	dev=(HR@5:0.7421,NDCG@5:0.5833) [0.5 s]
+Epoch 30    loss=0.0745 [81.1 s]	dev=(HR@5:0.7402,NDCG@5:0.5830) [0.6 s]
+Epoch 31    loss=0.0735 [78.5 s]	dev=(HR@5:0.7392,NDCG@5:0.5853) [0.7 s] *
+Epoch 32    loss=0.0730 [79.2 s]	dev=(HR@5:0.7373,NDCG@5:0.5841) [0.4 s]
+Epoch 33    loss=0.0728 [79.8 s]	dev=(HR@5:0.7416,NDCG@5:0.5838) [0.4 s]
+Epoch 34    loss=0.0719 [79.8 s]	dev=(HR@5:0.7361,NDCG@5:0.5849) [0.4 s]
+Epoch 35    loss=0.0718 [80.8 s]	dev=(HR@5:0.7411,NDCG@5:0.5879) [0.5 s] *
+Epoch 36    loss=0.0703 [81.0 s]	dev=(HR@5:0.7396,NDCG@5:0.5867) [0.5 s]
+Epoch 37    loss=0.0706 [81.1 s]	dev=(HR@5:0.7387,NDCG@5:0.5856) [0.4 s]
+Epoch 38    loss=0.0702 [82.6 s]	dev=(HR@5:0.7331,NDCG@5:0.5802) [0.5 s]
+Epoch 39    loss=0.0697 [83.5 s]	dev=(HR@5:0.7341,NDCG@5:0.5834) [0.5 s]
+Epoch 40    loss=0.0700 [82.0 s]	dev=(HR@5:0.7394,NDCG@5:0.5865) [0.5 s]
+Epoch 41    loss=0.0688 [81.0 s]	dev=(HR@5:0.7384,NDCG@5:0.5872) [0.4 s]
+Epoch 42    loss=0.0684 [81.1 s]	dev=(HR@5:0.7397,NDCG@5:0.5877) [0.4 s]
+Epoch 43    loss=0.0685 [80.8 s]	dev=(HR@5:0.7373,NDCG@5:0.5859) [0.4 s]
+Epoch 44    loss=0.0681 [81.0 s]	dev=(HR@5:0.7361,NDCG@5:0.5824) [0.5 s]
+Early stop at 44 based on dev result.
+
+Best Iter(dev)=   35	 dev=(HR@5:0.7411,NDCG@5:0.5879) [3615.7 s] 
+Load model from ../model/TiSASRec/TiSASRec__ml1m__0__lr=0.0001__l2=1e-06__emb_size=64__num_layers=1__num_heads=1__time_max=512.pt
+                                                                                                    
+Dev  After Training: (HR@5:0.7411,NDCG@5:0.5879,HR@10:0.8344,NDCG@10:0.6183,HR@20:0.9141,NDCG@20:0.6385,HR@50:0.9791,NDCG@50:0.6517)
+                                                                                                    
+Test After Training: (HR@5:0.7031,NDCG@5:0.5476,HR@10:0.8075,NDCG@10:0.5816,HR@20:0.8911,NDCG@20:0.6028,HR@50:0.9725,NDCG@50:0.6192)
+make dirs: ../log/TiSASRec/TiSASRec__ml1m__0__lr=0
+Saving top-100 recommendation results to: ../log/TiSASRec/TiSASRec__ml1m__0__lr=0/rec-TiSASRec-dev.csv
+dev Prediction results saved!
+Saving top-100 recommendation results to: ../log/TiSASRec/TiSASRec__ml1m__0__lr=0/rec-TiSASRec-test.csv
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 5 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+test Prediction results saved!
+
+--------------------------------------------- END: 2025-12-20 11:48:32 ---------------------------------------------
