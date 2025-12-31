@@ -217,6 +217,11 @@ class SelfGNN(BaseModel):
         final_user_vector = multihead_user_vector.mean(dim=1)
         final_item_vector = multihead_item_vector.mean(dim=1)
         iEmbed_att = final_item_vector
+
+        device = iEmbed_att.device
+        sequence = sequence.to(device)
+        mask = mask.to(device)
+        pos = pos.to(device)
         
         # Sequence attention
         seq_item_embed = iEmbed_att[sequence]  # [batch, pos_length, latdim]
