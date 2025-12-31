@@ -28,7 +28,9 @@ conda create -n selfgnn python==3.10.4
 conda activate selfgnn
 pip install -r requirements.txt
 ```
-
+```bash
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.6 -c pytorch -c conda-forge
+```
 # 2. 复现论文代码
 
 保持论文的参数设置
