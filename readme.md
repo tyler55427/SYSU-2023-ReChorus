@@ -24,7 +24,7 @@ cd SYSU-2023-Rechorus
 ## 1. 2 安装依赖
 
 ```bash
-conda create -n selfgnn python==3.10.4
+conda create -n selfgnn python==3.10.19
 conda activate selfgnn
 pip install -r requirements.txt
 ```
