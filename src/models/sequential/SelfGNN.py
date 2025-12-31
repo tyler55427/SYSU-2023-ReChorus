@@ -109,11 +109,11 @@ class SelfGNN(BaseModel):
         tgt_nodes = adj_indices[0].clamp(0, out_size - 1)
         
         # 获取源节点嵌入
-        src_embeds = srclats[src_nodes]
+        src_embeds = srclats[src_nodes].to(device)
         
         # 使用scatter_add进行聚合
         lat = torch.zeros(out_size, self.args.latdim, device=device)
-        tgt_expanded = tgt_nodes.unsqueeze(-1).expand(-1, self.args.latdim)
+        tgt_expanded = tgt_nodes.unsqueeze(-1).expand(-1, self.args.latdim).to(device)
         lat = lat.scatter_add(0, tgt_expanded, src_embeds)
         
         # LeakyReLU
