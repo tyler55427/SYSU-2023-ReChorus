@@ -1,3 +1,5 @@
+# ！！！请clone仓库中的代码进行实验！！！
+
 # SYSU 2023 级 机器学习大作业
 
 本仓库为使用 ReChorus 框架对 "[SelfGNN: Self-Supervised Graph Neural Networks for Sequential Recommendation](https://arxiv.org/abs/2405.20878)"[SIGIR'2024]进行复现
